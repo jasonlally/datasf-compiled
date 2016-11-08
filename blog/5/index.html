@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <!-- Basic ================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- Mobile ================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  
+  <!-- Title and meta description================================================== -->
+  <title>DataSF | Blog</title>
+  <meta name="description" content="Our mission is to empower use of the City and County of San Francisco's data. Our core product is SF OpenData, the official open data portal.">
+  <!--<link rel="canonical" href="https://datasf.org/blog/5/">-->
+  
+  <!-- Open Graph and Author Metas================================================== -->
+  
+  	<!-- Open Graph -->
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="DataSF | Blog">
+	
+	<meta property="og:url" content="https://datasf.org/blog/5/">
+	
+	<meta property="og:site_name" content="DataSF">
+	<!-- Twitter Cards -->
+	<meta name="twitter:title" content="DataSF | Blog">
+	
+	<meta name="twitter:site" content="@datasf">
+	<meta name="twitter:creator" content="@datasf">
+	
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:image:src" content="https://datasf.org/assets/img/">
+	
+	
+  
+  
+  <!-- Custom Fonts ================================================== -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Alegreya:400italic,700italic,400,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+  
+  <!-- CSS ================================================== -->
+  <link rel="stylesheet" href="/assets/css/vendor.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  <link rel="stylesheet" href="/assets/js/vendor/DataTables-1.10.7/Plugins-1.10.7/integration/bootstrap/3/dataTables.bootstrap.css">
+  
+  <!--[if lte IE 9]><script src="/assets/js/vendor/aight/aight.min.js"></script><![endif]-->
+  <!-- D3 for charting (only need this on some pages -->
+  <script src="/assets/js/vendor/d3.js"></script>
+
+  <!--[if IE 8]><script src="/assets/js/vendor/aight/d3/d3.ie8.js"></script><![endif]-->
+  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  
+  <!-- Scripts ================================================== -->
+  <script src="/assets/js/vendor/modernizr.custom.94053.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-53975719-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+  
+</head>
+
+  
+   <body >
+    <div class="nav-group navbar-fixed-top  navbar-shrink ">
+  <div class="navbar navbar-mini navbar-static-top visible-sm visible-md visible-lg" role="region" aria-label="external links">
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbar-collapse-2">
+        <ul class="nav navbar-nav navbar-right">
+            
+          <li class="">
+            <a class=" " href="https://www.sfgov.org">SFGov</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/coordinators/">Coordinator's Portal</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/about/">About</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="http://support.datasf.org">Help</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="/"><span class="brand"><span class="brand-highlight">Data</span>SF</span></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+            
+          <li class="">
+            <a class="  ext-sf-opendata " href="https://data.sfgov.org">Data Catalog</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/showcase/">Showcase</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/publishing/">Publishing</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/academy/">Academy</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/resources/">Resources</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/blog/">Blog</a>
+          </li>
+          
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="https://www.sfgov.org">SFGov</a>
+          </li>
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="/coordinators/">Coordinator's Portal</a>
+          </li>
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="/about/">About</a>
+          </li>
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="http://support.datasf.org">Help</a>
+          </li>
+          
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  
+</div>
+    <!-- Stories List Section -->
+<section id="stories" class="bg-light-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 section-heading-wrapper">
+        <h1 class="section-heading bg-line">DataSF <i class="fa fa-bullhorn"></i> Speaks</h1>
+        <p class="section-subheading text-muted">Our blog and stories</p>
+      </div>
+      <div class="col-md-8">
+        
+<div class="story-item">
+  <div class="story-caption clearfix">
+    
+    <div class="block-image pull-right" style="background-image:url(/assets/blog/pddl-launch/DataUnlocked-01.png);"></div>
+    
+    <time datetime=" 2015-01-23 " itemprop="datePublished">
+      January 23, 2015
+    </time>
+    <a href="/blog/data-license-liberation-day/"><h4>Data License Liberation Day</h4></a>
+    <p class="text-muted">It’s official – we have legal sign off on a single licensing strategy for DataSF! Going forward, all data will be released under the friendly, no obligation Public Domain Dedication License (PDDL).</p>
+  </div>
+</div>
+
+<div class="story-item">
+  <div class="story-caption clearfix">
+    
+    <div class="block-image pull-right" style="background-image:url(/assets/blog/u-heart-metadata/u-heart-metadata.png);"></div>
+    
+    <time datetime=" 2014-09-15 " itemprop="datePublished">
+      September 15, 2014
+    </time>
+    <a href="/blog/u-heart-metadata/"><h4>U Heart Metadata</h4></a>
+    <p class="text-muted">Thank you to everyone who responded to our request for feedback on our metadata draft! We really appreciated your comments and thoughts.</p>
+  </div>
+</div>
+
+<div class="story-item">
+  <div class="story-caption clearfix">
+    
+    <div class="block-image pull-right" style="background-image:url(/assets/blog/new-portal/before-after.png);"></div>
+    
+    <time datetime=" 2014-08-19 " itemprop="datePublished">
+      August 19, 2014
+    </time>
+    <a href="/blog/the-new-datasf/"><h4>The New DataSF!</h4></a>
+    <p class="text-muted">Today we released the new DataSF. You spoke and we listened. Our new design addresses some of the major usability issues on our website...</p>
+  </div>
+</div>
+
+<div class="story-item">
+  <div class="story-caption clearfix">
+    
+    <div class="block-image pull-right" style="background-image:url(/assets/blog/i-heart-metadata/i-heart-metadata.png);"></div>
+    
+    <time datetime=" 2014-07-23 " itemprop="datePublished">
+      July 23, 2014
+    </time>
+    <a href="/blog/dating-data-what-do-you-look-for/"><h4>Metadata & Dating - More in Common than you Think...</h4></a>
+    <p class="text-muted">Finding, dating and settling down with the perfect mate is a lot easier with online dating tools. When you look for a potential match, maybe you only want a few details.</p>
+  </div>
+</div>
+
+<div class="story-item">
+  <div class="story-caption clearfix">
+    
+    <div class="block-image pull-right" style="background-image:url(/assets/blog/open-data-grows-up/open-data-theory-of-change.png);"></div>
+    
+    <time datetime=" 2014-07-19 " itemprop="datePublished">
+      July 19, 2014
+    </time>
+    <a href="/blog/open-data-grows-up/"><h4>Open Data Grows Up</h4></a>
+    <p class="text-muted">We released our multi-year strategic plan today! You can learn about our strategic plan and track our progress over time.</p>
+  </div>
+</div>
+
+        <!-- Pagination links -->
+        
+        <nav class="text-center">
+        <ul class="pagination">
+          
+          <li>
+          <a href="/blog/4/" aria-label="Previous">&laquo; Prev</a> </li>
+          
+           
+          <li><a href="/blog">1</a></li>  
+          <li><a href="/blog/2/">2</a></li>   
+          <li><a href="/blog/3/">3</a></li>   
+          <li><a href="/blog/4/">4</a></li>   
+          <li class="active"><span><em>5</em></span></li>   
+          <li><a href="/blog/6/">6</a></li>   
+          <li><a href="/blog/6/">Next &raquo;</a></li> 
+        </ul>
+      </nav>
+        
+      </div>
+      <div class="col-md-4 sidebar">
+        <a class="twitter-timeline" href="https://twitter.com/DataSF" data-widget-id="559899210959421440">Tweets by @DataSF</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        <!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup">
+  <form action="//datasf.us10.list-manage.com/subscribe/post-json?u=c16d18091b821e3289a7546f9&amp;id=9e931a2612" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+      <h2>Subscribe to our newsletter</h2>
+      <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+      <div class="mc-field-group">
+        <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+        </label>
+        <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL">
+      </div>
+      <div class="mc-field-group form-group">
+        <label for="mce-FNAME">First Name </label>
+        <input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME">
+      </div>
+      <div class="mc-field-group form-group">
+        <label for="mce-LNAME">Last Name </label>
+        <input type="text" value="" name="LNAME" class="form-control" id="mce-LNAME">
+      </div>
+      <div id="mce-responses" class="clear">
+        <div class="response alert-error" id="mce-error-response" style="display:none"></div>
+        <div class="response alert-success" id="mce-success-response" style="display:none"></div>
+      </div>
+      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+      <div style="position: absolute; left: -5000px;">
+        <input type="text" name="b_c16d18091b821e3289a7546f9_9e931a2612" tabindex="-1" value="">
+      </div>
+      <div class="clear">
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default">
+      </div>
+    </div>
+  </form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+<script type='text/javascript'>
+  (function($) {
+    window.fnames = new Array();
+    window.ftypes = new Array();
+    fnames[0] = 'EMAIL';
+    ftypes[0] = 'email';
+    fnames[1] = 'FNAME';
+    ftypes[1] = 'text';
+    fnames[2] = 'LNAME';
+    ftypes[2] = 'text';
+  }(jQuery));
+  var $mcj = jQuery.noConflict(true);
+</script>
+<!--End mc_embed_signup-->
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+    <footer>
+  <div class="container extra-links">
+    <div class="row text-center">
+      <div class="col-md-4">
+
+      </div>
+      <div class="col-md-4">
+        
+        <ul class="list-inline social-buttons">
+          
+          <li><a href="http://twitter.com/datasf"><i class="fa fa-twitter"></i></a>
+          </li>
+          
+          <li><a href="http://opendata.stackexchange.com/search?q=san+francisco"><i class="fa fa-stack-overflow"></i></a>
+          </li>
+          
+          <li><a href="http://github.com/datasf"><i class="fa fa-github"></i></a>
+          </li>
+          
+        </ul>
+        
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline quicklinks">
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-content-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-md-4 left-border-dotted">
+          <ul class="list-unstyled quick-links">
+              
+              <li class="">
+                <a class="  ext-sf-opendata " href="https://data.sfgov.org">Data Catalog</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/showcase/">Showcase</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/publishing/">Publishing</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/academy/">Academy</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/resources/">Resources</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/blog/">Blog</a>
+              </li>
+            
+            
+              <li style="margin-top: 15px;"><a href="/privacy/">Privacy Policy</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-md-6 mission">
+          <p>DataSF's mission is to empower use of data. We seek to transform the way the City works through the use of data. We believe use of data and evidence can improve our operations and the services we provide. This ultimately leads to increased quality of life and work for San Francisco residents, employers, employees and visitors. <a href="/about">Learn more about our work.</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="text-center made-in">
+    Made with <i class="fa fa-heart"><span class="sr-only">heart</span></i> in San Francisco
+  </div>
+  
+</footer>
+    <!-- jQuery Version 1.11.3 -->
+<script src="/assets/js/vendor/jquery-1.11.3.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="/assets/js/vendor/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="/assets/js/vendor/jquery.easing.min.js"></script>
+<script src="/assets/js/vendor/jquery.validate.min.js"></script>
+<script src="/assets/js/vendor/DataTables-1.10.7/media/js/jquery.dataTables.min.js"></script>
+<script src="/assets/js/vendor/DataTables-1.10.7/Plugins-1.10.7/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+<script src="/assets/js/vendor/jsrender.min.js"></script>
+
+
+
+
+<script src="/assets/js/vendor/c3.js"></script>
+<script src="/assets/js/vendor/moment.js"></script>
+<script src="/assets/js/vendor/selectize.min.js"></script>
+
+<!-- utilities -->
+<script src="/assets/js/vendor/toTitleCase.js"></script>
+
+<!-- Custom site JavaScript -->
+<script src="/assets/js/datasf.js"></script>
+
+
+    </body>
+</html>

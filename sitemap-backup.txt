@@ -1,0 +1,1432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+    
+    <url>
+      <loc>https://datasf.org/blog/show-me-the-data-dictionary/</loc>
+      
+        <lastmod>2016-10-31T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/blog/4-steps-to-manage-privacy-and-de-identification-for-your-open-data-program/</loc>
+      
+        <lastmod>2016-10-06T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/blog/year-3-is-in-session/</loc>
+      
+        <lastmod>2016-08-16T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/resources/personal-data-request-guidebook/</loc>
+      
+        <lastmod>2016-08-08T16:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/resources/open-data-release-toolkit/</loc>
+      
+        <lastmod>2016-08-08T16:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/resources/open-data-release-toolkit-form/</loc>
+      
+        <lastmod>2016-08-08T16:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/resources/one-page-summary-of-personal-data-requests/</loc>
+      
+        <lastmod>2016-08-08T16:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/blog/we-want-you-serve-as-the-digital-services-chief/</loc>
+      
+        <lastmod>2016-07-26T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/blog/say-hello-to-systems-inventory/</loc>
+      
+        <lastmod>2016-07-01T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/blog/new-search-experience/</loc>
+      
+        <lastmod>2016-06-06T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/blog/yumm-new-data-in-san-francisco/</loc>
+      
+        <lastmod>2016-04-22T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/academy/introduction-to-r/</loc>
+      
+        <lastmod>2016-04-21T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/academy/leveraging-the-citys-open-data-portal/</loc>
+      
+        <lastmod>2016-03-12T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/academy/intermediate-tableau-ii/</loc>
+      
+        <lastmod>2016-03-12T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/academy/intermediate-tableau-i/</loc>
+      
+        <lastmod>2016-03-12T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/academy/excel-shortcuts/</loc>
+      
+        <lastmod>2016-03-12T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/academy/data-usability/</loc>
+      
+        <lastmod>2016-03-12T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/academy/business-process-mapping-and-analysis/</loc>
+      
+        <lastmod>2016-03-12T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/academy/basics-of-information-design/</loc>
+      
+        <lastmod>2016-03-12T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/academy/introduction-to-tableau/</loc>
+      
+        <lastmod>2016-03-11T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/academy/applying-design-thinking-behavioral-economics-lean-startup-at-work/</loc>
+      
+        <lastmod>2016-03-11T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/academy/advanced-excel/</loc>
+      
+        <lastmod>2016-03-05T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/academy/intermediate-excel/</loc>
+      
+        <lastmod>2016-03-02T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/academy/introduction-to-excel/</loc>
+      
+        <lastmod>2016-03-01T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/blog/how-to-measure-open-data/</loc>
+      
+        <lastmod>2015-12-16T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/blog/share-sf-coordinator-job-post/</loc>
+      
+        <lastmod>2015-10-22T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/blog/meet-casey-the-user-open-data-portals-forgot/</loc>
+      
+        <lastmod>2015-09-21T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/resources/stat-starter-kit/</loc>
+      
+        <lastmod>2015-09-02T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/blog/datasf-seeks-open-data-services-engineer/</loc>
+      
+        <lastmod>2015-08-26T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/blog/sf-open-data-roundup-1/</loc>
+      
+        <lastmod>2015-08-14T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/resources/year-2-detailed-timeline-with-activities/</loc>
+      
+        <lastmod>2015-07-31T12:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/resources/year-2-open-data-strategic-plan/</loc>
+      
+        <lastmod>2015-07-31T11:45:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/blog/announcing-our-year-2-plan/</loc>
+      
+        <lastmod>2015-07-31T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/blog/how-to-unstick-data-publishing/</loc>
+      
+        <lastmod>2015-07-07T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/blog/5-ways-to-scale-mountain-of-data/</loc>
+      
+        <lastmod>2015-06-17T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/blog/raising-digital-barn/</loc>
+      
+        <lastmod>2015-05-13T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/blog/housing-data-hub-launched/</loc>
+      
+        <lastmod>2015-04-24T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/blog/our-new-home/</loc>
+      
+        <lastmod>2015-04-06T21:33:12+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/blog/building-lighter-and-faster/</loc>
+      
+        <lastmod>2015-04-06T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/blog/datasf-summer-internship/</loc>
+      
+        <lastmod>2015-03-20T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/resources/data-coordinator-inventory-webinar-wave-2/</loc>
+      
+        <lastmod>2015-01-29T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/blog/data-license-liberation-day/</loc>
+      
+        <lastmod>2015-01-23T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/resources/licensing-open-data-resources-and-practices/</loc>
+      
+        <lastmod>2014-09-30T12:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/resources/licenses-inventory/</loc>
+      
+        <lastmod>2014-09-30T10:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/resources/licensing-open-data-a-practical-guide/</loc>
+      
+        <lastmod>2014-09-30T09:30:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/resources/final-metadata-standard/</loc>
+      
+        <lastmod>2014-09-15T23:49:25+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/resources/metadata-analysis-and-inventories-of-metadata-standards/</loc>
+      
+        <lastmod>2014-09-15T13:15:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/resources/metadata-existing-practices-and-survey/</loc>
+      
+        <lastmod>2014-09-15T12:58:30+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/resources/metadata-project-document-and-major-steps/</loc>
+      
+        <lastmod>2014-09-15T09:54:04+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/blog/u-heart-metadata/</loc>
+      
+        <lastmod>2014-09-15T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/blog/the-new-datasf/</loc>
+      
+        <lastmod>2014-08-19T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/blog/dating-data-what-do-you-look-for/</loc>
+      
+        <lastmod>2014-07-23T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/blog/open-data-grows-up/</loc>
+      
+        <lastmod>2014-07-19T00:39:45+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/resources/detailed-timeline-with-activities/</loc>
+      
+        <lastmod>2014-07-14T23:36:32+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/resources/open-data-strategic-plan/</loc>
+      
+        <lastmod>2014-07-14T12:50:25+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/blog/hello-world/</loc>
+      
+        <lastmod>2014-06-20T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/resources/data-inventory-template/</loc>
+      
+        <lastmod>2014-06-19T10:30:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/resources/data-inventory-example/</loc>
+      
+        <lastmod>2014-06-19T10:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/resources/data-coordinator-detailed-inventory-guide-steps-2-and-3/</loc>
+      
+        <lastmod>2014-06-19T09:30:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/resources/data-coordinator-guidebook/</loc>
+      
+        <lastmod>2014-06-19T09:15:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/resources/one-page-summary-of-data-inventory-process/</loc>
+      
+        <lastmod>2014-06-19T09:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/resources/one-page-summary-of-datasf-program/</loc>
+      
+        <lastmod>2014-06-19T08:30:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+  
+    
+    <url>
+      <loc>https://datasf.org/api/jsonp/authors.json</loc>
+      
+        <lastmod>2016-11-08T21:48:05+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/publishing/services/</loc>
+      
+        <lastmod>2016-11-08T21:48:05+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/assets/js/datasf.js</loc>
+      
+        <lastmod>2016-11-08T21:48:05+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/catalog/developers/</loc>
+      
+        <lastmod>2016-11-08T21:48:05+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/feed/index.xml</loc>
+      
+        <lastmod>2016-11-08T21:48:05+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/publishing/guidelines/</loc>
+      
+        <lastmod>2016-11-08T21:48:05+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/publishing/plans/</loc>
+      
+        <lastmod>2016-11-08T21:48:05+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/publishing/</loc>
+      
+        <lastmod>2016-11-08T21:48:05+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/showcase/made-with-open-data-survey/</loc>
+      
+        <lastmod>2016-11-08T21:48:05+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/showcase/</loc>
+      
+        <lastmod>2016-11-08T21:48:05+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/academy/faq/</loc>
+      
+        <lastmod>2016-11-08T21:48:05+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/academy/</loc>
+      
+        <lastmod>2016-11-08T21:48:05+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/catalog/</loc>
+      
+        <lastmod>2016-11-08T21:48:05+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/resources/</loc>
+      
+        <lastmod>2016-11-08T21:48:05+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/about/</loc>
+      
+        <lastmod>2016-11-08T21:48:05+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/coordinators/calendar/</loc>
+      
+        <lastmod>2016-11-08T21:48:05+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/coordinators/</loc>
+      
+        <lastmod>2016-11-08T21:48:05+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/blog/</loc>
+      
+        <lastmod>2016-11-08T21:48:05+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/progress/</loc>
+      
+        <lastmod>2016-11-08T21:48:05+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/</loc>
+      
+        <lastmod>2016-11-08T21:48:05+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/statstarterkit/</loc>
+      
+        <lastmod>2016-11-08T21:48:05+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/privacy/</loc>
+      
+        <lastmod>2016-11-08T21:48:05+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/robots.txt</loc>
+      
+        <lastmod>2016-11-08T21:48:05+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/assets/css/style.css</loc>
+      
+        <lastmod>2016-11-08T21:48:05+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/publishing/submission-guidelines/</loc>
+      
+        <lastmod>2016-11-08T21:48:05+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/api/jsonp/tags.json</loc>
+      
+        <lastmod>2016-11-08T21:48:05+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/catalog/terms-of-use/</loc>
+      
+        <lastmod>2016-11-08T21:48:05+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/assets/css/vendor.css</loc>
+      
+        <lastmod>2016-11-08T21:48:05+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/blog/2/</loc>
+      
+        <lastmod>2016-11-08T21:48:05+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/blog/3/</loc>
+      
+        <lastmod>2016-11-08T21:48:05+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/blog/4/</loc>
+      
+        <lastmod>2016-11-08T21:48:05+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/blog/5/</loc>
+      
+        <lastmod>2016-11-08T21:48:05+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://datasf.org/blog/6/</loc>
+      
+        <lastmod>2016-11-08T21:48:05+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+</urlset>

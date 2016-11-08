@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <!-- Basic ================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- Mobile ================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  
+  <!-- Title and meta description================================================== -->
+  <title>Open Data Grows Up</title>
+  <meta name="description" content="Our mission is to empower use of the City and County of San Francisco's data. Our core product is SF OpenData, the official open data portal.">
+  <!--<link rel="canonical" href="https://datasf.org/blog/open-data-grows-up/">-->
+  
+  <!-- Open Graph and Author Metas================================================== -->
+  
+  	<!-- Open Graph -->
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Open Data Grows Up">
+	<meta property="og:description" content="We released our multi-year strategic plan today! You can learn about our strategic plan and track our progress over time.">
+	<meta property="og:url" content="https://datasf.org/blog/open-data-grows-up/">
+	
+	<meta property="og:image" content="https://datasf.org/assets/blog/open-data-grows-up/open-data-theory-of-change.png">
+	
+	<meta property="og:site_name" content="DataSF">
+	<!-- Twitter Cards -->
+	<meta name="twitter:title" content="Open Data Grows Up">
+	<meta name="twitter:description" content="We released our multi-year strategic plan today! You can learn about our strategic plan and track our progress over time.">
+	<meta name="twitter:site" content="@datasf">
+	<meta name="twitter:creator" content="@datasf">
+	
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:image:src" content="https://datasf.org/assets/blog/open-data-grows-up/open-data-theory-of-change.png">
+	
+	
+  
+  
+  <!-- Custom Fonts ================================================== -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Alegreya:400italic,700italic,400,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+  
+  <!-- CSS ================================================== -->
+  <link rel="stylesheet" href="/assets/css/vendor.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  <link rel="stylesheet" href="/assets/js/vendor/DataTables-1.10.7/Plugins-1.10.7/integration/bootstrap/3/dataTables.bootstrap.css">
+  
+  <!--[if lte IE 9]><script src="/assets/js/vendor/aight/aight.min.js"></script><![endif]-->
+  <!-- D3 for charting (only need this on some pages -->
+  <script src="/assets/js/vendor/d3.js"></script>
+
+  <!--[if IE 8]><script src="/assets/js/vendor/aight/d3/d3.ie8.js"></script><![endif]-->
+  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  
+  <!-- Scripts ================================================== -->
+  <script src="/assets/js/vendor/modernizr.custom.94053.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-53975719-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+  
+</head>
+
+  
+   <body >
+    <div class="nav-group navbar-fixed-top  navbar-shrink ">
+  <div class="navbar navbar-mini navbar-static-top visible-sm visible-md visible-lg" role="region" aria-label="external links">
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbar-collapse-2">
+        <ul class="nav navbar-nav navbar-right">
+            
+          <li class="">
+            <a class=" " href="https://www.sfgov.org">SFGov</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/coordinators/">Coordinator's Portal</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/about/">About</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="http://support.datasf.org">Help</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="/"><span class="brand"><span class="brand-highlight">Data</span>SF</span></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+            
+          <li class="">
+            <a class="  ext-sf-opendata " href="https://data.sfgov.org">Data Catalog</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/showcase/">Showcase</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/publishing/">Publishing</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/academy/">Academy</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/resources/">Resources</a>
+          </li>
+            
+          <li class="active">
+            <a class="active " href="/blog/">Blog</a>
+          </li>
+          
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="https://www.sfgov.org">SFGov</a>
+          </li>
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="/coordinators/">Coordinator's Portal</a>
+          </li>
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="/about/">About</a>
+          </li>
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="http://support.datasf.org">Help</a>
+          </li>
+          
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  
+</div>
+    <div id="main" role="main" class="blog-post">
+  <div class="container">
+    
+
+
+<ol class="list-unstyled list-inline">
+ 
+  <li><a href="/">home</a> &#187; </li>
+
+  
+   
+   
+
+   <li><a href="/blog">blog</a> &#187; </li>
+
+   
+  
+ 
+</ol>
+    <article class="wrap" itemscope itemtype="http://schema.org/Article">
+      <!-- include breadcrumbs.html -->
+      <div class="row">
+        <div class="col-md-8">
+          <div class="page-title">
+            <h1>Open Data Grows Up</h1>
+          </div>
+          
+          <nav class="toc"></nav>
+          <!-- /.toc -->
+          <div id="content" class="page-content" itemprop="articleBody">
+            <p>We released our multi-year strategic plan today! <a href="http://sfmayor.org/index.aspx?page=846&amp;recordid=639&amp;returnURL=%2findex.aspx%3fpage%3d1">Read the press release</a>.</p>
+
+<p>You can read the whole thing as a <a href="http://sfmayor.org/Modules/ShowDocument.aspx?documentID=425">PDF</a> or <a href="https://docs.google.com/document/d/1hvp_wls8KuJrfHW_NwX1qtyFR4EFdWCkxcULnNlhKNw/edit?usp=sharing">google doc</a>. If you want a quick read, I pasted the executive summary below. You can also track details on our progress on our <a href="https://docs.google.com/spreadsheets/d/1M30oyAFUO6TXkmZ1jqGXTNGdvsTiXh5V7oS7vUCKRJ0/edit?usp=sharing">timeline of activities</a> (google spreadsheet).</p>
+
+<p>(And PS - we added a <a href="/resources">resources page</a> to the blog where we’ll blog-post all of our documents - reuse, re-purpose, critique!)</p>
+
+<h2 id="executive-summary">Executive Summary</h2>
+
+<p>San Francisco has been a leader in open data. As one of the first cities with an open data policy, we helped fuel a movement that has spread across the country and the world. Open data can serve as a platform to 1) change how we use, share and consume government data - externally and internally; 2) transform data into services; and 3) foster continuous improvement in decision-making and the business of government.</p>
+
+<p><img src="/assets/blog/open-data-grows-up/open-data-theory-of-change.png" alt="Open Data- Theory of Change (1)" />&lt;/a&gt;</p>
+
+<h3 id="need-to-evolve">Need to Evolve.</h3>
+
+<p>But this plan demonstrates the need to evolve and mature our approach. Not only do we need to reinvigorate our program and release more data, we need to evolve our work to support the use of data in decision-making. To transform our initiative into a program, our strategic plan is designed to build the elements of an institutional approach to open data and data use more generally. The goals and strategies for year 1 lay out a framework for how we can grow, mature, and sustain our program to align our activities and resources with the expectations of the open data policy. In achieving these goals and strategies, we can fulfill our mission of enabling use of the City’s data thereby fostering an ecosystem of data-enabled management, services, and decisions.</p>
+
+<h3 id="timing-and-resources">Timing and Resources.</h3>
+
+<p>Our strategic plan is ambitious and reflects a vision of what we hope to accomplish over time. We do not expect to be able to deliver on all aspects of our strategic vision in year 1. However, by fully articulating our vision, we are better able to prioritize and allocate our resources and identify where we need key partners to help execute on our goals. Moreover, this plan recognizes that each of our goals are multi-year goals and that a great deal of work is already happening throughout the City. This plan helps us stitch together an overarching vision of how these efforts align, where the role of open data fits in, and how we can move forward to enable use of data.</p>
+
+<p>While we expect our strategic goals to change over time, we believe the goals in this plan will be in place for the next three years. The Office of the Chief Data Officer (OCDO) will be focused on Goals 1, 2 and 6 in year 1, in conjunction with key partners and the departments themselves. In year 1, OCDO work on goals 3, 4, and 5 is focused on leveraging key partnerships or pursuing strategies that will inform future work. Section 6 and Appendix D include more details.</p>
+
+<table>
+<tbody>
+<tr>
+<th><b>Goals</b></th>
+<th><b>Supporting Strategies</b></th>
+</tr>
+<tr>
+<td><b>Goal 1. Increase number and timeliness of datasets on DataSF</b></td>
+<td><b>Why this matters. </b>To enable the use of data we must first make it available. We need to ensure that we are publishing the City’s data when allowed and in a timely way. We will:&lt;/p&gt;
+<ol>
+<li>Establish the role of data coordinators and support development of data catalogs—this will provide the basis of data governance and allow us to understand the scope of the City’s data.*</li>
+<li>Develop methods to inform the prioritization of datasets for publication —this will allow us to stagger publication based on resource availability.</li>
+<li>Develop metrics to track and measure progress in publishing open data—this will provide the basic reporting for our data publication plans.</li>
+<li>Develop our program to automate publication of data—this will increase efficiency and decrease department effort in publishing datasets.*</li>
+<li>Develop an outreach and support program for data coordinators and data publishers—this will help departments be successful in publishing data.</li>
+<li>Establish methods to ensure SF licensing and publication of data for new information systems—this will stem future open data costs by building open data into new system requirements.*</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td><b>Goal 2. Improve the usability of DataSF</b></td>
+<td><b>Why this matters.</b> To ensure that our open data is readily accessible and used, we need to make sure that our data website and the means of accessing the data support the needs of users. We will:&lt;/p&gt;
+<ol>
+<li>Better leverage existing services and features from our data portal vendor, Socrata—this will help optimize our investment in our vendor.*</li>
+<li>Partner closely with Socrata to inform the development of the portal—this will help ensure that the data platform evolves to meet our needs.</li>
+<li>Redesign our web presence and supporting processes and materials to better meet the needs of our users—this will increase the impact of open data by easing access to more users.</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td><b>Goal 3. Improve the usability, quality and consistency of our data</b></td>
+<td><b>Why this matters.</b> While Goals 1 and 2 help provide access to the City’s data, the ultimate value of the data depends on its usability, quality, and consistency. We will:&lt;/p&gt;
+<ol>
+<li>Establish metadata standards for published data—this is key to increasing understanding and usability of our data.*</li>
+<li>Establish mechanisms to elicit and track feedback and learnings from data users—this will help us flag data quality problems.</li>
+<li>Explore the creation of data quality processes and measures—this will help inform how to support improved data quality over time.</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td><b>Goal 4. Enable use of confidential data, while appropriately protecting it</b></td>
+<td><b>Why this matters.</b> While the City needs to appropriately protect confidential data, we also need to enable better access to and use of this data for cross-department data sharing. We will:&lt;/p&gt;
+<ol>
+<li>Create a data classification and sharing standard—this will help improve efficiency and consistency in sharing and protecting data.*</li>
+<li>Create a process for accessing your individual data—this will help support data quality and privacy.*</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td><b>Goal 5. Support increased use of data in decision-making</b></td>
+<td><b>Why this matters.</b> Once data is available, we need to use it. We need to match the availability of data with the capacity to use data, both in terms of people and technology. We will:&lt;/p&gt;
+<ol>
+<li>Establish a training curriculum to support increased use of data in decision-making—this will increase the capacity of City staff to use, analyze, and manage with data.*</li>
+<li>Help establish department stat programs based on department readiness; codify lessons learned and materials for broader use—this will help increase effectiveness in using and leveraging “stat” programs.*</li>
+<li>Continue to develop our portfolio of transparency tools and websites—this will help leverage open data to inform broader decision-making.*</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td><b>Goal 6. Identify and foster innovations in open data and data use</b></td>
+<td><b>Why this matters. </b>The pace of change in the open data, analytics, and visualization spaces is breathtaking. We need to identify and nurture innovation in order to ensure that the City benefits. We will:&lt;/p&gt;
+<ol>
+<li>Develop and maintain a communications and engagement strategy—this will help ensure that we stay in touch with evolving stakeholder needs.</li>
+<li>Conduct ongoing reviews of best practices and the changing technology landscape—this will help us stay ahead of the innovation curve.</li>
+<li>Identify and enable targeted data-centric initiatives—this will help us uncover and foster new uses of data, internally and externally.*</li>
+<li>Establish a data licensing framework and standard—this will help ensure that our data users can use our data in any way they see fit.*</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p>*Indicates need for resources or activities beyond the OCDO (e.g. key partnerships, department effort, volunteers etc).</p>
+
+            <hr />
+            <div class="page-footer">
+
+            </div>
+            <!-- /.footer -->
+            <aside>
+              
+            </aside>
+          </div>
+          <!-- /.content -->
+        </div>
+        <div class="col-md-4 sidebar">
+          <aside>
+            
+              
+                
+
+<div class="author-wrapper clearfix">
+<div class="author-image pull-left">
+	<img src="http://gravatar.com/avatar/8614bd4a1d6f6c24c0f6b08a2b9c0335?s=100" alt="Joy Bonaguro's picture">
+</div><!-- ./author-image -->
+<div class="author-content">
+	<h3 class="author-name color-primary"><span itemprop="author">Joy Bonaguro</span></h3>
+	<p class="author-bio">Chief Data Officer, City and County of San Francisco</p>
+</div><!-- ./author-content -->
+</div>
+              
+            
+            <div class="page-meta">
+	<p>Updated <time datetime="2014-07-19T00:39:45Z" itemprop="datePublished">July 19, 2014</time></p>
+</div><!-- /.page-meta --> 
+            
+                <div class="inline-btn">
+	<a class="btn-social twitter" href="https://twitter.com/intent/tweet?text=Open%20Data%20Grows%20Up&amp;url=https://datasf.org/blog/open-data-grows-up/&amp;via=datasf" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Share on Twitter</a>
+	<a class="btn-social facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://datasf.org/blog/open-data-grows-up/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> Share on Facebook</a>
+	<a class="btn-social google-plus"  href="https://plus.google.com/share?url=https://datasf.org/blog/open-data-grows-up/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i> Share on Google+</a>
+</div><!-- /.share-this -->
+             
+            <!-- Stories List Section -->
+<div class="row">
+  <div class="col-lg-12 story-sidebar">
+    <h3 class="sidebar-heading color-primary">Other stories</h3> 
+     
+    <div class="story-item">
+      <div class="story-caption clearfix">
+          October 31, 2016
+        <a href="/blog/show-me-the-data-dictionary/"><h4>Show me the data (dictionary)!</h4></a>
+      </div>
+    </div>
+     
+    <div class="story-item">
+      <div class="story-caption clearfix">
+          October 06, 2016
+        <a href="/blog/4-steps-to-manage-privacy-and-de-identification-for-your-open-data-program/"><h4>4 Steps to Manage Privacy and De-Identification for your Open Data Program</h4></a>
+      </div>
+    </div>
+     
+    <div class="story-item">
+      <div class="story-caption clearfix">
+          August 16, 2016
+        <a href="/blog/year-3-is-in-session/"><h4>Year 3 is in Session</h4></a>
+      </div>
+    </div>
+     
+    <div class="story-item">
+      <div class="story-caption clearfix">
+          July 26, 2016
+        <a href="/blog/we-want-you-serve-as-the-digital-services-chief/"><h4>We Want You- Serve as the Digital Services Chief for San Francisco</h4></a>
+      </div>
+    </div>
+     
+    <div class="story-item">
+      <div class="story-caption clearfix">
+          July 01, 2016
+        <a href="/blog/say-hello-to-systems-inventory/"><h4>Say hello to our brand new systems inventory</h4></a>
+      </div>
+    </div>
+    
+    <div><a href="/blog">More Stories...</a></div>
+  </div>
+</div>
+          </aside>
+          <!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup">
+  <form action="//datasf.us10.list-manage.com/subscribe/post-json?u=c16d18091b821e3289a7546f9&amp;id=9e931a2612" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+      <h2>Subscribe to our newsletter</h2>
+      <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+      <div class="mc-field-group">
+        <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+        </label>
+        <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL">
+      </div>
+      <div class="mc-field-group form-group">
+        <label for="mce-FNAME">First Name </label>
+        <input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME">
+      </div>
+      <div class="mc-field-group form-group">
+        <label for="mce-LNAME">Last Name </label>
+        <input type="text" value="" name="LNAME" class="form-control" id="mce-LNAME">
+      </div>
+      <div id="mce-responses" class="clear">
+        <div class="response alert-error" id="mce-error-response" style="display:none"></div>
+        <div class="response alert-success" id="mce-success-response" style="display:none"></div>
+      </div>
+      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+      <div style="position: absolute; left: -5000px;">
+        <input type="text" name="b_c16d18091b821e3289a7546f9_9e931a2612" tabindex="-1" value="">
+      </div>
+      <div class="clear">
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default">
+      </div>
+    </div>
+  </form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+<script type='text/javascript'>
+  (function($) {
+    window.fnames = new Array();
+    window.ftypes = new Array();
+    fnames[0] = 'EMAIL';
+    ftypes[0] = 'email';
+    fnames[1] = 'FNAME';
+    ftypes[1] = 'text';
+    fnames[2] = 'LNAME';
+    ftypes[2] = 'text';
+  }(jQuery));
+  var $mcj = jQuery.noConflict(true);
+</script>
+<!--End mc_embed_signup-->
+        </div>
+      </div>
+      <!-- /.inner-wrap -->
+    </article>
+    <!-- Edit current page -->
+    <!--
+  <a href="https://github.com/login/oauth/authorize?client_id=c602a8bd54b1e774f864&scope=repo&redirect_uri=http://prose.io/#datasf/datasf-website/edit/master/blog/_posts/2014-07-18-open-data-grows-up.md" target="_blank">Edit this page in Prose.io</a>-->
+
+    <!-- Add post -->
+    <!--
+  <a href="//prose.io/#zzolo/zzolo.github.com/new/master/_posts" target="_blank">Add a post with Prose.io</a>-->
+
+  </div>
+  <!-- ./wrap -->
+</div>
+<!-- /#main -->
+    <footer>
+  <div class="container extra-links">
+    <div class="row text-center">
+      <div class="col-md-4">
+
+      </div>
+      <div class="col-md-4">
+        
+        <ul class="list-inline social-buttons">
+          
+          <li><a href="http://twitter.com/datasf"><i class="fa fa-twitter"></i></a>
+          </li>
+          
+          <li><a href="http://opendata.stackexchange.com/search?q=san+francisco"><i class="fa fa-stack-overflow"></i></a>
+          </li>
+          
+          <li><a href="http://github.com/datasf"><i class="fa fa-github"></i></a>
+          </li>
+          
+        </ul>
+        
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline quicklinks">
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-content-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-md-4 left-border-dotted">
+          <ul class="list-unstyled quick-links">
+              
+              <li class="">
+                <a class="  ext-sf-opendata " href="https://data.sfgov.org">Data Catalog</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/showcase/">Showcase</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/publishing/">Publishing</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/academy/">Academy</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/resources/">Resources</a>
+              </li>
+              
+              <li class="active">
+                <a class="active " href="/blog/">Blog</a>
+              </li>
+            
+            
+              <li style="margin-top: 15px;"><a href="/privacy/">Privacy Policy</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-md-6 mission">
+          <p>DataSF's mission is to empower use of data. We seek to transform the way the City works through the use of data. We believe use of data and evidence can improve our operations and the services we provide. This ultimately leads to increased quality of life and work for San Francisco residents, employers, employees and visitors. <a href="/about">Learn more about our work.</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="text-center made-in">
+    Made with <i class="fa fa-heart"><span class="sr-only">heart</span></i> in San Francisco
+  </div>
+  
+</footer>
+    <!-- jQuery Version 1.11.3 -->
+<script src="/assets/js/vendor/jquery-1.11.3.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="/assets/js/vendor/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="/assets/js/vendor/jquery.easing.min.js"></script>
+<script src="/assets/js/vendor/jquery.validate.min.js"></script>
+<script src="/assets/js/vendor/DataTables-1.10.7/media/js/jquery.dataTables.min.js"></script>
+<script src="/assets/js/vendor/DataTables-1.10.7/Plugins-1.10.7/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+<script src="/assets/js/vendor/jsrender.min.js"></script>
+
+
+
+
+<script src="/assets/js/vendor/c3.js"></script>
+<script src="/assets/js/vendor/moment.js"></script>
+<script src="/assets/js/vendor/selectize.min.js"></script>
+
+<!-- utilities -->
+<script src="/assets/js/vendor/toTitleCase.js"></script>
+
+<!-- Custom site JavaScript -->
+<script src="/assets/js/datasf.js"></script>
+
+
+    </body>
+</html>

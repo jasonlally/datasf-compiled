@@ -1,0 +1,38 @@
+authorsCallback([
+
+	{
+		"name": "Joy Bonaguro",
+		"value": "joy_bonaguro"
+	}, 
+
+	{
+		"name": "Jason Lally",
+		"value": "jason_lally"
+	}, 
+
+	{
+		"name": "Erica Finkle",
+		"value": "erica_finkle"
+	}, 
+
+	{
+		"name": "Janine Heiser",
+		"value": "janine_heiser"
+	}, 
+
+	{
+		"name": "Jeff Johnson",
+		"value": "jeff_johnson"
+	}, 
+
+	{
+		"name": "Samuel Valdez",
+		"value": "sam_valdez"
+	}, 
+
+	{
+		"name": "Brian Quinn",
+		"value": "brian_quinn"
+	} 
+
+]);

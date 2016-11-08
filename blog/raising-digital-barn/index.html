@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Basic ================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- Mobile ================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  
+  <!-- Title and meta description================================================== -->
+  <title>Raising the digital barn, or how we're building the Housing Data Hub</title>
+  <meta name="description" content="Our mission is to empower use of the City and County of San Francisco's data. Our core product is SF OpenData, the official open data portal.">
+  <!--<link rel="canonical" href="https://datasf.org/blog/raising-digital-barn/">-->
+  
+  <!-- Open Graph and Author Metas================================================== -->
+  
+  	<!-- Open Graph -->
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Raising the digital barn, or how we're building the Housing Data Hub">
+	<meta property="og:description" content="The Housing Data Hub was born out of the notion that in order to mature our open data practice at the City, we needed to diversify our approach to publishing data. In the City’s open data strategy, a quick look at datasets over time reveals a publishing stagnation.">
+	<meta property="og:url" content="https://datasf.org/blog/raising-digital-barn/">
+	
+	<meta property="og:image" content="https://datasf.org/assets/blog/digital-barn/white_board_NDoCH.jpg">
+	
+	<meta property="og:site_name" content="DataSF">
+	<!-- Twitter Cards -->
+	<meta name="twitter:title" content="Raising the digital barn, or how we're building the Housing Data Hub">
+	<meta name="twitter:description" content="The Housing Data Hub was born out of the notion that in order to mature our open data practice at the City, we needed to diversify our approach to publishing data. In the City’s open data strategy, a quick look at datasets over time reveals a publishing stagnation.">
+	<meta name="twitter:site" content="@datasf">
+	<meta name="twitter:creator" content="@synchronouscity">
+	
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image:src" content="https://datasf.org/assets/blog/digital-barn/white_board_NDoCH.jpg">
+	
+	
+  
+  <link rel="author" href="https://plus.google.com/+jasonlally">
+  
+  
+  <!-- Custom Fonts ================================================== -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya:400italic,700italic,400,700%7CMontserrat:400,700" rel="stylesheet" type="text/css">
+  
+  <!-- CSS ================================================== -->
+  <link rel="stylesheet" href="/assets/css/vendor.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  <link rel="stylesheet" href="/assets/js/vendor/DataTables-1.10.7/Plugins-1.10.7/integration/bootstrap/3/dataTables.bootstrap.css">
+  
+  <!--[if lte IE 9]><script src="/assets/js/vendor/aight/aight.min.js"></script><![endif]-->
+  <!-- D3 for charting (only need this on some pages -->
+  <script src="/assets/js/vendor/d3.js"></script>
+
+  <!--[if IE 8]><script src="/assets/js/vendor/aight/d3/d3.ie8.js"></script><![endif]-->
+  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  
+  <!-- Scripts ================================================== -->
+  <script src="/assets/js/vendor/modernizr.custom.94053.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-53975719-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+  
+</head>
+
+  
+   <body>
+    <div class="nav-group navbar-fixed-top  navbar-shrink ">
+  <div class="navbar navbar-mini navbar-static-top visible-sm visible-md visible-lg" role="region" aria-label="external links">
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbar-collapse-2">
+        <ul class="nav navbar-nav navbar-right">
+            
+          <li class="">
+            <a class=" " href="https://www.sfgov.org">SFGov</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/coordinators/">Coordinator's Portal</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/about/">About</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="http://support.datasf.org">Help</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="/"><span class="brand"><span class="brand-highlight">Data</span>SF</span></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+            
+          <li class="">
+            <a class="  ext-sf-opendata " href="https://data.sfgov.org">Data Catalog</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/showcase/">Showcase</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/publishing/">Publishing</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/academy/">Academy</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/resources/">Resources</a>
+          </li>
+            
+          <li class="active">
+            <a class="active " href="/blog/">Blog</a>
+          </li>
+          
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="https://www.sfgov.org">SFGov</a>
+          </li>
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="/coordinators/">Coordinator's Portal</a>
+          </li>
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="/about/">About</a>
+          </li>
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="http://support.datasf.org">Help</a>
+          </li>
+          
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  
+</div>
+    <div id="main" role="main" class="blog-post">
+  <div class="container">
+    
+
+
+<ol class="list-unstyled list-inline">
+ 
+  <li>
+<a href="/">home</a> » </li>
+
+  
+   
+   
+
+   <li>
+<a href="/blog">blog</a> » </li>
+
+   
+  
+ 
+</ol>
+    <article class="wrap" itemscope itemtype="http://schema.org/Article">
+      <!-- include breadcrumbs.html -->
+      <div class="row">
+        <div class="col-md-8">
+          <div class="page-title">
+            <h1>Raising the digital barn, or how we're building the Housing Data Hub</h1>
+          </div>
+          
+          <div class="page-feature">
+            <div class="page-image">
+              <figure>
+              <img src="/assets/blog/digital-barn/white_board_NDoCH.jpg" class="page-feature-image" alt="National Day of Civic Hacking 2014 brought together lots of ideas and a working prototype. That work influences the approach to this day." itemprop="image"> 
+              
+              <figcaption>National Day of Civic Hacking 2014 brought together lots of ideas and a working prototype. That work influences the approach to this day.
+              </figcaption>
+              
+              </figure>
+            </div>
+            <!-- /.page-image -->
+          </div>
+          <!-- /.page-feature -->
+          
+          <nav class="toc"></nav>
+          <!-- /.toc -->
+          <div id="content" class="page-content" itemprop="articleBody">
+            <p>A couple weeks ago, <a href="http://datasf.org/blog/housing-data-hub-launched/">we announced the Housing Data Hub</a>! In this blog-post, read about our technical and process approach to building the hub and what’s next.</p>
+
+<h2 id="prototyping-together-the-housing-data-hub-as-process">Prototyping together: the Housing Data Hub as process</h2>
+<p>The <a href="http://housing.datasf.org">Housing Data Hub</a> was born out of the notion that in order to mature our open data practice at the City, we needed to diversify our approach to publishing data. In the <a href="https://docs.google.com/document/d/1hvp_wls8KuJrfHW_NwX1qtyFR4EFdWCkxcULnNlhKNw/edit?usp=sharing">City’s open data strategy</a>, a quick look at datasets over time reveals a publishing stagnation. While the inventory process will help us bring institutional focus and planning to citywide data, Joy hit on the idea early on that we also needed to release datasets strategically around common themes or topics. Housing affordability is our first one.</p>
+
+<p>These strategic (or thematic) releases allow us to apply focused, collaborative effort around a number of related datasets. <a href="http://datasf.org/blog/housing-data-hub-launched/">Joy lays out more about this approach</a> in her housing data hub announcement. The key challenge was how to turn a concept into action - this is where technology met process.</p>
+
+<h3 id="getting-started">Getting started</h3>
+<p>One of the key parts of a strategic release is to bundle data with a product. This could be a website, a report, a study, or any product that helps frame and focus the activity around the data. In this case, we imagined a website that presented the portfolio of local policies that affect housing affordability in San Francisco in a clearer manner.</p>
+
+<p>With a concept and buy in from departments, Joy began work. Starting with paper prototypes and content drafts, the first push on code began during the 2014 <a href="http://hackforchange.org">National Day of Civic Hacking</a> weekend in San Francisco. Working with local <a href="http://codeforsanfrancisco.org">Code for San Francisco</a> volunteers (<a href="http://www.codeforamerica.org/blog/2014/06/24/peer-network-spotlight-joy-bonaguro/">read about our weekend</a> ), the concept was fleshed out in code using the <a href="http://rubyonrails.org/">Ruby on Rails framework</a>.</p>
+
+<h3 id="changing-technical-direction">Changing technical direction</h3>
+<p>The volunteer work was incredibly useful for crystallizing the concepts you see in the hub today like the data browser and policy pages. But we hit some challenges using Ruby on Rails for both a content management system (CMS) and to store data.</p>
+
+<p>It was hard to iterate fast enough to get content in for review by our content partners. And loading data into a separate database introduced failure points between the source data and the visuals.</p>
+
+<h4 id="using-prose-as-a-lightweight-cms">Using Prose as a lightweight CMS</h4>
+<p>After huddling and laying out the options, we decided to adopt a lighter weight approach. It turned out we didn’t really need full CMS-like capability. The content could be edited in iterations outside the website, and once the content was set, changes would be infrequent. Any CMS capabilities that ended up being built would go underused. It just didn’t make sense to apply the effort there. Instead, we focused on making it easy to configure visuals and consume external data sources. We leaned on emerging <a href="https://developmentseed.org/blog/2012/07/27/build-cms-free-websites/">CMS-less</a> <a href="http://thinkshout.com/blog/2014/10/success-building-cmsless-production-sites-with-jekyll/">practices</a> for content including using <a href="http://prose.io">Prose.io</a> as a basic editing interface.</p>
+
+<h4 id="from-database-to-dogfood">From database to dogfood</h4>
+<p>And instead of using a separate database via Ruby on Rails - we used <a href="http://dev.socrata.com/docs/endpoints.html">open data APIs from our portal</a>. This allows us to have the data in a single place and use the same set of tools as our open data portal users. This approach is often referred to as dogfooding, which you can <a href="https://medium.com/@antheaws/hey-uncle-sam-eat-your-own-dogfood-9f0c110c13c8">read more about in the great blog-post by Anthea Watson Strong</a>.</p>
+
+<p>And we were able to save much of the original front-end work from National Day of Civic Hacking weekend (<a href="http://codeforsanfrancisco.org/hackforchange/">sign up for 2015</a>) even though we changed the underlying technology. Ultimately, I don’t see this as a failure, but as an important learning moment and maybe even a necessary part of working in the open. We had to travel down some roads to discover what would work, and being able to put eyes on some code helped us crystallize the approach.</p>
+
+<!--
+<figure>
+	<img src="/assets/img/blog/white_board_NDoCH.jpg">
+	<figcaption>National Day of Civic Hacking 2014 brought together lots of ideas and a working prototype. That work influences the approach to this day.</figcaption>
+	Manu Koenig (right) works on the white board with Victoria Ngo (left), designing what would become the start of the Housing Data Hub interface.
+</figure>
+-->
+
+<h3 id="the-technology-stack">The technology stack</h3>
+<p>To implement the desired changes, we evaluated and then picked a mix of frameworks and code libraries that would help us ship the product. The core ones being:</p>
+
+<ol>
+  <li>
+<strong><a href="http://jekyllrb.com">Jekyll</a></strong> - a static site compiler and the core of our CMS-less approach. It allows us to quickly develop content and templates to display that content. You can read <a href="http://datasf.org/blog/building-lighter-and-faster">more about how we’ve applied it on the DataSF website</a>.</li>
+  <li>
+<strong><a href="http://c3js.org">C3js</a></strong> - a javascript library that allows the creation of reusable charts wrapped around the incredible D3 visualiztion library. The most important feature here for our process is that we could throw a CSV  or JSON file at it, allowing us to prototype with CSVs and swap in JSON API endpoints from our portal later.</li>
+  <li>
+<strong><a href="https://www.mapbox.com/mapbox.js/api/v2.1.9/">Mapbox.js</a></strong> - a javascript library wrapped around the mapping library, Leaflet, that makes consuming map tiles from Mapbox easy and inherits all of the sweet  capabilities of Leaflet. This lets us present the user with mapped data, consuming geojson for breakfast, which is great because our open data portal <a href="http://dev.socrata.com/changelog/2015/04/27/new-higher-performance-apis.html">now supports that format</a>.</li>
+</ol>
+
+<p>There are many other libraries and inspirations <a href="http://housing.datasf.org/about#acknowledgements">mentioned in our acknowledgements</a>, but these three drive the primary features of the Hub.</p>
+
+<h2 id="it-takes-a-village">It takes a village</h2>
+<p>The change in technology direction removed a major bottleneck and allowed us to implement changes quickly. We worked with department and citizen user reviewers to check content for accuracy as well as ease of understanding (government prose is not always the easiest to decipher <img class="emoji" title=":wink:" alt=":wink:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f609.png" height="20" width="20" align="absmiddle">). By having prototypes in place fast, we were able to gather around a real thing and not just an abstract concept: <strong><em>the technology didn’t drive the development, it supported our process of co-creating with multiple stakeholders of varying degrees of technical ability</em></strong>.</p>
+
+<p>Hopefully, you can tell by now, that many many hands (and hearts) touched this project. Not just the folks we’ve <a href="http://housing.datasf.org/about#acknowledgements">acknowledged on the hub already</a>, but the countless coders that have contributed thousands of lines of code to the open source projects on which we’re building.</p>
+
+<p>And that goes to an even broader takeaway. This whole opengov, open data, civic tech (whatever you call it) movement must be built on community. We learn together, which is why we attempt to share as much as we can here on our website. We hope in sharing, we learn even more from everyone else.</p>
+
+<h2 id="whats-next">What’s next?</h2>
+<p>The Hub remains a work in progress. You’ll notice, if you look closely, that not all datasets are being fed directly from the portal. We are simultaneously working on getting datasets published to the portal regularly and consistently (per Goal 1 of our Open Data Strategy). As we get those up, we’ll swap out the generated CSVs for an API call to the portal. As mentioned, C3js enables this flexible pattern. You can track the progress of that transition <a href="http://housing.datasf.org/about#our-process">on the Hub’s about page</a>.</p>
+
+<h3 id="a-little-spring-cleaning">A little spring cleaning</h3>
+<p>If <a href="http://github.com/datasf/housing-data-hub">you look even closer</a>, you’ll notice the code is a bit sloppy <img class="emoji" title=":grimacing:" alt=":grimacing:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f62c.png" height="20" width="20" align="absmiddle">! We’re about to freeze the featureset and refactor and document the project in greater detail. We’re kicking the tires on this approach, so I’ll be develop standards for documenting earlier and often and employing better code practices. There’s plenty of inspiration here from <a href="http://18f.gsa.gov">18F</a> and various open source communities that I can’t wait to borrow from.</p>
+
+<p>We’ll work on getting some issues up on the repo and working more with civic hackers and volunteers on the next rounds of improvements. Keep an eye out, and if you want to help, let us know! (Oh, and <a href="http://codeforsanfrancisco.org/hackforchange">maybe swing by National Day of Civic Hacking 2015</a>)</p>
+
+<h3 id="from-product-to-platform">From product to platform</h3>
+<p>Now that we’ve gone deep, we’re thinking broad. What if we want to spin up something similar again? Or what if another city would like to do the same? After we get the fundamentals down with the refactor, we’ll be looking to abstract the approach so others can follow suit. At a minimum, this means really great documentation, cleaning out the specific content, and using good conventions to maintain the project.</p>
+
+<figure>
+	<img src="/assets/blog/digital-barn/get_dataset.png">
+	<figcaption>A "Get the source dataset" button exists wherever there is raw data available on the open data portal. Over time, all visuals will have this link.</figcaption>
+</figure>
+
+<p>Even more broadly, I’ll point you to a seemingly small feature that actually has larger implications for our strategic approach. On <a href="http://housing.datasf.org/data-browser/rent-control/eviction-notices-over-time/">visualizations</a> <a href="http://housing.datasf.org/data-browser/rent-control/annual-allowable-increases/">for</a> <a href="http://housing.datasf.org/data-browser/inclusionary-housing/principal-projects-by-declaration/">which</a> the underlying data are available on the open data portal, you’ll see a “Get the source dataset” button. Following this takes you to the full dataset on <a href="http://data.sfgov.org">SF OpenData</a>, where you can explore and download the data. This is a small but important step toward creating <em>enduring sources of truth</em> and <em>unbroken data lineages</em>. Gone will be the days of shipping spreadsheets and reports around and losing track of what came from where, and it all starts with that simple, blue button.</p>
+
+            <hr>
+            <div class="page-footer">
+
+            </div>
+            <!-- /.footer -->
+            <aside>
+              
+            </aside>
+          </div>
+          <!-- /.content -->
+        </div>
+        <div class="col-md-4 sidebar">
+          <aside>
+            
+              
+                
+
+<div class="author-wrapper clearfix">
+<div class="author-image pull-left">
+	<img src="http://gravatar.com/avatar/b0d79f25e915d34f7f06907322ad8060?s=100" alt="Jason Lally's picture">
+</div>
+<!-- ./author-image -->
+<div class="author-content">
+	<h3 class="author-name color-primary"><span itemprop="author">Jason Lally</span></h3>
+	<p class="author-bio">Open Data Program Manager, City and County of San Francisco</p>
+</div>
+<!-- ./author-content -->
+</div>
+              
+            
+            <div class="page-meta">
+	<p>Updated <time datetime="2015-05-13T00:00:00Z" itemprop="datePublished">May 13, 2015</time></p>
+</div>
+<!-- /.page-meta --> 
+            
+                <div class="inline-btn">
+	<a class="btn-social twitter" href="https://twitter.com/intent/tweet?text=Raising%20the%20digital%20barn,%20or%20how%20we're%20building%20the%20Housing%20Data%20Hub&amp;url=https://datasf.org/blog/raising-digital-barn/&amp;via=datasf" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Share on Twitter</a>
+	<a class="btn-social facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://datasf.org/blog/raising-digital-barn/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> Share on Facebook</a>
+	<a class="btn-social google-plus" href="https://plus.google.com/share?url=https://datasf.org/blog/raising-digital-barn/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i> Share on Google+</a>
+</div>
+<!-- /.share-this -->
+             
+            <!-- Stories List Section -->
+<div class="row">
+  <div class="col-lg-12 story-sidebar">
+    <h3 class="sidebar-heading color-primary">Other stories</h3> 
+     
+    <div class="story-item">
+      <div class="story-caption clearfix">
+          October 31, 2016
+        <a href="/blog/show-me-the-data-dictionary/"><h4>Show me the data (dictionary)!</h4></a>
+      </div>
+    </div>
+     
+    <div class="story-item">
+      <div class="story-caption clearfix">
+          October 06, 2016
+        <a href="/blog/4-steps-to-manage-privacy-and-de-identification-for-your-open-data-program/"><h4>4 Steps to Manage Privacy and De-Identification for your Open Data Program</h4></a>
+      </div>
+    </div>
+     
+    <div class="story-item">
+      <div class="story-caption clearfix">
+          August 16, 2016
+        <a href="/blog/year-3-is-in-session/"><h4>Year 3 is in Session</h4></a>
+      </div>
+    </div>
+     
+    <div class="story-item">
+      <div class="story-caption clearfix">
+          July 26, 2016
+        <a href="/blog/we-want-you-serve-as-the-digital-services-chief/"><h4>We Want You- Serve as the Digital Services Chief for San Francisco</h4></a>
+      </div>
+    </div>
+     
+    <div class="story-item">
+      <div class="story-caption clearfix">
+          July 01, 2016
+        <a href="/blog/say-hello-to-systems-inventory/"><h4>Say hello to our brand new systems inventory</h4></a>
+      </div>
+    </div>
+    
+    <div><a href="/blog">More Stories...</a></div>
+  </div>
+</div>
+          </aside>
+          <!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup">
+  <form action="//datasf.us10.list-manage.com/subscribe/post-json?u=c16d18091b821e3289a7546f9&amp;id=9e931a2612" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+      <h2>Subscribe to our newsletter</h2>
+      <div class="indicates-required">
+<span class="asterisk">*</span> indicates required</div>
+      <div class="mc-field-group">
+        <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+        </label>
+        <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL">
+      </div>
+      <div class="mc-field-group form-group">
+        <label for="mce-FNAME">First Name </label>
+        <input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME">
+      </div>
+      <div class="mc-field-group form-group">
+        <label for="mce-LNAME">Last Name </label>
+        <input type="text" value="" name="LNAME" class="form-control" id="mce-LNAME">
+      </div>
+      <div id="mce-responses" class="clear">
+        <div class="response alert-error" id="mce-error-response" style="display:none"></div>
+        <div class="response alert-success" id="mce-success-response" style="display:none"></div>
+      </div>
+      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+      <div style="position: absolute; left: -5000px;">
+        <input type="text" name="b_c16d18091b821e3289a7546f9_9e931a2612" tabindex="-1" value="">
+      </div>
+      <div class="clear">
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default">
+      </div>
+    </div>
+  </form>
+</div>
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+<script type="text/javascript">
+  (function($) {
+    window.fnames = new Array();
+    window.ftypes = new Array();
+    fnames[0] = 'EMAIL';
+    ftypes[0] = 'email';
+    fnames[1] = 'FNAME';
+    ftypes[1] = 'text';
+    fnames[2] = 'LNAME';
+    ftypes[2] = 'text';
+  }(jQuery));
+  var $mcj = jQuery.noConflict(true);
+</script>
+<!--End mc_embed_signup-->
+        </div>
+      </div>
+      <!-- /.inner-wrap -->
+    </article>
+    <!-- Edit current page -->
+    <!--
+  <a href="https://github.com/login/oauth/authorize?client_id=c602a8bd54b1e774f864&scope=repo&redirect_uri=http://prose.io/#datasf/datasf-website/edit/master/blog/_posts/2015-05-13-raising-digital-barn.md" target="_blank">Edit this page in Prose.io</a>-->
+
+    <!-- Add post -->
+    <!--
+  <a href="//prose.io/#zzolo/zzolo.github.com/new/master/_posts" target="_blank">Add a post with Prose.io</a>-->
+
+  </div>
+  <!-- ./wrap -->
+</div>
+<!-- /#main -->
+    <footer>
+  <div class="container extra-links">
+    <div class="row text-center">
+      <div class="col-md-4">
+
+      </div>
+      <div class="col-md-4">
+        
+        <ul class="list-inline social-buttons">
+          
+          <li>
+<a href="http://twitter.com/datasf"><i class="fa fa-twitter"></i></a>
+          </li>
+          
+          <li>
+<a href="http://opendata.stackexchange.com/search?q=san+francisco"><i class="fa fa-stack-overflow"></i></a>
+          </li>
+          
+          <li>
+<a href="http://github.com/datasf"><i class="fa fa-github"></i></a>
+          </li>
+          
+        </ul>
+        
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline quicklinks">
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-content-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-md-4 left-border-dotted">
+          <ul class="list-unstyled quick-links">
+              
+              <li class="">
+                <a class="  ext-sf-opendata " href="https://data.sfgov.org">Data Catalog</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/showcase/">Showcase</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/publishing/">Publishing</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/academy/">Academy</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/resources/">Resources</a>
+              </li>
+              
+              <li class="active">
+                <a class="active " href="/blog/">Blog</a>
+              </li>
+            
+            
+              <li style="margin-top: 15px;"><a href="/privacy/">Privacy Policy</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-md-6 mission">
+          <p>DataSF's mission is to empower use of data. We seek to transform the way the City works through the use of data. We believe use of data and evidence can improve our operations and the services we provide. This ultimately leads to increased quality of life and work for San Francisco residents, employers, employees and visitors. <a href="/about">Learn more about our work.</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="text-center made-in">
+    Made with <i class="fa fa-heart"><span class="sr-only">heart</span></i> in San Francisco
+  </div>
+  
+</footer>
+    <!-- jQuery Version 1.11.3 -->
+<script src="/assets/js/vendor/jquery-1.11.3.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="/assets/js/vendor/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="/assets/js/vendor/jquery.easing.min.js"></script>
+<script src="/assets/js/vendor/jquery.validate.min.js"></script>
+<script src="/assets/js/vendor/DataTables-1.10.7/media/js/jquery.dataTables.min.js"></script>
+<script src="/assets/js/vendor/DataTables-1.10.7/Plugins-1.10.7/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+<script src="/assets/js/vendor/jsrender.min.js"></script>
+
+
+
+
+<script src="/assets/js/vendor/c3.js"></script>
+<script src="/assets/js/vendor/moment.js"></script>
+<script src="/assets/js/vendor/selectize.min.js"></script>
+
+<!-- utilities -->
+<script src="/assets/js/vendor/toTitleCase.js"></script>
+
+<!-- Custom site JavaScript -->
+<script src="/assets/js/datasf.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <!-- Basic ================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- Mobile ================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  
+  <!-- Title and meta description================================================== -->
+  <title>5 Ways to Scale the Mountain of Data in Your Organization</title>
+  <meta name="description" content="Our mission is to empower use of the City and County of San Francisco's data. Our core product is SF OpenData, the official open data portal.">
+  <!--<link rel="canonical" href="https://datasf.org/blog/5-ways-to-scale-mountain-of-data/">-->
+  
+  <!-- Open Graph and Author Metas================================================== -->
+  
+  	<!-- Open Graph -->
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="5 Ways to Scale the Mountain of Data in Your Organization">
+	<meta property="og:description" content="Creating a data inventory for an entire City feels a lot like climbing a mountain. Read how we scaled this mountain and what we've learned along the way.">
+	<meta property="og:url" content="https://datasf.org/blog/5-ways-to-scale-mountain-of-data/">
+	
+	<meta property="og:image" content="https://datasf.org/assets/blog/scaling-mountain/lake_tahoe.jpg">
+	
+	<meta property="og:site_name" content="DataSF">
+	<!-- Twitter Cards -->
+	<meta name="twitter:title" content="5 Ways to Scale the Mountain of Data in Your Organization">
+	<meta name="twitter:description" content="Creating a data inventory for an entire City feels a lot like climbing a mountain. Read how we scaled this mountain and what we've learned along the way.">
+	<meta name="twitter:site" content="@datasf">
+	<meta name="twitter:creator" content="@datasf">
+	
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image:src" content="https://datasf.org/assets/blog/scaling-mountain/lake_tahoe.jpg">
+	
+	
+  
+  
+  <!-- Custom Fonts ================================================== -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Alegreya:400italic,700italic,400,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+  
+  <!-- CSS ================================================== -->
+  <link rel="stylesheet" href="/assets/css/vendor.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  <link rel="stylesheet" href="/assets/js/vendor/DataTables-1.10.7/Plugins-1.10.7/integration/bootstrap/3/dataTables.bootstrap.css">
+  
+  <!--[if lte IE 9]><script src="/assets/js/vendor/aight/aight.min.js"></script><![endif]-->
+  <!-- D3 for charting (only need this on some pages -->
+  <script src="/assets/js/vendor/d3.js"></script>
+
+  <!--[if IE 8]><script src="/assets/js/vendor/aight/d3/d3.ie8.js"></script><![endif]-->
+  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  
+  <!-- Scripts ================================================== -->
+  <script src="/assets/js/vendor/modernizr.custom.94053.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-53975719-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+  
+</head>
+
+  
+   <body >
+    <div class="nav-group navbar-fixed-top  navbar-shrink ">
+  <div class="navbar navbar-mini navbar-static-top visible-sm visible-md visible-lg" role="region" aria-label="external links">
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbar-collapse-2">
+        <ul class="nav navbar-nav navbar-right">
+            
+          <li class="">
+            <a class=" " href="https://www.sfgov.org">SFGov</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/coordinators/">Coordinator's Portal</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/about/">About</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="http://support.datasf.org">Help</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="/"><span class="brand"><span class="brand-highlight">Data</span>SF</span></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+            
+          <li class="">
+            <a class="  ext-sf-opendata " href="https://data.sfgov.org">Data Catalog</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/showcase/">Showcase</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/publishing/">Publishing</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/academy/">Academy</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/resources/">Resources</a>
+          </li>
+            
+          <li class="active">
+            <a class="active " href="/blog/">Blog</a>
+          </li>
+          
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="https://www.sfgov.org">SFGov</a>
+          </li>
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="/coordinators/">Coordinator's Portal</a>
+          </li>
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="/about/">About</a>
+          </li>
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="http://support.datasf.org">Help</a>
+          </li>
+          
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  
+</div>
+    <div id="main" role="main" class="blog-post">
+  <div class="container">
+    
+
+
+<ol class="list-unstyled list-inline">
+ 
+  <li><a href="/">home</a> &#187; </li>
+
+  
+   
+   
+
+   <li><a href="/blog">blog</a> &#187; </li>
+
+   
+  
+ 
+</ol>
+    <article class="wrap" itemscope itemtype="http://schema.org/Article">
+      <!-- include breadcrumbs.html -->
+      <div class="row">
+        <div class="col-md-8">
+          <div class="page-title">
+            <h1>5 Ways to Scale the Mountain of Data in Your Organization</h1>
+          </div>
+          
+          <div class="page-feature">
+            <div class="page-image">
+              <figure>
+              <img src="/assets/blog/scaling-mountain/lake_tahoe.jpg" class="page-feature-image" alt="From the base of the mountain, it can look daunting, but once on top: Oh, the views!" itemprop="image"> 
+              
+              <figcaption>From the base of the mountain, it can look daunting, but once on top: Oh, the views!
+               <br>Source: "<a rel="nofollow" class="external text" href="https://www.flickr.com/photos/jcookfisher/14753791375/">Lake Tahoe from Mt. Tallac</a>" by <a rel="nofollow" class="external text" href="https://www.flickr.com/photos/jcookfisher/">jcookfisher</a> is licensed under <a rel="nofollow" class="external text" href="http://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a> 
+              </figcaption>
+              
+              </figure>
+            </div>
+            <!-- /.page-image -->
+          </div>
+          <!-- /.page-feature -->
+          
+          <nav class="toc"></nav>
+          <!-- /.toc -->
+          <div id="content" class="page-content" itemprop="articleBody">
+            <p>I was completely terrified.  We were hiking downhill towards the Pacific Ocean, and I was fighting visions of slipping, tumbling down the hillside.</p>
+
+<p>It was my first hike. In retrospect, it was not steep or challenging or particularly precipitous. But growing up in the flat plains of the Midwest, I had made it to my early twenties without a single hike (and was questioning the rationality of this strange subspecies known as “hikers”).</p>
+
+<p>Many years later, I managed to hike the Inca Trail, where I <em>mostly</em> conquered my lingering fears of hiking.</p>
+
+<p>Well, our data inventory was our Inca Trail, and let me just say…</p>
+
+<h2 id="try-some-foothills-before-you-scale-a-mountain">Try some foothills before you scale a mountain</h2>
+<p>In other words - consider starting with something smaller than a full scale inventory (i.e. listing all of your data). In our case, our program had been around for awhile and the inventory was a natural progression. But for programs that are just starting, an inventory can take a lot of work without visible results. Ideally, you should have some successes or examples in place before starting an inventory.</p>
+
+<p>Here are some ideas for alternatives to doing a full scale inventory:</p>
+
+<ol>
+  <li><strong>Topic Inventory.</strong> Collect and list all the data around a service or topic like Housing or Transit or Recreation and then pair it with a <a href="http://datasf.org/blog/housing-data-hub-launched/">strategic release</a>.</li>
+  <li><strong>Top Five.</strong> Ask departments to list their top 5 datasets. See <a href="https://data.lacity.org/">DataLA</a>.</li>
+  <li><strong>Department Dives.</strong> Dive deep into a handful of departments and inventory (and maybe publish) their data. <a href="http://www.phila.gov/data/">See Philly</a>.</li>
+  <li><strong>Initiative Inventory.</strong> Start with a specific problem or challenge your City is facing and inventory the data related to that. Again, couple with a strategic release.</li>
+  <li><strong>Stop at Systems.</strong> Simply identifying systems that generate data could be a natural stopping point. Our legislation was more specific and the dataset inventory is super helpful to have, but it’s one way to go.</li>
+</ol>
+
+<p>Alternatively - do the full scale inventory, but use these alternatives as an implementation or phasing strategy. Whatever you do…</p>
+
+<h2 id="break-it-into-steps">Break it into steps</h2>
+<p>Our legislative requirement to inventory our data didn’t come with a set of instructions. And we didn’t find a lot of guidance out there (though maybe we missed it). So we broke it into 3 phases:</p>
+
+<ol>
+  <li>Identify data sources</li>
+  <li>Brainstorm datasets</li>
+  <li>Complete dataset inventory</li>
+</ol>
+
+<p>Without these discrete tasks, the inventory felt too big and scary to accomplish. And for each of those steps…</p>
+
+<h2 id="provide-guidance-and-support">Provide guidance and support</h2>
+<p>Our Data Coordinators (representatives from each department) ultimately had to deliver the inventory. (And FYI, they are the true heroes here.) So we did our best to support them every step of the way and <strong><em>make it as easy as possible</em></strong> for them to complete the work. During this phase your data coordinators are your users. Craft empathy for them and leverage user-centered design to support them.</p>
+
+<p>Tools we provided:</p>
+
+<ul>
+  <li>Guidebooks, webinars and workshops</li>
+  <li>Shared definitions (e.g. data steward, data source) - thank you <a href="http://www.govfresh.com/about/">GovFresh</a></li>
+  <li><a href="https://www.youtube.com/watch?v=UuFRCg0U6mE">Activities to motivate the process</a></li>
+  <li>Templates designed to ease input</li>
+  <li>Custom support and consulting for complicated departments</li>
+  <li>A single <a href="http://datasf.org/coordinators/">online  resource portal</a> for Data Coordinators to go to</li>
+  <li>Deadlines, including intermediate deadlines (they actually asked for this ;-)</li>
+</ul>
+
+<p>Check out our <a href="http://datasf.org/resources/">Data Inventory Resources</a>, but before you use them…</p>
+
+<h2 id="implement-quality-control-and-maintenance">Implement quality control and maintenance</h2>
+<p>At each stage in the process, plan to allocate time and energy to ensure quality submissions. If you don’t do this, your inventory will be less useful. This takes a lot of work (try to minimize by thinking thoughtfully about your data collection strategy) but it’s worth it. Just budget the time. Also, come up with a plan for maintaining the inventory and always, always…</p>
+
+<h2 id="track-progress">Track progress</h2>
+<p>We tracked the status of each department through each phase (and deadline) of the inventory. This forced us to checkin and helped us identify the need for targeted outreach and support. It also made us accountable to our legislative requirements.</p>
+
+<p>At this point, 75% of our departments have completed the inventory, <a href="https://data.sfgov.org/City-Management-and-Ethics/Dataset-Inventory/y8fp-fbf5">which you can check out here</a>. We decided to go live with the inventory despite not having all departments ready. That’s also where tracking comes into play. We have rolled the tracking into our quarterly report and are accepting department submissions on a rolling, monthly basis.</p>
+
+<h2 id="anticipate-future-needs-inventory-as-platform">Anticipate future needs: Inventory as platform</h2>
+<p>Your inventory is a one time chance to capture a lot of awesome information. Don’t waste it. Now that we have this tremendous resource in place, we are building all sorts of stuff on top of it. More on this in subsequent blog-posts but we are using the inventory to:</p>
+
+<ul>
+  <li>Create publishing plans</li>
+  <li>Automate monitoring and performance metrics in publishing and open data</li>
+  <li>Conduct dataset management</li>
+  <li>Build tools to endorse datasets for publication</li>
+  <li>Provide data dating / data concierge services</li>
+  <li>And more…stay tuned ;-)</li>
+</ul>
+
+<p>And again, thanks to our amazing Data Coordinators for making this possible!</p>
+
+            <hr />
+            <div class="page-footer">
+
+            </div>
+            <!-- /.footer -->
+            <aside>
+              
+            </aside>
+          </div>
+          <!-- /.content -->
+        </div>
+        <div class="col-md-4 sidebar">
+          <aside>
+            
+              
+                
+
+<div class="author-wrapper clearfix">
+<div class="author-image pull-left">
+	<img src="http://gravatar.com/avatar/8614bd4a1d6f6c24c0f6b08a2b9c0335?s=100" alt="Joy Bonaguro's picture">
+</div><!-- ./author-image -->
+<div class="author-content">
+	<h3 class="author-name color-primary"><span itemprop="author">Joy Bonaguro</span></h3>
+	<p class="author-bio">Chief Data Officer, City and County of San Francisco</p>
+</div><!-- ./author-content -->
+</div>
+              
+            
+            <div class="page-meta">
+	<p>Updated <time datetime="2015-06-17T00:00:00Z" itemprop="datePublished">June 17, 2015</time></p>
+</div><!-- /.page-meta --> 
+            
+                <div class="inline-btn">
+	<a class="btn-social twitter" href="https://twitter.com/intent/tweet?text=5%20Ways%20to%20Scale%20the%20Mountain%20of%20Data%20in%20Your%20Organization&amp;url=https://datasf.org/blog/5-ways-to-scale-mountain-of-data/&amp;via=datasf" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Share on Twitter</a>
+	<a class="btn-social facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://datasf.org/blog/5-ways-to-scale-mountain-of-data/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> Share on Facebook</a>
+	<a class="btn-social google-plus"  href="https://plus.google.com/share?url=https://datasf.org/blog/5-ways-to-scale-mountain-of-data/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i> Share on Google+</a>
+</div><!-- /.share-this -->
+             
+            <!-- Stories List Section -->
+<div class="row">
+  <div class="col-lg-12 story-sidebar">
+    <h3 class="sidebar-heading color-primary">Other stories</h3> 
+     
+    <div class="story-item">
+      <div class="story-caption clearfix">
+          October 31, 2016
+        <a href="/blog/show-me-the-data-dictionary/"><h4>Show me the data (dictionary)!</h4></a>
+      </div>
+    </div>
+     
+    <div class="story-item">
+      <div class="story-caption clearfix">
+          October 06, 2016
+        <a href="/blog/4-steps-to-manage-privacy-and-de-identification-for-your-open-data-program/"><h4>4 Steps to Manage Privacy and De-Identification for your Open Data Program</h4></a>
+      </div>
+    </div>
+     
+    <div class="story-item">
+      <div class="story-caption clearfix">
+          August 16, 2016
+        <a href="/blog/year-3-is-in-session/"><h4>Year 3 is in Session</h4></a>
+      </div>
+    </div>
+     
+    <div class="story-item">
+      <div class="story-caption clearfix">
+          July 26, 2016
+        <a href="/blog/we-want-you-serve-as-the-digital-services-chief/"><h4>We Want You- Serve as the Digital Services Chief for San Francisco</h4></a>
+      </div>
+    </div>
+     
+    <div class="story-item">
+      <div class="story-caption clearfix">
+          July 01, 2016
+        <a href="/blog/say-hello-to-systems-inventory/"><h4>Say hello to our brand new systems inventory</h4></a>
+      </div>
+    </div>
+    
+    <div><a href="/blog">More Stories...</a></div>
+  </div>
+</div>
+          </aside>
+          <!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup">
+  <form action="//datasf.us10.list-manage.com/subscribe/post-json?u=c16d18091b821e3289a7546f9&amp;id=9e931a2612" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+      <h2>Subscribe to our newsletter</h2>
+      <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+      <div class="mc-field-group">
+        <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+        </label>
+        <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL">
+      </div>
+      <div class="mc-field-group form-group">
+        <label for="mce-FNAME">First Name </label>
+        <input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME">
+      </div>
+      <div class="mc-field-group form-group">
+        <label for="mce-LNAME">Last Name </label>
+        <input type="text" value="" name="LNAME" class="form-control" id="mce-LNAME">
+      </div>
+      <div id="mce-responses" class="clear">
+        <div class="response alert-error" id="mce-error-response" style="display:none"></div>
+        <div class="response alert-success" id="mce-success-response" style="display:none"></div>
+      </div>
+      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+      <div style="position: absolute; left: -5000px;">
+        <input type="text" name="b_c16d18091b821e3289a7546f9_9e931a2612" tabindex="-1" value="">
+      </div>
+      <div class="clear">
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default">
+      </div>
+    </div>
+  </form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+<script type='text/javascript'>
+  (function($) {
+    window.fnames = new Array();
+    window.ftypes = new Array();
+    fnames[0] = 'EMAIL';
+    ftypes[0] = 'email';
+    fnames[1] = 'FNAME';
+    ftypes[1] = 'text';
+    fnames[2] = 'LNAME';
+    ftypes[2] = 'text';
+  }(jQuery));
+  var $mcj = jQuery.noConflict(true);
+</script>
+<!--End mc_embed_signup-->
+        </div>
+      </div>
+      <!-- /.inner-wrap -->
+    </article>
+    <!-- Edit current page -->
+    <!--
+  <a href="https://github.com/login/oauth/authorize?client_id=c602a8bd54b1e774f864&scope=repo&redirect_uri=http://prose.io/#datasf/datasf-website/edit/master/blog/_posts/2015-06-17-5-ways-to-scale-mountain-of-data.md" target="_blank">Edit this page in Prose.io</a>-->
+
+    <!-- Add post -->
+    <!--
+  <a href="//prose.io/#zzolo/zzolo.github.com/new/master/_posts" target="_blank">Add a post with Prose.io</a>-->
+
+  </div>
+  <!-- ./wrap -->
+</div>
+<!-- /#main -->
+    <footer>
+  <div class="container extra-links">
+    <div class="row text-center">
+      <div class="col-md-4">
+
+      </div>
+      <div class="col-md-4">
+        
+        <ul class="list-inline social-buttons">
+          
+          <li><a href="http://twitter.com/datasf"><i class="fa fa-twitter"></i></a>
+          </li>
+          
+          <li><a href="http://opendata.stackexchange.com/search?q=san+francisco"><i class="fa fa-stack-overflow"></i></a>
+          </li>
+          
+          <li><a href="http://github.com/datasf"><i class="fa fa-github"></i></a>
+          </li>
+          
+        </ul>
+        
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline quicklinks">
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-content-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-md-4 left-border-dotted">
+          <ul class="list-unstyled quick-links">
+              
+              <li class="">
+                <a class="  ext-sf-opendata " href="https://data.sfgov.org">Data Catalog</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/showcase/">Showcase</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/publishing/">Publishing</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/academy/">Academy</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/resources/">Resources</a>
+              </li>
+              
+              <li class="active">
+                <a class="active " href="/blog/">Blog</a>
+              </li>
+            
+            
+              <li style="margin-top: 15px;"><a href="/privacy/">Privacy Policy</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-md-6 mission">
+          <p>DataSF's mission is to empower use of data. We seek to transform the way the City works through the use of data. We believe use of data and evidence can improve our operations and the services we provide. This ultimately leads to increased quality of life and work for San Francisco residents, employers, employees and visitors. <a href="/about">Learn more about our work.</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="text-center made-in">
+    Made with <i class="fa fa-heart"><span class="sr-only">heart</span></i> in San Francisco
+  </div>
+  
+</footer>
+    <!-- jQuery Version 1.11.3 -->
+<script src="/assets/js/vendor/jquery-1.11.3.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="/assets/js/vendor/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="/assets/js/vendor/jquery.easing.min.js"></script>
+<script src="/assets/js/vendor/jquery.validate.min.js"></script>
+<script src="/assets/js/vendor/DataTables-1.10.7/media/js/jquery.dataTables.min.js"></script>
+<script src="/assets/js/vendor/DataTables-1.10.7/Plugins-1.10.7/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+<script src="/assets/js/vendor/jsrender.min.js"></script>
+
+
+
+
+<script src="/assets/js/vendor/c3.js"></script>
+<script src="/assets/js/vendor/moment.js"></script>
+<script src="/assets/js/vendor/selectize.min.js"></script>
+
+<!-- utilities -->
+<script src="/assets/js/vendor/toTitleCase.js"></script>
+
+<!-- Custom site JavaScript -->
+<script src="/assets/js/datasf.js"></script>
+
+
+    </body>
+</html>

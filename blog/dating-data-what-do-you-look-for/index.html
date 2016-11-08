@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <!-- Basic ================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- Mobile ================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  
+  <!-- Title and meta description================================================== -->
+  <title>Metadata & Dating - More in Common than you Think...</title>
+  <meta name="description" content="Our mission is to empower use of the City and County of San Francisco's data. Our core product is SF OpenData, the official open data portal.">
+  <!--<link rel="canonical" href="https://datasf.org/blog/dating-data-what-do-you-look-for/">-->
+  
+  <!-- Open Graph and Author Metas================================================== -->
+  
+  	<!-- Open Graph -->
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Metadata & Dating - More in Common than you Think...">
+	<meta property="og:description" content="Finding, dating and settling down with the perfect mate is a lot easier with online dating tools. When you look for a potential match, maybe you only want a few details.">
+	<meta property="og:url" content="https://datasf.org/blog/dating-data-what-do-you-look-for/">
+	
+	<meta property="og:image" content="https://datasf.org/assets/blog/i-heart-metadata/i-heart-metadata.png">
+	
+	<meta property="og:site_name" content="DataSF">
+	<!-- Twitter Cards -->
+	<meta name="twitter:title" content="Metadata & Dating - More in Common than you Think...">
+	<meta name="twitter:description" content="Finding, dating and settling down with the perfect mate is a lot easier with online dating tools. When you look for a potential match, maybe you only want a few details.">
+	<meta name="twitter:site" content="@datasf">
+	<meta name="twitter:creator" content="@datasf">
+	
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:image:src" content="https://datasf.org/assets/blog/i-heart-metadata/i-heart-metadata.png">
+	
+	
+  
+  
+  <!-- Custom Fonts ================================================== -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Alegreya:400italic,700italic,400,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+  
+  <!-- CSS ================================================== -->
+  <link rel="stylesheet" href="/assets/css/vendor.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  <link rel="stylesheet" href="/assets/js/vendor/DataTables-1.10.7/Plugins-1.10.7/integration/bootstrap/3/dataTables.bootstrap.css">
+  
+  <!--[if lte IE 9]><script src="/assets/js/vendor/aight/aight.min.js"></script><![endif]-->
+  <!-- D3 for charting (only need this on some pages -->
+  <script src="/assets/js/vendor/d3.js"></script>
+
+  <!--[if IE 8]><script src="/assets/js/vendor/aight/d3/d3.ie8.js"></script><![endif]-->
+  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  
+  <!-- Scripts ================================================== -->
+  <script src="/assets/js/vendor/modernizr.custom.94053.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-53975719-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+  
+</head>
+
+  
+   <body >
+    <div class="nav-group navbar-fixed-top  navbar-shrink ">
+  <div class="navbar navbar-mini navbar-static-top visible-sm visible-md visible-lg" role="region" aria-label="external links">
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbar-collapse-2">
+        <ul class="nav navbar-nav navbar-right">
+            
+          <li class="">
+            <a class=" " href="https://www.sfgov.org">SFGov</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/coordinators/">Coordinator's Portal</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/about/">About</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="http://support.datasf.org">Help</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="/"><span class="brand"><span class="brand-highlight">Data</span>SF</span></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+            
+          <li class="">
+            <a class="  ext-sf-opendata " href="https://data.sfgov.org">Data Catalog</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/showcase/">Showcase</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/publishing/">Publishing</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/academy/">Academy</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/resources/">Resources</a>
+          </li>
+            
+          <li class="active">
+            <a class="active " href="/blog/">Blog</a>
+          </li>
+          
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="https://www.sfgov.org">SFGov</a>
+          </li>
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="/coordinators/">Coordinator's Portal</a>
+          </li>
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="/about/">About</a>
+          </li>
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="http://support.datasf.org">Help</a>
+          </li>
+          
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  
+</div>
+    <div id="main" role="main" class="blog-post">
+  <div class="container">
+    
+
+
+<ol class="list-unstyled list-inline">
+ 
+  <li><a href="/">home</a> &#187; </li>
+
+  
+   
+   
+
+   <li><a href="/blog">blog</a> &#187; </li>
+
+   
+  
+ 
+</ol>
+    <article class="wrap" itemscope itemtype="http://schema.org/Article">
+      <!-- include breadcrumbs.html -->
+      <div class="row">
+        <div class="col-md-8">
+          <div class="page-title">
+            <h1>Metadata & Dating - More in Common than you Think...</h1>
+          </div>
+          
+          <nav class="toc"></nav>
+          <!-- /.toc -->
+          <div id="content" class="page-content" itemprop="articleBody">
+            <p><img class="pull-left" src="/assets/blog/i-heart-metadata/i-heart-metadata.png" alt="I Heart Metadata" style="width:240px; margin-right: 10px" /></p>
+
+<p>Finding, dating and settling down with the perfect mate is a lot easier with online dating tools. When you look for a potential match, maybe you only want a few details - like name and a list of interests. But as things get serious, you want to know more.</p>
+
+<p>In the real and online world, you have lots of ways to learn more. But in the online data dating world, you really only have one - metadata.</p>
+
+<p>And, well, our metadata makes it hard to commit…So we’re updating it.</p>
+
+<p>You can read more below - but check out our new draft standard:
+- <a href="http://bit.ly/SFMetadata">Draft Metadata Standard</a>
+- <a href="http://bit.ly/MetadataFeedback">Give us feedback on the draft standard</a> (3 short questions!)&lt;/li&gt;</p>
+
+<h2 id="metadatadream-date">Metadata Dream Date</h2>
+
+<p>In my metadata dreamworld:</p>
+
+<ul>
+  <li>Each required field would have a thoughtful and robust justification</li>
+  <li>Fields would be easy to complete and populate (think drop downs and controlled vocabulary)</li>
+  <li>The metadata would be in a friendly, portable file (think json)</li>
+  <li>Our Socrata platform would include an automated dataset of datasets that included each metadata field for each dataset. And I would make charts and views of the dataset of datasets that summarized and tracked our performance in open data.</li>
+  <li>Bonus feature! An API on the dataset of datasets that would let us create apps or feeds for recently updated, new datasets, etc!</li>
+</ul>
+
+<h3 id="instead">Instead…</h3>
+
+<p>Our metadata (the data about our datasets) is more or less out of the box (<a href="https://data.sfgov.org/Business-and-Economic-Development/Businesses-Registered-in-San-Francisco-Active/funx-qxxn/about">see an example for business registered in SF</a>). We have a handful of custom fields like Department and frequency, but we haven’t sat down and really thought through what fields we should include (and require) and why. And we’re inspired by metadata leadership from <a href="https://data.ny.gov/">Open New York</a> and <a href="http://www.cabq.gov/abq-data">Albuquerque</a>.</p>
+
+<h2 id="how-were-tackling-metadata-in-san-franciscoh2">How we’re tackling metadata in San Francisco&lt;/h2&gt;</h2>
+
+<p>We’ve kicked off a working group to draft a metadata standard. The team includes some metadata experts, library scientists, and some of our biggest publishers on DataSF. Read our <a href="https://docs.google.com/document/d/1w5-zVPGanEw9ePL7KevAgYgnD2feaNCjpjQgqDL1fVY/edit?usp=sharing">project document with background/motivation/major steps</a>.</p>
+
+<p>But before we kicked off the group, we surveyed the metadata landscape for existing practices. Some major findings:</p>
+
+<ul>
+  <li>Alot of great work has been done in migrating existing frameworks to accommodate open data (Dublin Core, DCAT, and Common Core). Though we were surprised by some interesting gaps (e.g. data quality notes, field definitions).</li>
+  <li>A balance is to be had in terms of making something required if a) you want compliance and b) you want to get data published. Alot of portals have metadata requirements, but compliance can by tricky.</li>
+</ul>
+
+<p>Read our full document on <a href="https://docs.google.com/document/d/1dz_-yWePLvfNPX8KZRn2SiP1SCpFcojZeO-8U8SPXgE/edit?usp=sharing">Metadata: Existing Practices and Survey</a>.</p>
+
+<p>(And PS - you can always visit our <a href="http://datasf.org/resources">Resources</a> page for all of our metadata documents.)</p>
+
+<h2 id="your-metadatadream-date">Your Metadata Dream Date</h2>
+
+<p>And we want to hear from you:
+- Data publishers - What works and what doesn’t about metadata?
+- Data users - What elements and fields are essential?
+- What’s field elements are hard to do? Can we crowd source data dictionaries???</p>
+
+<p>Drop us a line at datasf at sfgov dot org or check out our standard and give us feedback:</p>
+
+<ul>
+  <li><a href="http://bit.ly/SFMetadata">Draft Metadata Standard</a></li>
+  <li><a href="http://bit.ly/MetadataFeedback">Give us feedback on the draft standard</a> (3 short questions!)</li>
+</ul>
+
+            <hr />
+            <div class="page-footer">
+
+            </div>
+            <!-- /.footer -->
+            <aside>
+              
+            </aside>
+          </div>
+          <!-- /.content -->
+        </div>
+        <div class="col-md-4 sidebar">
+          <aside>
+            
+              
+                
+
+<div class="author-wrapper clearfix">
+<div class="author-image pull-left">
+	<img src="http://gravatar.com/avatar/8614bd4a1d6f6c24c0f6b08a2b9c0335?s=100" alt="Joy Bonaguro's picture">
+</div><!-- ./author-image -->
+<div class="author-content">
+	<h3 class="author-name color-primary"><span itemprop="author">Joy Bonaguro</span></h3>
+	<p class="author-bio">Chief Data Officer, City and County of San Francisco</p>
+</div><!-- ./author-content -->
+</div>
+              
+            
+            <div class="page-meta">
+	<p>Updated <time datetime="2014-07-23T00:00:00Z" itemprop="datePublished">July 23, 2014</time></p>
+</div><!-- /.page-meta --> 
+            
+                <div class="inline-btn">
+	<a class="btn-social twitter" href="https://twitter.com/intent/tweet?text=Metadata%20&amp;%20Dating%20-%20More%20in%20Common%20than%20you%20Think...&amp;url=https://datasf.org/blog/dating-data-what-do-you-look-for/&amp;via=datasf" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Share on Twitter</a>
+	<a class="btn-social facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://datasf.org/blog/dating-data-what-do-you-look-for/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> Share on Facebook</a>
+	<a class="btn-social google-plus"  href="https://plus.google.com/share?url=https://datasf.org/blog/dating-data-what-do-you-look-for/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i> Share on Google+</a>
+</div><!-- /.share-this -->
+             
+            <!-- Stories List Section -->
+<div class="row">
+  <div class="col-lg-12 story-sidebar">
+    <h3 class="sidebar-heading color-primary">Other stories</h3> 
+     
+    <div class="story-item">
+      <div class="story-caption clearfix">
+          October 31, 2016
+        <a href="/blog/show-me-the-data-dictionary/"><h4>Show me the data (dictionary)!</h4></a>
+      </div>
+    </div>
+     
+    <div class="story-item">
+      <div class="story-caption clearfix">
+          October 06, 2016
+        <a href="/blog/4-steps-to-manage-privacy-and-de-identification-for-your-open-data-program/"><h4>4 Steps to Manage Privacy and De-Identification for your Open Data Program</h4></a>
+      </div>
+    </div>
+     
+    <div class="story-item">
+      <div class="story-caption clearfix">
+          August 16, 2016
+        <a href="/blog/year-3-is-in-session/"><h4>Year 3 is in Session</h4></a>
+      </div>
+    </div>
+     
+    <div class="story-item">
+      <div class="story-caption clearfix">
+          July 26, 2016
+        <a href="/blog/we-want-you-serve-as-the-digital-services-chief/"><h4>We Want You- Serve as the Digital Services Chief for San Francisco</h4></a>
+      </div>
+    </div>
+     
+    <div class="story-item">
+      <div class="story-caption clearfix">
+          July 01, 2016
+        <a href="/blog/say-hello-to-systems-inventory/"><h4>Say hello to our brand new systems inventory</h4></a>
+      </div>
+    </div>
+    
+    <div><a href="/blog">More Stories...</a></div>
+  </div>
+</div>
+          </aside>
+          <!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup">
+  <form action="//datasf.us10.list-manage.com/subscribe/post-json?u=c16d18091b821e3289a7546f9&amp;id=9e931a2612" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+      <h2>Subscribe to our newsletter</h2>
+      <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+      <div class="mc-field-group">
+        <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+        </label>
+        <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL">
+      </div>
+      <div class="mc-field-group form-group">
+        <label for="mce-FNAME">First Name </label>
+        <input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME">
+      </div>
+      <div class="mc-field-group form-group">
+        <label for="mce-LNAME">Last Name </label>
+        <input type="text" value="" name="LNAME" class="form-control" id="mce-LNAME">
+      </div>
+      <div id="mce-responses" class="clear">
+        <div class="response alert-error" id="mce-error-response" style="display:none"></div>
+        <div class="response alert-success" id="mce-success-response" style="display:none"></div>
+      </div>
+      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+      <div style="position: absolute; left: -5000px;">
+        <input type="text" name="b_c16d18091b821e3289a7546f9_9e931a2612" tabindex="-1" value="">
+      </div>
+      <div class="clear">
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default">
+      </div>
+    </div>
+  </form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+<script type='text/javascript'>
+  (function($) {
+    window.fnames = new Array();
+    window.ftypes = new Array();
+    fnames[0] = 'EMAIL';
+    ftypes[0] = 'email';
+    fnames[1] = 'FNAME';
+    ftypes[1] = 'text';
+    fnames[2] = 'LNAME';
+    ftypes[2] = 'text';
+  }(jQuery));
+  var $mcj = jQuery.noConflict(true);
+</script>
+<!--End mc_embed_signup-->
+        </div>
+      </div>
+      <!-- /.inner-wrap -->
+    </article>
+    <!-- Edit current page -->
+    <!--
+  <a href="https://github.com/login/oauth/authorize?client_id=c602a8bd54b1e774f864&scope=repo&redirect_uri=http://prose.io/#datasf/datasf-website/edit/master/blog/_posts/2014-07-23-dating-data-what-do-you-look-for.md" target="_blank">Edit this page in Prose.io</a>-->
+
+    <!-- Add post -->
+    <!--
+  <a href="//prose.io/#zzolo/zzolo.github.com/new/master/_posts" target="_blank">Add a post with Prose.io</a>-->
+
+  </div>
+  <!-- ./wrap -->
+</div>
+<!-- /#main -->
+    <footer>
+  <div class="container extra-links">
+    <div class="row text-center">
+      <div class="col-md-4">
+
+      </div>
+      <div class="col-md-4">
+        
+        <ul class="list-inline social-buttons">
+          
+          <li><a href="http://twitter.com/datasf"><i class="fa fa-twitter"></i></a>
+          </li>
+          
+          <li><a href="http://opendata.stackexchange.com/search?q=san+francisco"><i class="fa fa-stack-overflow"></i></a>
+          </li>
+          
+          <li><a href="http://github.com/datasf"><i class="fa fa-github"></i></a>
+          </li>
+          
+        </ul>
+        
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline quicklinks">
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-content-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-md-4 left-border-dotted">
+          <ul class="list-unstyled quick-links">
+              
+              <li class="">
+                <a class="  ext-sf-opendata " href="https://data.sfgov.org">Data Catalog</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/showcase/">Showcase</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/publishing/">Publishing</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/academy/">Academy</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/resources/">Resources</a>
+              </li>
+              
+              <li class="active">
+                <a class="active " href="/blog/">Blog</a>
+              </li>
+            
+            
+              <li style="margin-top: 15px;"><a href="/privacy/">Privacy Policy</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-md-6 mission">
+          <p>DataSF's mission is to empower use of data. We seek to transform the way the City works through the use of data. We believe use of data and evidence can improve our operations and the services we provide. This ultimately leads to increased quality of life and work for San Francisco residents, employers, employees and visitors. <a href="/about">Learn more about our work.</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="text-center made-in">
+    Made with <i class="fa fa-heart"><span class="sr-only">heart</span></i> in San Francisco
+  </div>
+  
+</footer>
+    <!-- jQuery Version 1.11.3 -->
+<script src="/assets/js/vendor/jquery-1.11.3.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="/assets/js/vendor/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="/assets/js/vendor/jquery.easing.min.js"></script>
+<script src="/assets/js/vendor/jquery.validate.min.js"></script>
+<script src="/assets/js/vendor/DataTables-1.10.7/media/js/jquery.dataTables.min.js"></script>
+<script src="/assets/js/vendor/DataTables-1.10.7/Plugins-1.10.7/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+<script src="/assets/js/vendor/jsrender.min.js"></script>
+
+
+
+
+<script src="/assets/js/vendor/c3.js"></script>
+<script src="/assets/js/vendor/moment.js"></script>
+<script src="/assets/js/vendor/selectize.min.js"></script>
+
+<!-- utilities -->
+<script src="/assets/js/vendor/toTitleCase.js"></script>
+
+<!-- Custom site JavaScript -->
+<script src="/assets/js/datasf.js"></script>
+
+
+    </body>
+</html>

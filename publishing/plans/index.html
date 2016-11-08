@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <!-- Basic ================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- Mobile ================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  
+  <!-- Title and meta description================================================== -->
+  <title>DataSF | Department Open Data Plans</title>
+  <meta name="description" content="Our mission is to empower use of the City and County of San Francisco's data. Our core product is SF OpenData, the official open data portal.">
+  <!--<link rel="canonical" href="https://datasf.org/publishing/plans/">-->
+  
+  <!-- Open Graph and Author Metas================================================== -->
+  
+  	<!-- Open Graph -->
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="DataSF | Department Open Data Plans">
+	
+	<meta property="og:url" content="https://datasf.org/publishing/plans/">
+	
+	<meta property="og:site_name" content="DataSF">
+	<!-- Twitter Cards -->
+	<meta name="twitter:title" content="DataSF | Department Open Data Plans">
+	
+	<meta name="twitter:site" content="@datasf">
+	<meta name="twitter:creator" content="@datasf">
+	
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:image:src" content="https://datasf.org/assets/img/">
+	
+	
+  
+  
+  <!-- Custom Fonts ================================================== -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Alegreya:400italic,700italic,400,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+  
+  <!-- CSS ================================================== -->
+  <link rel="stylesheet" href="/assets/css/vendor.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  <link rel="stylesheet" href="/assets/js/vendor/DataTables-1.10.7/Plugins-1.10.7/integration/bootstrap/3/dataTables.bootstrap.css">
+  
+  <!--[if lte IE 9]><script src="/assets/js/vendor/aight/aight.min.js"></script><![endif]-->
+  <!-- D3 for charting (only need this on some pages -->
+  <script src="/assets/js/vendor/d3.js"></script>
+
+  <!--[if IE 8]><script src="/assets/js/vendor/aight/d3/d3.ie8.js"></script><![endif]-->
+  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  
+  <!-- Scripts ================================================== -->
+  <script src="/assets/js/vendor/modernizr.custom.94053.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-53975719-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+  
+</head>
+
+  
+   <body  class="has-subnav" >
+    <div class="nav-group navbar-fixed-top  navbar-shrink ">
+  <div class="navbar navbar-mini navbar-static-top visible-sm visible-md visible-lg" role="region" aria-label="external links">
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbar-collapse-2">
+        <ul class="nav navbar-nav navbar-right">
+            
+          <li class="">
+            <a class=" " href="https://www.sfgov.org">SFGov</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/coordinators/">Coordinator's Portal</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/about/">About</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="http://support.datasf.org">Help</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="/"><span class="brand"><span class="brand-highlight">Data</span>SF</span></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+            
+          <li class="">
+            <a class="  ext-sf-opendata " href="https://data.sfgov.org">Data Catalog</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/showcase/">Showcase</a>
+          </li>
+            
+          <li class="active">
+            <a class="active " href="/publishing/">Publishing</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/academy/">Academy</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/resources/">Resources</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/blog/">Blog</a>
+          </li>
+          
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="https://www.sfgov.org">SFGov</a>
+          </li>
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="/coordinators/">Coordinator's Portal</a>
+          </li>
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="/about/">About</a>
+          </li>
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="http://support.datasf.org">Help</a>
+          </li>
+          
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  
+  <div class="navbar navbar-subnav navbar-static-top visible-sm visible-md visible-lg" role="region" aria-label="external links">
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbar-collapse-3">
+        <ul class="nav navbar-nav navbar-right">
+            
+          <li class="">
+            <a class=" " href="/publishing/">Publishing Submission</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/publishing/submission-guidelines/">Submission Guidelines</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/publishing/guidelines/">Publishing Guidelines</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/publishing/services/">Automation Services</a>
+          </li>
+            
+          <li class="active">
+            <a class="active " href="/publishing/plans/">Plans</a>
+          </li>
+          
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+</div>
+    <section id="plan">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 col-lg-8">
+        <h1 class="first-heading">Department Publishing Plans</h1>
+        <select id="select-department" class="form-control selectize-select">
+          <option value="">Citywide</option>
+          
+          <option value="311">311</option>
+          
+          <option value="academy-of-sciences">Academy of Sciences</option>
+          
+          <option value="adult-probation">Adult Probation</option>
+          
+          <option value="airport">Airport</option>
+          
+          <option value="arts-commission">Arts Commission</option>
+          
+          <option value="asian-art-museum">Asian Art Museum</option>
+          
+          <option value="assessor-recorder">Assessor-Recorder</option>
+          
+          <option value="board-of-appeals">Board of Appeals</option>
+          
+          <option value="board-of-supervisors">Board of Supervisors</option>
+          
+          <option value="building-inspection">Building Inspection</option>
+          
+          <option value="child-support-services">Child Support Services</option>
+          
+          <option value="children-and-families-commission">Children and Families Commission</option>
+          
+          <option value="children-youth-their-families">Children, Youth & Their Families</option>
+          
+          <option value="city-attorney">City Attorney</option>
+          
+          <option value="civil-service-commission">Civil Service Commission</option>
+          
+          <option value="community-investment-and-infrastructure">Community Investment and Infrastructure</option>
+          
+          <option value="controller">Controller</option>
+          
+          <option value="district-attorney">District Attorney</option>
+          
+          <option value="economic-workforce-development">Economic & Workforce Development</option>
+          
+          <option value="elections">Elections</option>
+          
+          <option value="emergency-management">Emergency Management</option>
+          
+          <option value="environment">Environment</option>
+          
+          <option value="ethics-commission">Ethics Commission</option>
+          
+          <option value="film-commission">Film Commission</option>
+          
+          <option value="fine-arts-museums">Fine Arts Museums</option>
+          
+          <option value="fire-department">Fire Department</option>
+          
+          <option value="gsa-city-administrator-s-office">GSA - City Administrator's Office</option>
+          
+          <option value="gsa-public-works">GSA - Public Works</option>
+          
+          <option value="gsa-technology">GSA - Technology</option>
+          
+          <option value="health-service-system">Health Service System</option>
+          
+          <option value="human-resources">Human Resources</option>
+          
+          <option value="human-rights-commission">Human Rights Commission</option>
+          
+          <option value="human-services-agency">Human Services Agency</option>
+          
+          <option value="juvenile-probation">Juvenile Probation</option>
+          
+          <option value="mayor">Mayor</option>
+          
+          <option value="municipal-transportation-agency">Municipal Transportation Agency</option>
+          
+          <option value="office-of-citizen-complaints">Office of Citizen Complaints</option>
+          
+          <option value="office-of-early-care-and-education">Office of Early Care and Education</option>
+          
+          <option value="planning">Planning</option>
+          
+          <option value="police-department">Police Department</option>
+          
+          <option value="port">Port</option>
+          
+          <option value="public-defender">Public Defender</option>
+          
+          <option value="public-health">Public Health</option>
+          
+          <option value="public-library">Public Library</option>
+          
+          <option value="public-utilities-commission">Public Utilities Commission</option>
+          
+          <option value="recreation-and-parks">Recreation and Parks</option>
+          
+          <option value="rent-arbitration-board">Rent Arbitration Board</option>
+          
+          <option value="retirement-system">Retirement System</option>
+          
+          <option value="sheriff">Sheriff</option>
+          
+          <option value="status-of-women">Status of Women</option>
+          
+          <option value="treasurer-tax-collector">Treasurer-Tax Collector</option>
+          
+          <option value="war-memorial">War Memorial</option>
+          
+        </select>
+        <div id="plan-picker" style="margin-bottom: 15px;">
+          <form class="form-inline">
+            <div class="form-group">
+            <label for="plan-picker-select">Showing plan for the period covering</label>
+            <select id="plan-picker-select" class="form-control" style="width: auto; font-size: 18px; font-weight: 700; height: auto">
+              <option value="0">July 2016 to Dec 2016</option>
+              <option value="1">Jan 2016 to June 2016</option>
+              <option value="2">July 2015 to Dec 2015</option>
+            </select>
+            </div>
+          </form>
+        </div>
+        <div id="citywide-narrative">
+          <p class="lead">Welcome to the City’s Department Publishing Plans portal. These plans and supporting data inventories are the result of many hours of hard work by departmental data coordinators and their colleagues. It is here we will not just report the plans but automatically track progress as data gets published over time.</p>
+          <p>Each plan includes a narrative indicating what the department is committing to through the end of 2015. Along the right hand side are metrics including:
+          </p>
+          <ol>
+            <li>Percent of datasets published out of the department's inventory</li>
+            <li>Datasets published since <span class="published-since-date">January 2016</span></li>
+            <li>And when appropriate, the number of datasets targeted for publishing by <span class="targeted-date">June 31, 2016</span></li>
+          </ol>
+          <p>These update to reflect the department you’re viewing. Right now, the metrics to the right reflect the rollup of activity across all departments that have completed their inventory. Also, at the bottom of each page is a table representing the inventory for the department you’re viewing.</p>
+          <p>You can track additional program-wide metrics about the City’s open data program through <a href="/progress">DataSF in Progress</a>, our dashboard.</p>
+          <p>Start browsing the plans by clicking on the department menu at the top of this page and selecting a department. You can view past plans by .</p>
+        </div>
+        <div class="dept-link"></div>
+        <p class="department-mission lead">
+        </p>
+        <p class="narrative-maintenance">
+        </p>
+        <p class="narrative-publishing">
+        </p>
+        <p class="narrative-planning">
+        </p>
+      </div>
+      <div class="col-md-5 col-lg-4 quick-stats">
+        <div id="inventory-incomplete" class="mini-charts-item bgm-lightred" style="display:none;">
+          <div class="clearfix">
+            <div class="count">
+              <p>This department has not completed its dataset inventory.</p>
+            </div>
+          </div>
+        </div>
+        <div id="chart-number-published" class="mini-charts-item bgm-lightgreen">
+          <div class="clearfix">
+            <div id="chart" class="chart">
+            </div>
+            <div class="count">
+              <small>Percent published datasets</small>
+              <div class="chart-number"></div> <small class="ratio"></small>
+            </div>
+          </div>
+        </div>
+        <div id="chart-published-since" class="mini-charts-item bgm-orange">
+          <div class="clearfix">
+            <div id="chart2" class="chart">
+            </div>
+            <div class="count">
+              <small>Published datasets</small>
+              <div class="chart-number"></div>
+              <small>since <span class="chart-published-since-date"></span></small>
+            </div>
+          </div>
+        </div>
+        <div id="chart-targeted" class="mini-charts-item bgm-teal">
+          <div class="clearfix">
+            <div id="chart3" class="chart">
+              <i class="fa fa-bullseye fa-5x" style="color: #fff"></i>
+            </div>
+            <div class="count">
+              <small>Targeted datasets for publishing</small>
+              <div class="chart-number"></div> <small>by <span class="chart-targeted-date"></span></small>
+            </div>
+          </div>
+        </div>
+        <div id="chart-targeted-citywide" class="mini-charts-item bgm-teal">
+          <div class="clearfix">
+            <div id="chart3" class="chart">
+              <i class="fa fa-bullseye fa-5x" style="color: #fff"></i>
+            </div>
+            <div class="count">
+              <small>Targeted datasets for publishing</small>
+              <div class="chart-number">121</div> <small>by <span class="chart-targeted-date"></span></small>
+            </div>
+          </div>
+        </div>
+        <div id="dept-link">
+          <div class="clearfix">
+            <div>
+              <span class="sr-only">Department's Website</span>
+              <span class="website-text"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="testing">
+
+  </div>
+</section>
+<section id="datasets">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <table id="inventory" class="display">
+          <thead>
+            <tr>
+              <th>Inventory ID</th>
+              <th>Department or Division</th>
+              <th>Dataset Name</th>
+              <th>Dataset Description</th>
+              <th>Publishing Status</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</section>
+    <footer>
+  <div class="container extra-links">
+    <div class="row text-center">
+      <div class="col-md-4">
+
+      </div>
+      <div class="col-md-4">
+        
+        <ul class="list-inline social-buttons">
+          
+          <li><a href="http://twitter.com/datasf"><i class="fa fa-twitter"></i></a>
+          </li>
+          
+          <li><a href="http://opendata.stackexchange.com/search?q=san+francisco"><i class="fa fa-stack-overflow"></i></a>
+          </li>
+          
+          <li><a href="http://github.com/datasf"><i class="fa fa-github"></i></a>
+          </li>
+          
+        </ul>
+        
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline quicklinks">
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-content-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-md-4 left-border-dotted">
+          <ul class="list-unstyled quick-links">
+              
+              <li class="">
+                <a class="  ext-sf-opendata " href="https://data.sfgov.org">Data Catalog</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/showcase/">Showcase</a>
+              </li>
+              
+              <li class="active">
+                <a class="active " href="/publishing/">Publishing</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/academy/">Academy</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/resources/">Resources</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/blog/">Blog</a>
+              </li>
+            
+            
+              <li style="margin-top: 15px;"><a href="/privacy/">Privacy Policy</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-md-6 mission">
+          <p>DataSF's mission is to empower use of data. We seek to transform the way the City works through the use of data. We believe use of data and evidence can improve our operations and the services we provide. This ultimately leads to increased quality of life and work for San Francisco residents, employers, employees and visitors. <a href="/about">Learn more about our work.</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="text-center made-in">
+    Made with <i class="fa fa-heart"><span class="sr-only">heart</span></i> in San Francisco
+  </div>
+  
+</footer>
+    <!-- jQuery Version 1.11.3 -->
+<script src="/assets/js/vendor/jquery-1.11.3.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="/assets/js/vendor/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="/assets/js/vendor/jquery.easing.min.js"></script>
+<script src="/assets/js/vendor/jquery.validate.min.js"></script>
+<script src="/assets/js/vendor/DataTables-1.10.7/media/js/jquery.dataTables.min.js"></script>
+<script src="/assets/js/vendor/DataTables-1.10.7/Plugins-1.10.7/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+<script src="/assets/js/vendor/jsrender.min.js"></script>
+
+
+
+
+<script src="/assets/js/vendor/c3.js"></script>
+<script src="/assets/js/vendor/moment.js"></script>
+<script src="/assets/js/vendor/selectize.min.js"></script>
+
+<!-- utilities -->
+<script src="/assets/js/vendor/toTitleCase.js"></script>
+
+<!-- Custom site JavaScript -->
+<script src="/assets/js/datasf.js"></script>
+
+<!-- Custom page JS -->
+<script src="/assets/js/plans.js"></script>
+
+
+    </body>
+</html>

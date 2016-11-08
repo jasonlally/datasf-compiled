@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <!-- Basic ================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- Mobile ================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  
+  <!-- Title and meta description================================================== -->
+  <title>DataSF | In Progress</title>
+  <meta name="description" content="Our mission is to empower use of the City and County of San Francisco's data. Our core product is SF OpenData, the official open data portal.">
+  <!--<link rel="canonical" href="https://datasf.org/progress/">-->
+  
+  <!-- Open Graph and Author Metas================================================== -->
+  
+  	<!-- Open Graph -->
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="DataSF | In Progress">
+	
+	<meta property="og:url" content="https://datasf.org/progress/">
+	
+	<meta property="og:site_name" content="DataSF">
+	<!-- Twitter Cards -->
+	<meta name="twitter:title" content="DataSF | In Progress">
+	
+	<meta name="twitter:site" content="@datasf">
+	<meta name="twitter:creator" content="@datasf">
+	
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:image:src" content="https://datasf.org/assets/img/">
+	
+	
+  
+  
+  <!-- Custom Fonts ================================================== -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Alegreya:400italic,700italic,400,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+  
+  <!-- CSS ================================================== -->
+  <link rel="stylesheet" href="/assets/css/vendor.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  <link rel="stylesheet" href="/assets/js/vendor/DataTables-1.10.7/Plugins-1.10.7/integration/bootstrap/3/dataTables.bootstrap.css">
+  
+  <!--[if lte IE 9]><script src="/assets/js/vendor/aight/aight.min.js"></script><![endif]-->
+  <!-- D3 for charting (only need this on some pages -->
+  <script src="/assets/js/vendor/d3.js"></script>
+
+  <!--[if IE 8]><script src="/assets/js/vendor/aight/d3/d3.ie8.js"></script><![endif]-->
+  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  
+  <!-- Scripts ================================================== -->
+  <script src="/assets/js/vendor/modernizr.custom.94053.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-53975719-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+  
+</head>
+
+  
+   <body >
+    <div class="nav-group navbar-fixed-top  navbar-shrink ">
+  <div class="navbar navbar-mini navbar-static-top visible-sm visible-md visible-lg" role="region" aria-label="external links">
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbar-collapse-2">
+        <ul class="nav navbar-nav navbar-right">
+            
+          <li class="">
+            <a class=" " href="https://www.sfgov.org">SFGov</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/coordinators/">Coordinator's Portal</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/about/">About</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="http://support.datasf.org">Help</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="/"><span class="brand"><span class="brand-highlight">Data</span>SF</span></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+            
+          <li class="">
+            <a class="  ext-sf-opendata " href="https://data.sfgov.org">Data Catalog</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/showcase/">Showcase</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/publishing/">Publishing</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/academy/">Academy</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/resources/">Resources</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/blog/">Blog</a>
+          </li>
+          
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="https://www.sfgov.org">SFGov</a>
+          </li>
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="/coordinators/">Coordinator's Portal</a>
+          </li>
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="/about/">About</a>
+          </li>
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="http://support.datasf.org">Help</a>
+          </li>
+          
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  
+</div>
+    <section id="progress-report">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="first">DataSF In Progress</h1>
+        <h2>Plan Progress</h2>
+        <p>Our open data legislation requires 1) an inventory of City datasets and 2) publishing plans from each department. March 31, 2015 was the target date for all departments to complete the dataset inventory. We accept department submissions on a rolling
+          monthly basis. Publishing plans were due contingent on inventory completion and will be updated every six months.</p>
+      </div>
+      <div class="col-md-4 quick-stats">
+        <div id="stat-total-dept" class="stat-text"><span class="stat-number">52</span> Departments</div>
+        <div id="stat-inventory" class="stat-text"><span class="stat-number"></span> Inventories Complete</div>
+        <div id="stat-plans-complete" class="stat-text"><span class="stat-number"></span> Plans Complete</div>
+        <div><a href="/publishing/plans" class="btn btn-default btn-block">Read the Publishing Plans</a></div>
+        <div>
+          <button class="btn btn-default btn-block collapsed" type="button" data-toggle="collapse" data-target="#statusContainer" aria-expanded="false" aria-controls="collapseTwo">View Progress by Department
+          </button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <span class="chart-title center">Inventory status</span>
+        <div id="chart0" class="" style="min-height:320px">
+
+        </div>
+      </div>
+      <div class="col-md-4">
+        <span class="chart-title center">Publishing plan status<span>
+        <div id="chart1" class="">
+
+        </div>
+      </div>
+      <div class="col-md-12 collapse" id="statusContainer">
+        <table id="status" class="display">
+          <thead>
+            <tr>
+              <th>Department or Division</th>
+              <th>Inventory Status</th>
+              <th>Publishing Plan Status</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 break">
+        <h2>Publishing Activity</h2>
+      </div>
+      <div class="col-md-6">
+        <div class="pullout-stat bgm-orange">
+          <div class="clearfix">
+            <div id="stat-published-datasets"><span class="stat-number"></span> Published Datasets</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="pullout-stat bgm-orange">
+          <div class="clearfix">
+            <div id="stat-inventoried-datasets"><span class="stat-number"></span> Inventoried Datasets</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 chart">
+        <span class="chart-title center">% datasets published from inventory</span>
+        <div id="chart4">
+
+        </div>
+
+      </div>
+      <div class="col-md-8 chart">
+        <span class="chart-title">Datasets published by category</span>
+        <div id="chart5">
+
+        </div>
+      </div>
+    </div>
+    <div class="row inner-break">
+      <div class="col-md-6">
+        <span class="chart-title">% of inventoried datasets published by dataset classification</span>
+        <p style="min-height: 81px;">During our inventory process, we classified datasets as public, sensitive or protected. We expect departments to publish public datasets first.
+        </p>
+        <div id="chart11">
+
+        </div>
+      </div>
+      
+      <div class="col-md-6">
+        <span class="chart-title">% of inventoried datasets published by priority</span>
+        <p>Departments prioritize datasets for publication based on data classification and value. We expect to publish Priority 1 datasets first. <a href="http://datasf.org/blog/how-to-unstick-data-publishing/">Learn more about how we prioritize datasets.</a></p>
+        <div id="chart12">
+
+        </div>
+      </div>
+    </div>
+    <div class="row inner-break">
+      <div class="col-md-12">
+        <span class="chart-title">Datasets published over time <small><a href="#" class="by-year">(toggle month and year)</a></small></span>
+      </div>
+      <div id="chart2" class="col-md-12 chart">
+
+      </div>
+      <div id="chart3" class="col-md-12 chart" style="display: none;">
+
+      </div>
+      <div class="col-md-12 note">
+        <p>*Note the publishing activity above represents when it was made available via our current open data platform provider (Socrata). 2012 is when the City officially launched the updated portal, however many of those datasets were available earlier.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 break">
+        <h2>Publishing Quality</h2>
+      </div>
+      <!-- Row -->
+      <div class="col-md-12">
+        <h3>Performance against targets</h3>
+        <p>Every six months, departments set a target number of datasets to publish. Below is the citywide rollup of department targets. The counts and targets reflect the current planning period, July 2016 through end of December 2016.</p>
+      </div>
+      
+       <div class="col-md-6 chart">
+        <span class="chart-title center">% of datasets published against 6 month target</span>
+        
+        <div id="chart10">
+
+        </div>
+
+      </div>
+      
+       <div class="col-md-6">
+        <div class="pullout-stat bgm-orange">
+          <div class="clearfix">
+            <div id="stat-published-plan"><span class="stat-number"></span> Published Datasets since Jul 2016</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6">
+        <div class="pullout-stat bgm-orange">
+          <div class="clearfix">
+            <div id="stat-targeted-datasets"><span class="stat-number"></span> Targeted Datasets through Dec 2016</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row inner-break">
+       <div class="col-md-12">
+        <h3>Timeliness of publishing</h3>
+        <p>Each dataset is published with a target publishing frequency (e.g. daily). We calculate if datasets meet this target. Datasets with no update schedule are marked as unknown. Over time, all datasets will have an update target. Datasets may also be published with a time lag (e.g. a month old). Publishing lags must be justified and should not exceed a month.</p>
+      </div>
+
+      <div class="col-md-4 chart">
+        <span class="chart-title center">% of datasets updated on time</span>
+        <div id="chart7">
+
+        </div>
+
+      </div>
+      
+      <div class="col-md-4 chart">
+        <span class="chart-title center">% of datasets without a publishing lag</span>
+        <div id="chart8">
+
+        </div>
+
+      </div>
+      
+      <div class="col-md-4">
+        <div class="pullout-stat bgm-orange">
+          <div class="clearfix">
+            <div id="stat-median-lag"><span class="stat-number"></span> Median Lag in Days</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row inner-break">
+      
+      <!-- Row -->
+       <div class="col-md-12">
+        <h3>Documentation and usability</h3>
+        <p>Datasets are only usable if they are understood and accessible. We aim to have complete metadata including data dictionaries for every dataset on the portal. We also like data to be published "natively" meaning it is hosted in our open data platform, which provides more tools for using the data.</p>
+      </div>
+
+      <div class="col-md-6 chart">
+        <span class="chart-title center">% of datasets with required metadata</span>
+        <div id="chart9">
+
+        </div>
+
+      </div>
+      
+      <div class="col-md-6 chart">
+        <span class="chart-title center">% of datasets natively hosted</span>
+        <div id="chart6">
+
+        </div>
+
+      </div>
+     
+    </div>
+  </div>
+</section>
+
+    <footer>
+  <div class="container extra-links">
+    <div class="row text-center">
+      <div class="col-md-4">
+
+      </div>
+      <div class="col-md-4">
+        
+        <ul class="list-inline social-buttons">
+          
+          <li><a href="http://twitter.com/datasf"><i class="fa fa-twitter"></i></a>
+          </li>
+          
+          <li><a href="http://opendata.stackexchange.com/search?q=san+francisco"><i class="fa fa-stack-overflow"></i></a>
+          </li>
+          
+          <li><a href="http://github.com/datasf"><i class="fa fa-github"></i></a>
+          </li>
+          
+        </ul>
+        
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline quicklinks">
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-content-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-md-4 left-border-dotted">
+          <ul class="list-unstyled quick-links">
+              
+              <li class="">
+                <a class="  ext-sf-opendata " href="https://data.sfgov.org">Data Catalog</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/showcase/">Showcase</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/publishing/">Publishing</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/academy/">Academy</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/resources/">Resources</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/blog/">Blog</a>
+              </li>
+            
+            
+              <li style="margin-top: 15px;"><a href="/privacy/">Privacy Policy</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-md-6 mission">
+          <p>DataSF's mission is to empower use of data. We seek to transform the way the City works through the use of data. We believe use of data and evidence can improve our operations and the services we provide. This ultimately leads to increased quality of life and work for San Francisco residents, employers, employees and visitors. <a href="/about">Learn more about our work.</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="text-center made-in">
+    Made with <i class="fa fa-heart"><span class="sr-only">heart</span></i> in San Francisco
+  </div>
+  
+</footer>
+    <!-- jQuery Version 1.11.3 -->
+<script src="/assets/js/vendor/jquery-1.11.3.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="/assets/js/vendor/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="/assets/js/vendor/jquery.easing.min.js"></script>
+<script src="/assets/js/vendor/jquery.validate.min.js"></script>
+<script src="/assets/js/vendor/DataTables-1.10.7/media/js/jquery.dataTables.min.js"></script>
+<script src="/assets/js/vendor/DataTables-1.10.7/Plugins-1.10.7/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+<script src="/assets/js/vendor/jsrender.min.js"></script>
+
+
+
+
+<script src="/assets/js/vendor/c3.js"></script>
+<script src="/assets/js/vendor/moment.js"></script>
+<script src="/assets/js/vendor/selectize.min.js"></script>
+
+<!-- utilities -->
+<script src="/assets/js/vendor/toTitleCase.js"></script>
+
+<!-- Custom site JavaScript -->
+<script src="/assets/js/datasf.js"></script>
+
+<!-- Custom page JS -->
+<script src="/assets/js/progress.js"></script>
+
+
+    </body>
+</html>

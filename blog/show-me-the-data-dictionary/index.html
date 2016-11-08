@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <!-- Basic ================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- Mobile ================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  
+  <!-- Title and meta description================================================== -->
+  <title>Show me the data (dictionary)!</title>
+  <meta name="description" content="Our mission is to empower use of the City and County of San Francisco's data. Our core product is SF OpenData, the official open data portal.">
+  <!--<link rel="canonical" href="https://datasf.org/blog/show-me-the-data-dictionary/">-->
+  
+  <!-- Open Graph and Author Metas================================================== -->
+  
+  	<!-- Open Graph -->
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Show me the data (dictionary)!">
+	<meta property="og:description" content="For San Francisco’s open data, finding that documentation can be, ahem, inconsistent, and it’s high time we address that for everyone’s sanity! We are beginning a project to make the collection, maintenance and dissemination of data documentation consistent for data publishers, DataSF staff and data users.">
+	<meta property="og:url" content="https://datasf.org/blog/show-me-the-data-dictionary/">
+	
+	<meta property="og:image" content="https://datasf.org/assets/blog//data-dictionary/definition.jpg">
+	
+	<meta property="og:site_name" content="DataSF">
+	<!-- Twitter Cards -->
+	<meta name="twitter:title" content="Show me the data (dictionary)!">
+	<meta name="twitter:description" content="For San Francisco’s open data, finding that documentation can be, ahem, inconsistent, and it’s high time we address that for everyone’s sanity! We are beginning a project to make the collection, maintenance and dissemination of data documentation consistent for data publishers, DataSF staff and data users.">
+	<meta name="twitter:site" content="@datasf">
+	
+	
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image:src" content="https://datasf.org/assets/blog//data-dictionary/definition.jpg">
+	
+	
+  
+  
+  <!-- Custom Fonts ================================================== -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Alegreya:400italic,700italic,400,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+  
+  <!-- CSS ================================================== -->
+  <link rel="stylesheet" href="/assets/css/vendor.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  <link rel="stylesheet" href="/assets/js/vendor/DataTables-1.10.7/Plugins-1.10.7/integration/bootstrap/3/dataTables.bootstrap.css">
+  
+  <!--[if lte IE 9]><script src="/assets/js/vendor/aight/aight.min.js"></script><![endif]-->
+  <!-- D3 for charting (only need this on some pages -->
+  <script src="/assets/js/vendor/d3.js"></script>
+
+  <!--[if IE 8]><script src="/assets/js/vendor/aight/d3/d3.ie8.js"></script><![endif]-->
+  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  
+  <!-- Scripts ================================================== -->
+  <script src="/assets/js/vendor/modernizr.custom.94053.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-53975719-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+  
+</head>
+
+  
+   <body >
+    <div class="nav-group navbar-fixed-top  navbar-shrink ">
+  <div class="navbar navbar-mini navbar-static-top visible-sm visible-md visible-lg" role="region" aria-label="external links">
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbar-collapse-2">
+        <ul class="nav navbar-nav navbar-right">
+            
+          <li class="">
+            <a class=" " href="https://www.sfgov.org">SFGov</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/coordinators/">Coordinator's Portal</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/about/">About</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="http://support.datasf.org">Help</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="/"><span class="brand"><span class="brand-highlight">Data</span>SF</span></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+            
+          <li class="">
+            <a class="  ext-sf-opendata " href="https://data.sfgov.org">Data Catalog</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/showcase/">Showcase</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/publishing/">Publishing</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/academy/">Academy</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/resources/">Resources</a>
+          </li>
+            
+          <li class="active">
+            <a class="active " href="/blog/">Blog</a>
+          </li>
+          
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="https://www.sfgov.org">SFGov</a>
+          </li>
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="/coordinators/">Coordinator's Portal</a>
+          </li>
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="/about/">About</a>
+          </li>
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="http://support.datasf.org">Help</a>
+          </li>
+          
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  
+</div>
+    <div id="main" role="main" class="blog-post">
+  <div class="container">
+    
+
+
+<ol class="list-unstyled list-inline">
+ 
+  <li><a href="/">home</a> &#187; </li>
+
+  
+   
+   
+
+   <li><a href="/blog">blog</a> &#187; </li>
+
+   
+  
+ 
+</ol>
+    <article class="wrap" itemscope itemtype="http://schema.org/Article">
+      <!-- include breadcrumbs.html -->
+      <div class="row">
+        <div class="col-md-8">
+          <div class="page-title">
+            <h1>Show me the data (dictionary)!</h1>
+          </div>
+          
+          <div class="page-feature">
+            <div class="page-image">
+              <figure>
+              <img src="/assets/blog//data-dictionary/definition.jpg" class="page-feature-image" alt="We're working to make field definitions easier to discover and manage" itemprop="image"> 
+              
+              <figcaption>We're working to make field definitions easier to discover and manage
+              </figcaption>
+              
+              </figure>
+            </div>
+            <!-- /.page-image -->
+          </div>
+          <!-- /.page-feature -->
+          
+          <nav class="toc"></nav>
+          <!-- /.toc -->
+          <div id="content" class="page-content" itemprop="articleBody">
+            <p>What does that field mean? That’s an oft-asked question that can normally be answered by a little documentation. <a href="https://data.sfgov.org">For San Francisco’s open data</a>, finding that documentation can be, ahem, inconsistent, and it’s high time we address that for everyone’s sanity! We are beginning a project to make the collection, maintenance and dissemination of data documentation consistent for data publishers, DataSF staff and data users.</p>
+
+<h2 id="where-we-are-today-a-confusing-array-of-options">Where we are today: a confusing array of options</h2>
+
+<p>Across the open data portal, there are many ways to access and find documentation about a dataset. These include:</p>
+
+<ul>
+  <li><strong>In the description of the dataset.</strong> This is rare, but sometimes a dataset will list field definitions in the description or link to a place that contains definitions.</li>
+  <li><strong>As descriptions within the open data platform.</strong> You can access these descriptions by mousing over the (i)nfo icon on the column name.</li>
+  <li><strong>As an attachment.</strong> This will be the case for almost all datasets published in the past year or so. As part of the updated DataSF publishing process, we generate a template and attach to each dataset.</li>
+  <li><strong>None at all.</strong> For some datasets posted in the early days of the portal, there may be no documentation. We’re fixing that through this process.</li>
+</ul>
+
+<p>The problem is that users don’t know which one to expect for a given dataset. That’s a pain. We get it.</p>
+
+<h2 id="where-were-headed-one-stop-documentation">Where we’re headed: one stop documentation</h2>
+
+<p>When we started, data dictionary templates were the best solution. And they’ve served us well at the start, but they hardly scale.</p>
+
+<p>Imagine getting a question about a dataset, answering the question, updating an attachment and re-uploading it. Now imagine that across 400+ datasets, 52 data coordinators and thousands of users.</p>
+
+<p>So we’re centralizing and systematizing to support continuous improvement of documentation. We’ll do this work in phases, but when complete, we will have:</p>
+
+<ol>
+  <li>A single point of access for all field definitions and eventually profiled information about those fields.</li>
+  <li>Consistent, printer-friendly documentation to accompany datasets.</li>
+  <li>Global field definitions written once and propagated across datasets. (There’s no reason we should write the definition of Supervisor District more than one time).</li>
+  <li>A consistent way to administer changes and updates to the master field definitions.</li>
+</ol>
+
+<h2 id="write-once-read-anywhere">Write once, read anywhere</h2>
+
+<p>One of our primary goals is to reduce the overhead of maintaining and accessing field documentation. We know that data stewards spend a good bit of time explaining data to users. Maybe something gets written down, but many times, the documentation hasn’t been systematic. Or, if it has, it’s not easily accessible.</p>
+
+<p>As of today, <a href="https://data.sfgov.org/City-Management-and-Ethics/Field-Dictionary-for-Open-Data-Portal-Datasets/wn8x-uk7i">we’re releasing a working dataset</a> of all fields stored in the open data portal. We include field definitions where available. We also provide a link to data dictionary attachments where they exist. We have a bit of work to do to document all of the fields, but you’ll be able to track our progress (see below).</p>
+
+<p>The finished dataset will ultimately power a more user-friendly documentation interface. Don’t worry, we won’t expect everyone to go to the dataset to look up field definitions forever. It will also enable meta-analyses of fields. For example, we anticipate it informing our efforts around consistent data publishing practices.</p>
+
+<h2 id="follow-along-with-us">Follow along with us</h2>
+
+<p>We have over 7000 fields. About one third of them are documented either within the open data platform or through the template attachments. That leaves us with nearly 5000 fields with no documentation. That may sound like a lot, but we’re breaking it down into smaller pieces:</p>
+
+<ol>
+  <li><strong>Define unique, undocumented fields.</strong> We’ll rely on the data stewards to submit definitions for the currently undocumented fields that aren’t global. This averages to about 25 fields per steward.</li>
+  <li><strong>Define global fields.</strong> There are many fields that show up in multiple datasets. We can define these once and propagate them.</li>
+  <li><strong>Migrate documentation from templates.</strong> A subset of the 32% documented fields are in other documents. We’ll script what we can and systematically enter the rest.</li>
+  <li><strong>Deal with the rest as needed.</strong> Even if we don’t get to full coverage using the above 3 tactics, we’re okay with rolling on the rest as needed. Priorities can be determined based on where we’re seeing confusion through our support portal.</li>
+</ol>
+
+<p>To track our progress, we’ve created a simple dashboard. It’s linked to the field definition dataset and will update automatically. Follow along with us toward a brighter documentation future!</p>
+<div class="embed-responsive embed-responsive-square">
+<iframe src="https://app.powerbi.com/view?r=eyJrIjoiODk2ODgwZjctZWEzMC00YzJkLWJlOGYtNjg0OGUyNDQ4YmJmIiwidCI6IjIyZDVjMmNmLWNlM2UtNDQzZC05YTdmLWRmY2MwMjMxZjczZiIsImMiOjZ9" frameborder="0" allowfullscreen="true"></iframe>
+</div>
+
+            <hr />
+            <div class="page-footer">
+
+            </div>
+            <!-- /.footer -->
+            <aside>
+              
+            </aside>
+          </div>
+          <!-- /.content -->
+        </div>
+        <div class="col-md-4 sidebar">
+          <aside>
+            
+              
+                
+                    
+
+<div class="author-wrapper clearfix">
+<div class="author-image pull-left">
+	<img src="http://gravatar.com/avatar/b0d79f25e915d34f7f06907322ad8060?s=100" alt="Jason Lally's picture">
+</div><!-- ./author-image -->
+<div class="author-content">
+	<h3 class="author-name color-primary"><span itemprop="author">Jason Lally</span></h3>
+	<p class="author-bio">Open Data Program Manager, City and County of San Francisco</p>
+</div><!-- ./author-content -->
+</div>
+                
+                    
+
+<div class="author-wrapper clearfix">
+<div class="author-image pull-left">
+	<img src="http://gravatar.com/avatar/a15af49cb9ec97776196f650feefc26b?s=100" alt="Janine Heiser's picture">
+</div><!-- ./author-image -->
+<div class="author-content">
+	<h3 class="author-name color-primary"><span itemprop="author">Janine Heiser</span></h3>
+	<p class="author-bio">Open Data Services Engineer, City and County of San Francisco</p>
+</div><!-- ./author-content -->
+</div>
+                
+              
+            
+            <div class="page-meta">
+	<p>Updated <time datetime="2016-10-31T00:00:00Z" itemprop="datePublished">October 31, 2016</time></p>
+</div><!-- /.page-meta --> 
+            
+                <div class="inline-btn">
+	<a class="btn-social twitter" href="https://twitter.com/intent/tweet?text=Show%20me%20the%20data%20(dictionary)!&amp;url=https://datasf.org/blog/show-me-the-data-dictionary/&amp;via=datasf" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Share on Twitter</a>
+	<a class="btn-social facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://datasf.org/blog/show-me-the-data-dictionary/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> Share on Facebook</a>
+	<a class="btn-social google-plus"  href="https://plus.google.com/share?url=https://datasf.org/blog/show-me-the-data-dictionary/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i> Share on Google+</a>
+</div><!-- /.share-this -->
+             
+            <!-- Stories List Section -->
+<div class="row">
+  <div class="col-lg-12 story-sidebar">
+    <h3 class="sidebar-heading color-primary">Other stories</h3> 
+     
+    <div class="story-item">
+      <div class="story-caption clearfix">
+          October 31, 2016
+        <a href="/blog/show-me-the-data-dictionary/"><h4>Show me the data (dictionary)!</h4></a>
+      </div>
+    </div>
+     
+    <div class="story-item">
+      <div class="story-caption clearfix">
+          October 06, 2016
+        <a href="/blog/4-steps-to-manage-privacy-and-de-identification-for-your-open-data-program/"><h4>4 Steps to Manage Privacy and De-Identification for your Open Data Program</h4></a>
+      </div>
+    </div>
+     
+    <div class="story-item">
+      <div class="story-caption clearfix">
+          August 16, 2016
+        <a href="/blog/year-3-is-in-session/"><h4>Year 3 is in Session</h4></a>
+      </div>
+    </div>
+     
+    <div class="story-item">
+      <div class="story-caption clearfix">
+          July 26, 2016
+        <a href="/blog/we-want-you-serve-as-the-digital-services-chief/"><h4>We Want You- Serve as the Digital Services Chief for San Francisco</h4></a>
+      </div>
+    </div>
+     
+    <div class="story-item">
+      <div class="story-caption clearfix">
+          July 01, 2016
+        <a href="/blog/say-hello-to-systems-inventory/"><h4>Say hello to our brand new systems inventory</h4></a>
+      </div>
+    </div>
+    
+    <div><a href="/blog">More Stories...</a></div>
+  </div>
+</div>
+          </aside>
+          <!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup">
+  <form action="//datasf.us10.list-manage.com/subscribe/post-json?u=c16d18091b821e3289a7546f9&amp;id=9e931a2612" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+      <h2>Subscribe to our newsletter</h2>
+      <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+      <div class="mc-field-group">
+        <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+        </label>
+        <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL">
+      </div>
+      <div class="mc-field-group form-group">
+        <label for="mce-FNAME">First Name </label>
+        <input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME">
+      </div>
+      <div class="mc-field-group form-group">
+        <label for="mce-LNAME">Last Name </label>
+        <input type="text" value="" name="LNAME" class="form-control" id="mce-LNAME">
+      </div>
+      <div id="mce-responses" class="clear">
+        <div class="response alert-error" id="mce-error-response" style="display:none"></div>
+        <div class="response alert-success" id="mce-success-response" style="display:none"></div>
+      </div>
+      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+      <div style="position: absolute; left: -5000px;">
+        <input type="text" name="b_c16d18091b821e3289a7546f9_9e931a2612" tabindex="-1" value="">
+      </div>
+      <div class="clear">
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default">
+      </div>
+    </div>
+  </form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+<script type='text/javascript'>
+  (function($) {
+    window.fnames = new Array();
+    window.ftypes = new Array();
+    fnames[0] = 'EMAIL';
+    ftypes[0] = 'email';
+    fnames[1] = 'FNAME';
+    ftypes[1] = 'text';
+    fnames[2] = 'LNAME';
+    ftypes[2] = 'text';
+  }(jQuery));
+  var $mcj = jQuery.noConflict(true);
+</script>
+<!--End mc_embed_signup-->
+        </div>
+      </div>
+      <!-- /.inner-wrap -->
+    </article>
+    <!-- Edit current page -->
+    <!--
+  <a href="https://github.com/login/oauth/authorize?client_id=c602a8bd54b1e774f864&scope=repo&redirect_uri=http://prose.io/#datasf/datasf-website/edit/master/blog/_posts/2016-10-31-show-me-the-data-dictionary.md" target="_blank">Edit this page in Prose.io</a>-->
+
+    <!-- Add post -->
+    <!--
+  <a href="//prose.io/#zzolo/zzolo.github.com/new/master/_posts" target="_blank">Add a post with Prose.io</a>-->
+
+  </div>
+  <!-- ./wrap -->
+</div>
+<!-- /#main -->
+    <footer>
+  <div class="container extra-links">
+    <div class="row text-center">
+      <div class="col-md-4">
+
+      </div>
+      <div class="col-md-4">
+        
+        <ul class="list-inline social-buttons">
+          
+          <li><a href="http://twitter.com/datasf"><i class="fa fa-twitter"></i></a>
+          </li>
+          
+          <li><a href="http://opendata.stackexchange.com/search?q=san+francisco"><i class="fa fa-stack-overflow"></i></a>
+          </li>
+          
+          <li><a href="http://github.com/datasf"><i class="fa fa-github"></i></a>
+          </li>
+          
+        </ul>
+        
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline quicklinks">
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-content-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-md-4 left-border-dotted">
+          <ul class="list-unstyled quick-links">
+              
+              <li class="">
+                <a class="  ext-sf-opendata " href="https://data.sfgov.org">Data Catalog</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/showcase/">Showcase</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/publishing/">Publishing</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/academy/">Academy</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/resources/">Resources</a>
+              </li>
+              
+              <li class="active">
+                <a class="active " href="/blog/">Blog</a>
+              </li>
+            
+            
+              <li style="margin-top: 15px;"><a href="/privacy/">Privacy Policy</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-md-6 mission">
+          <p>DataSF's mission is to empower use of data. We seek to transform the way the City works through the use of data. We believe use of data and evidence can improve our operations and the services we provide. This ultimately leads to increased quality of life and work for San Francisco residents, employers, employees and visitors. <a href="/about">Learn more about our work.</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="text-center made-in">
+    Made with <i class="fa fa-heart"><span class="sr-only">heart</span></i> in San Francisco
+  </div>
+  
+</footer>
+    <!-- jQuery Version 1.11.3 -->
+<script src="/assets/js/vendor/jquery-1.11.3.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="/assets/js/vendor/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="/assets/js/vendor/jquery.easing.min.js"></script>
+<script src="/assets/js/vendor/jquery.validate.min.js"></script>
+<script src="/assets/js/vendor/DataTables-1.10.7/media/js/jquery.dataTables.min.js"></script>
+<script src="/assets/js/vendor/DataTables-1.10.7/Plugins-1.10.7/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+<script src="/assets/js/vendor/jsrender.min.js"></script>
+
+
+
+
+<script src="/assets/js/vendor/c3.js"></script>
+<script src="/assets/js/vendor/moment.js"></script>
+<script src="/assets/js/vendor/selectize.min.js"></script>
+
+<!-- utilities -->
+<script src="/assets/js/vendor/toTitleCase.js"></script>
+
+<!-- Custom site JavaScript -->
+<script src="/assets/js/datasf.js"></script>
+
+
+    </body>
+</html>

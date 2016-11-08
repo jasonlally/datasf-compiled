@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <!-- Basic ================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- Mobile ================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  
+  <!-- Title and meta description================================================== -->
+  <title>Introduction to Tableau</title>
+  <meta name="description" content="Our mission is to empower use of the City and County of San Francisco's data. Our core product is SF OpenData, the official open data portal.">
+  <!--<link rel="canonical" href="https://datasf.org/academy/introduction-to-tableau/">-->
+  
+  <!-- Open Graph and Author Metas================================================== -->
+  
+  	<!-- Open Graph -->
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Introduction to Tableau">
+	<meta property="og:description" content="This classroom based workshop is the first in a series of workshops on Tableau offered by the Data Academy.  Tableau Public is a free data visualization software that allows you to quickly create charts, maps, and dashboards with interactive filtering and drill-down capabilities.">
+	<meta property="og:url" content="https://datasf.org/academy/introduction-to-tableau/">
+	
+	<meta property="og:site_name" content="DataSF">
+	<!-- Twitter Cards -->
+	<meta name="twitter:title" content="Introduction to Tableau">
+	<meta name="twitter:description" content="This classroom based workshop is the first in a series of workshops on Tableau offered by the Data Academy.  Tableau Public is a free data visualization software that allows you to quickly create charts, maps, and dashboards with interactive filtering and drill-down capabilities.">
+	<meta name="twitter:site" content="@datasf">
+	<meta name="twitter:creator" content="@datasf">
+	
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:image:src" content="https://datasf.org/assets/img/">
+	
+	
+  
+  
+  <!-- Custom Fonts ================================================== -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Alegreya:400italic,700italic,400,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+  
+  <!-- CSS ================================================== -->
+  <link rel="stylesheet" href="/assets/css/vendor.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  <link rel="stylesheet" href="/assets/js/vendor/DataTables-1.10.7/Plugins-1.10.7/integration/bootstrap/3/dataTables.bootstrap.css">
+  
+  <!--[if lte IE 9]><script src="/assets/js/vendor/aight/aight.min.js"></script><![endif]-->
+  <!-- D3 for charting (only need this on some pages -->
+  <script src="/assets/js/vendor/d3.js"></script>
+
+  <!--[if IE 8]><script src="/assets/js/vendor/aight/d3/d3.ie8.js"></script><![endif]-->
+  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  
+  <!-- Scripts ================================================== -->
+  <script src="/assets/js/vendor/modernizr.custom.94053.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-53975719-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+  
+</head>
+
+  
+   <body >
+    <div class="nav-group navbar-fixed-top  navbar-shrink ">
+  <div class="navbar navbar-mini navbar-static-top visible-sm visible-md visible-lg" role="region" aria-label="external links">
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbar-collapse-2">
+        <ul class="nav navbar-nav navbar-right">
+            
+          <li class="">
+            <a class=" " href="https://www.sfgov.org">SFGov</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/coordinators/">Coordinator's Portal</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/about/">About</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="http://support.datasf.org">Help</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="/"><span class="brand"><span class="brand-highlight">Data</span>SF</span></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+            
+          <li class="">
+            <a class="  ext-sf-opendata " href="https://data.sfgov.org">Data Catalog</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/showcase/">Showcase</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/publishing/">Publishing</a>
+          </li>
+            
+          <li class="active">
+            <a class="active " href="/academy/">Academy</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/resources/">Resources</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/blog/">Blog</a>
+          </li>
+          
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="https://www.sfgov.org">SFGov</a>
+          </li>
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="/coordinators/">Coordinator's Portal</a>
+          </li>
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="/about/">About</a>
+          </li>
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="http://support.datasf.org">Help</a>
+          </li>
+          
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  
+</div>
+    <section id="article">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 section-heading-wrapper">
+        <h1 class="section-heading bg-line">Introduction to Tableau</h1> 
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-md-push-8 sidebar">
+        <div class="panel panel-default panel-course-details">
+          <!-- Default panel contents -->
+          <div class="panel-heading">Course Details</div>
+          <!-- List group -->
+          <ul class="list-group">
+            <li class="list-group-item">Length: 2 hours</li>
+            <li class="list-group-item">Price: Free!*</li>
+            
+            <li class="list-group-item">Subject(s):  Tableau, Analysis, Visualization </li>
+            
+            
+            <a href="https://drive.google.com/folderview?id=0BwRgeGq-b8f9Ym45cDhTQ21fbk0&usp=sharing"><li class="list-group-item list-group-item-download"><i class="fa fa-external-link" role="presentation"></i> View course materials <span class="sr-only">(link to google drive folder)</span></li></a>
+            
+            <li class="list-group-item" style="font-size: .7em;">* only open to CCSF employees with supervisor approval</li>
+          </ul>
+        </div>
+        <a class="btn btn-default btn-block" href="https://docs.google.com/forms/d/1KgDPIXlXAJJWz2BcVPMHF8DLgU3Z6cyra_JOiMnIKNA/viewform?entry.1562192740&entry.1369880909=Tableau - Intro">Join the waitlist for this course</a>
+      </div>
+      <article class="wrap article" itemscope itemtype="http://schema.org/Article">
+        <div class="col-md-8 col-md-pull-4">
+            <h2 id="about-this-course">About this course</h2>
+
+<p>This classroom based workshop is the first in a series of workshops on Tableau offered by the Data Academy. Tableau Public is a free data visualization software that allows you to quickly create charts, maps, and dashboards with interactive filtering and drill-down capabilities.</p>
+
+<p>In this training, we will orient you to Tableau’s user interface and show you how to make basic charts with open datasets in your department. We will also show you how Tableau’s interactive features add another analytical dimension to your data visualizations.</p>
+
+<h2 id="what-youll-learn">What you’ll learn</h2>
+
+<p>Please click the below links to access how-to guides!  Some links will direct you to sign up for a free Tableau Public account.</p>
+
+<ul>
+  <li><a href="http://www.tableau.com/learn/tutorials/on-demand/getting-started?signin=2eef25056a4473a83a6529b1c5d5353f">Why you should visualize your data and how Tableau can help</a></li>
+  <li><a href="http://www.tableau.com/learn/tutorials/on-demand/data-prep-text-and-excel-files?signin=72bd892169df0bda86f5bbdbce40b0a9">How to format source data and import it into Tableau</a></li>
+  <li><a href="http://www.tableau.com/learn/tutorials/on-demand/tableau-interface?signin=6294b9d2da0f05f4afc438f018ec5756">What basic tools you have at your disposal in a Tableau worksheet, including</a>:
+    <ul>
+      <li><a href="http://onlinehelp.tableau.com/current/pro/online/windows/en-us/help.htm#buildmanual_shelves.html%3FTocPath%3DBuilding%2520Data%2520Views%7CBuilding%2520Views%2520Manually%7CShelves%2520and%2520Cards%7C_____0">Columns/Rows Shelves</a></li>
+      <li><a href="http://onlinehelp.tableau.com/current/pro/online/windows/en-us/help.htm#buildauto_showme.html%3FTocPath%3DBuilding%2520Data%2520Views%7CBuilding%2520Views%2520Automatically%7C_____1">Show Me Menu</a></li>
+      <li><a href="http://onlinehelp.tableau.com/current/pro/online/windows/en-us/help.htm#buildmanual_shelves_marks.html">Marks Card</a></li>
+      <li><a href="http://onlinehelp.tableau.com/current/pro/online/windows/en-us/help.htm#filtering.html%3FTocPath%3DBuilding%2520Data%2520Views%7CFiltering%7C_____0">Filters Card</a></li>
+    </ul>
+  </li>
+  <li><a href="http://onlinehelp.tableau.com/current/pro/online/windows/en-us/help.htm#datafields_typesandroles_dataroles.html">How Tableau defines and formats different variable types</a></li>
+  <li>Hands-on exercises to practice answering management questions by:
+    <ul>
+      <li>Building <a href="http://onlinehelp.tableau.com/current/pro/online/windows/en-us/help.htm#buildexamples_bar.html%3FTocPath%3DBuilding%2520Data%2520Views%7CBuild-It-Yourself%2520Exercises%7C_____1">bar charts</a>, <a href="http://onlinehelp.tableau.com/current/pro/online/windows/en-us/help.htm#buildexamples_line.html%3FTocPath%3DBuilding%2520Data%2520Views%7CBuild-It-Yourself%2520Exercises%7C_____3">line charts</a>, <a href="http://www.tableau.com/learn/tutorials/on-demand/getting-started-mapping?signin=aa03c1bb2cd0297dc57257bcba159713">maps</a>, and <a href="http://onlinehelp.tableau.com/current/pro/online/windows/en-us/help.htm#build_auto.html%3FTocPath%3DBuilding%2520Data%2520Views%7CBuilding%2520Views%2520Automatically%7C_____0">crosstabs</a></li>
+      <li><a href="http://www.tableau.com/learn/tutorials/on-demand/ways-filter?signin=42b4a2e659aba58bda7faa8049c2fab2">Filtering for specific conditions</a></li>
+      <li><a href="http://www.tableau.com/learn/tutorials/on-demand/getting-started-visual-analytics">Using marks card to drill-down for more information</a></li>
+      <li><a href="http://www.tableau.com/learn/tutorials/on-demand/building-dashboard?signin=abfac91951e18c991976ce7091f6c1b2">Creating a basic dashboard</a></li>
+    </ul>
+  </li>
+  <li><a href="http://www.tableau.com/learn/tutorials/on-demand/getting-started-tableau-server-and-tableau-online?signin=a17b7025b9293339f7a665f25fe6b9ba">How to share the visualizations you build with others</a></li>
+</ul>
+
+<h1 id="nbsp"> </h1>
+
+<h2 id="more-resources">More resources</h2>
+
+<ul>
+  <li>Tableau.com
+    <ul>
+      <li><a href="http://www.tableau.com/learn/training">Free Tableau Training Videos</a></li>
+      <li><a href="http://onlinehelp.tableau.com/current/pro/online/windows/en-us/help.html">Online Tableau Help Guide</a></li>
+      <li><a href="http://mkt.tableau.com/files/Desktop-9-QA-Prep-Guide.pdf">Tableau Desktop 9 Qualified Associate Exam Preparation Guide</a></li>
+    </ul>
+  </li>
+  <li>Lynda - <a href="https://drive.google.com/file/d/0BwRgeGq-b8f9eVNXQU9BNEJJVHc/view?usp=sharing">click here</a> to learn how to sign up for a free Lynda account
+    <ul>
+      <li><a href="https://www.lynda.com/Tableau-tutorials/Tableau-9-Essential-Training/386886-2.html">Tableau 9 Essential Training</a> (2h 55m, total)</li>
+    </ul>
+  </li>
+  <li>Coursera
+    <ul>
+      <li><a href="https://www.coursera.org/learn/analytics-tableau/">Data Visualization and Communication in Tableau</a> (5 weeks, 3 - 5 hours per week)</li>
+    </ul>
+  </li>
+</ul>
+
+        </div>
+      </article>
+    </div>
+  </div>
+  
+</section>
+    <footer>
+  <div class="container extra-links">
+    <div class="row text-center">
+      <div class="col-md-4">
+
+      </div>
+      <div class="col-md-4">
+        
+        <ul class="list-inline social-buttons">
+          
+          <li><a href="http://twitter.com/datasf"><i class="fa fa-twitter"></i></a>
+          </li>
+          
+          <li><a href="http://opendata.stackexchange.com/search?q=san+francisco"><i class="fa fa-stack-overflow"></i></a>
+          </li>
+          
+          <li><a href="http://github.com/datasf"><i class="fa fa-github"></i></a>
+          </li>
+          
+        </ul>
+        
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline quicklinks">
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-content-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-md-4 left-border-dotted">
+          <ul class="list-unstyled quick-links">
+              
+              <li class="">
+                <a class="  ext-sf-opendata " href="https://data.sfgov.org">Data Catalog</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/showcase/">Showcase</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/publishing/">Publishing</a>
+              </li>
+              
+              <li class="active">
+                <a class="active " href="/academy/">Academy</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/resources/">Resources</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/blog/">Blog</a>
+              </li>
+            
+            
+              <li style="margin-top: 15px;"><a href="/privacy/">Privacy Policy</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-md-6 mission">
+          <p>DataSF's mission is to empower use of data. We seek to transform the way the City works through the use of data. We believe use of data and evidence can improve our operations and the services we provide. This ultimately leads to increased quality of life and work for San Francisco residents, employers, employees and visitors. <a href="/about">Learn more about our work.</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="text-center made-in">
+    Made with <i class="fa fa-heart"><span class="sr-only">heart</span></i> in San Francisco
+  </div>
+  
+</footer>
+    <!-- jQuery Version 1.11.3 -->
+<script src="/assets/js/vendor/jquery-1.11.3.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="/assets/js/vendor/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="/assets/js/vendor/jquery.easing.min.js"></script>
+<script src="/assets/js/vendor/jquery.validate.min.js"></script>
+<script src="/assets/js/vendor/DataTables-1.10.7/media/js/jquery.dataTables.min.js"></script>
+<script src="/assets/js/vendor/DataTables-1.10.7/Plugins-1.10.7/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+<script src="/assets/js/vendor/jsrender.min.js"></script>
+
+
+
+
+<script src="/assets/js/vendor/c3.js"></script>
+<script src="/assets/js/vendor/moment.js"></script>
+<script src="/assets/js/vendor/selectize.min.js"></script>
+
+<!-- utilities -->
+<script src="/assets/js/vendor/toTitleCase.js"></script>
+
+<!-- Custom site JavaScript -->
+<script src="/assets/js/datasf.js"></script>
+
+
+    </body>
+</html>

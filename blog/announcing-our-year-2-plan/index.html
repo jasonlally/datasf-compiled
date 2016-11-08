@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <!-- Basic ================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- Mobile ================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  
+  <!-- Title and meta description================================================== -->
+  <title>Announcing our Year 2 Strategic Plan!</title>
+  <meta name="description" content="Our mission is to empower use of the City and County of San Francisco's data. Our core product is SF OpenData, the official open data portal.">
+  <!--<link rel="canonical" href="https://datasf.org/blog/announcing-our-year-2-plan/">-->
+  
+  <!-- Open Graph and Author Metas================================================== -->
+  
+  	<!-- Open Graph -->
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Announcing our Year 2 Strategic Plan!">
+	<meta property="og:description" content="We are so excited to launch our strategic plan for Year 2 - Data in San Francisco: Meeting supply, spurring demand!">
+	<meta property="og:url" content="https://datasf.org/blog/announcing-our-year-2-plan/">
+	
+	<meta property="og:image" content="https://datasf.org/assets/blog/year-2-plan/data_love.png">
+	
+	<meta property="og:site_name" content="DataSF">
+	<!-- Twitter Cards -->
+	<meta name="twitter:title" content="Announcing our Year 2 Strategic Plan!">
+	<meta name="twitter:description" content="We are so excited to launch our strategic plan for Year 2 - Data in San Francisco: Meeting supply, spurring demand!">
+	<meta name="twitter:site" content="@datasf">
+	<meta name="twitter:creator" content="@datasf">
+	
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image:src" content="https://datasf.org/assets/blog/year-2-plan/data_love.png">
+	
+	
+  
+  
+  <!-- Custom Fonts ================================================== -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Alegreya:400italic,700italic,400,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+  
+  <!-- CSS ================================================== -->
+  <link rel="stylesheet" href="/assets/css/vendor.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  <link rel="stylesheet" href="/assets/js/vendor/DataTables-1.10.7/Plugins-1.10.7/integration/bootstrap/3/dataTables.bootstrap.css">
+  
+  <!--[if lte IE 9]><script src="/assets/js/vendor/aight/aight.min.js"></script><![endif]-->
+  <!-- D3 for charting (only need this on some pages -->
+  <script src="/assets/js/vendor/d3.js"></script>
+
+  <!--[if IE 8]><script src="/assets/js/vendor/aight/d3/d3.ie8.js"></script><![endif]-->
+  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  
+  <!-- Scripts ================================================== -->
+  <script src="/assets/js/vendor/modernizr.custom.94053.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-53975719-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+  
+</head>
+
+  
+   <body >
+    <div class="nav-group navbar-fixed-top  navbar-shrink ">
+  <div class="navbar navbar-mini navbar-static-top visible-sm visible-md visible-lg" role="region" aria-label="external links">
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbar-collapse-2">
+        <ul class="nav navbar-nav navbar-right">
+            
+          <li class="">
+            <a class=" " href="https://www.sfgov.org">SFGov</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/coordinators/">Coordinator's Portal</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/about/">About</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="http://support.datasf.org">Help</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="/"><span class="brand"><span class="brand-highlight">Data</span>SF</span></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+            
+          <li class="">
+            <a class="  ext-sf-opendata " href="https://data.sfgov.org">Data Catalog</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/showcase/">Showcase</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/publishing/">Publishing</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/academy/">Academy</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/resources/">Resources</a>
+          </li>
+            
+          <li class="active">
+            <a class="active " href="/blog/">Blog</a>
+          </li>
+          
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="https://www.sfgov.org">SFGov</a>
+          </li>
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="/coordinators/">Coordinator's Portal</a>
+          </li>
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="/about/">About</a>
+          </li>
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="http://support.datasf.org">Help</a>
+          </li>
+          
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  
+</div>
+    <div id="main" role="main" class="blog-post">
+  <div class="container">
+    
+
+
+<ol class="list-unstyled list-inline">
+ 
+  <li><a href="/">home</a> &#187; </li>
+
+  
+   
+   
+
+   <li><a href="/blog">blog</a> &#187; </li>
+
+   
+  
+ 
+</ol>
+    <article class="wrap" itemscope itemtype="http://schema.org/Article">
+      <!-- include breadcrumbs.html -->
+      <div class="row">
+        <div class="col-md-8">
+          <div class="page-title">
+            <h1>Announcing our Year 2 Strategic Plan!</h1>
+          </div>
+          
+          <div class="page-feature">
+            <div class="page-image">
+              <figure>
+              <img src="/assets/blog/year-2-plan/data_love.png" class="page-feature-image" alt="" itemprop="image"> 
+              
+              </figure>
+            </div>
+            <!-- /.page-image -->
+          </div>
+          <!-- /.page-feature -->
+          
+          <nav class="toc"></nav>
+          <!-- /.toc -->
+          <div id="content" class="page-content" itemprop="articleBody">
+            <p>We are so excited to launch our strategic plan for Year 2 - Data in San Francisco: Meeting supply, spurring demand!</p>
+
+<p><a href="http://www.sfmayor.org/index.aspx?recordid=927&amp;page=846">Read the press release</a> or <a href="https://docs.google.com/document/d/1mqunsT9wXRt-mBbOmY3WcEJmsWSpMOISotZ1WHZ1_IU/edit?usp=sharing">read the whole thing as a google doc</a> or <a href="https://drive.google.com/uc?export=download&amp;id=0B-65Qm9J0m0WTExmWnVaZVBNNTA">PDF</a>.</p>
+
+<h2 id="transforming-our-city-with-data">Transforming our City with Data</h2>
+<p>Data can feel dry, boring and academic. At the same time, everyone loves a good story. But every story has a rich vein of data threaded throughout, describing a pattern and illuminating a path forward. It’s only when we link the data narratives that underlie our stories, that we are able to make new connections that lead to new insights about what is working or what is possible. Our Year 2 plan is not about data for data’s sake. It is about transforming how we enrich our understanding, our experience and our City with data.</p>
+
+<h2 id="celebrating-year-1">Celebrating Year 1</h2>
+<p>Before we dive into what’s next, we need to step back and celebrate what we accomplished in Year 1. Section 3 of our plan goes into greater detail, but below are some of our favorite highlights from the last year:</p>
+
+<ul>
+  <li>Completed the <a href="https://data.sfgov.org/City-Management-and-Ethics/Dataset-Inventory/y8fp-fbf5">dataset inventory</a> with the help of our amazing Data Coordinators (<a href="http://datasf.org/blog/5-ways-to-scale-mountain-of-data/">learn more about our approach</a>)</li>
+  <li>Relaunched our open data portal and created a <a href="http://datasf.org/blog/building-lighter-and-faster/">web home for DataSF</a></li>
+  <li>Standardized <a href="http://datasf.org/publishing/">publishing methods</a> and <a href="http://datasf.org/blog/u-heart-metadata/">metadata requirements</a></li>
+  <li>Established a <a href="http://datasf.org/blog/data-license-liberation-day/">Citywide open data license</a> for published data</li>
+  <li>Launched the <a href="http://housing.datasf.org/">Housing Data Hub</a> our first strategic release in partnership with a slew of City departments</li>
+  <li>Launched the <a href="http://datasf.org/academy/">Data Academy</a> in partnership with the City Services Auditor</li>
+  <li>Developed a strategy to improve confidential data sharing
+with the City Services Auditor and more than a dozen City departments</li>
+  <li>Grew our team with the awesome addition of Jason Lally AND sneak peek: we’ll be hiring soon to support open data services and our confidential data sharing project - so keep an eye out!</li>
+</ul>
+
+<h2 id="leveraging-the-foundation-from-year-1">Leveraging the Foundation from Year 1</h2>
+<p>If Year 1 was about building the foundation, Year 2 is about buying furniture, painting the walls, hanging photos and throwing a housewarming party. It’s time to open the doors and not just let folks in, but deliver the invite in-person. That’s why the theme for Year 2 is to fill out the supply of data but also ensure that it’s being used by a broader range of people.</p>
+
+<h2 id="it-took-a-village">It took a village</h2>
+<p>A key part of our Year 1 foundation was the many people we partnered and worked with. The work we are doing requires the commitment, insight and effort of a tremendous number of people. And the length of our acknowledgements section reflects that.</p>
+
+<h2 id="our-goals-for-year-2">Our goals for Year 2</h2>
+<p>For Year 2, we are structuring our work around five core goals and subgoals in some cases.</p>
+
+<ol>
+  <li>Make timely data easily available</li>
+  <li>Increase number and timeliness of datasets on SF OpenData</li>
+  <li>Enable use of private data, while appropriately protecting it</li>
+  <li>Streamline internal data access</li>
+  <li>Improve the usability, quality and consistency of our data</li>
+  <li>Support increased use of data in decision-making</li>
+  <li>Increase internal capacity</li>
+  <li>Support public capacity</li>
+  <li>Foster and incent a data culture</li>
+  <li>Identify and foster innovations in open data and data use</li>
+  <li>Continuously improve, scale, maintain and monitor our work</li>
+</ol>
+
+<h2 id="things-we-plan-to-report-on-next-year">Things we plan to report on next year</h2>
+<p>If all goes according to plan, we will be reporting on the following key accomplishments next year:</p>
+
+<ul>
+  <li>Fully deployed data automation as a service to ease data publication</li>
+  <li>Deployed better, friendlier publishing for geographic data</li>
+  <li>Identified methods to crowdsource collective intelligence about published datasets</li>
+  <li>Launched new transparency websites</li>
+  <li>Engaged our broader community around a handful of key issues or datasets</li>
+  <li>Established center to facilitate and standardize confidential data sharing</li>
+  <li>Began to systematically tackle data quality</li>
+  <li>Developed Data Academy into a professional development strategy</li>
+  <li>Enriched our data through effective storytelling</li>
+</ul>
+
+<h2 id="in-the-meantime-check-out-datasf-in-progress">In the meantime, check out DataSF In Progress</h2>
+<p>Along with our plan, we are <a href="/progress">excited to launch DataSF In Progress</a> - our live dashboard tracking:</p>
+
+<ul>
+  <li>The Citywide data inventory and status by department</li>
+  <li>Department publishing plans</li>
+  <li>Publishing activity and performance</li>
+</ul>
+
+<p>Written with LOVE in San Francisco.</p>
+
+
+            <hr />
+            <div class="page-footer">
+
+            </div>
+            <!-- /.footer -->
+            <aside>
+              
+            </aside>
+          </div>
+          <!-- /.content -->
+        </div>
+        <div class="col-md-4 sidebar">
+          <aside>
+            
+              
+                
+
+<div class="author-wrapper clearfix">
+<div class="author-image pull-left">
+	<img src="http://gravatar.com/avatar/8614bd4a1d6f6c24c0f6b08a2b9c0335?s=100" alt="Joy Bonaguro's picture">
+</div><!-- ./author-image -->
+<div class="author-content">
+	<h3 class="author-name color-primary"><span itemprop="author">Joy Bonaguro</span></h3>
+	<p class="author-bio">Chief Data Officer, City and County of San Francisco</p>
+</div><!-- ./author-content -->
+</div>
+              
+            
+            <div class="page-meta">
+	<p>Updated <time datetime="2015-07-31T00:00:00Z" itemprop="datePublished">July 31, 2015</time></p>
+</div><!-- /.page-meta --> 
+            
+                <div class="inline-btn">
+	<a class="btn-social twitter" href="https://twitter.com/intent/tweet?text=Announcing%20our%20Year%202%20Strategic%20Plan!&amp;url=https://datasf.org/blog/announcing-our-year-2-plan/&amp;via=datasf" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Share on Twitter</a>
+	<a class="btn-social facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://datasf.org/blog/announcing-our-year-2-plan/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> Share on Facebook</a>
+	<a class="btn-social google-plus"  href="https://plus.google.com/share?url=https://datasf.org/blog/announcing-our-year-2-plan/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i> Share on Google+</a>
+</div><!-- /.share-this -->
+             
+            <!-- Stories List Section -->
+<div class="row">
+  <div class="col-lg-12 story-sidebar">
+    <h3 class="sidebar-heading color-primary">Other stories</h3> 
+     
+    <div class="story-item">
+      <div class="story-caption clearfix">
+          October 31, 2016
+        <a href="/blog/show-me-the-data-dictionary/"><h4>Show me the data (dictionary)!</h4></a>
+      </div>
+    </div>
+     
+    <div class="story-item">
+      <div class="story-caption clearfix">
+          October 06, 2016
+        <a href="/blog/4-steps-to-manage-privacy-and-de-identification-for-your-open-data-program/"><h4>4 Steps to Manage Privacy and De-Identification for your Open Data Program</h4></a>
+      </div>
+    </div>
+     
+    <div class="story-item">
+      <div class="story-caption clearfix">
+          August 16, 2016
+        <a href="/blog/year-3-is-in-session/"><h4>Year 3 is in Session</h4></a>
+      </div>
+    </div>
+     
+    <div class="story-item">
+      <div class="story-caption clearfix">
+          July 26, 2016
+        <a href="/blog/we-want-you-serve-as-the-digital-services-chief/"><h4>We Want You- Serve as the Digital Services Chief for San Francisco</h4></a>
+      </div>
+    </div>
+     
+    <div class="story-item">
+      <div class="story-caption clearfix">
+          July 01, 2016
+        <a href="/blog/say-hello-to-systems-inventory/"><h4>Say hello to our brand new systems inventory</h4></a>
+      </div>
+    </div>
+    
+    <div><a href="/blog">More Stories...</a></div>
+  </div>
+</div>
+          </aside>
+          <!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup">
+  <form action="//datasf.us10.list-manage.com/subscribe/post-json?u=c16d18091b821e3289a7546f9&amp;id=9e931a2612" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+      <h2>Subscribe to our newsletter</h2>
+      <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+      <div class="mc-field-group">
+        <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+        </label>
+        <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL">
+      </div>
+      <div class="mc-field-group form-group">
+        <label for="mce-FNAME">First Name </label>
+        <input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME">
+      </div>
+      <div class="mc-field-group form-group">
+        <label for="mce-LNAME">Last Name </label>
+        <input type="text" value="" name="LNAME" class="form-control" id="mce-LNAME">
+      </div>
+      <div id="mce-responses" class="clear">
+        <div class="response alert-error" id="mce-error-response" style="display:none"></div>
+        <div class="response alert-success" id="mce-success-response" style="display:none"></div>
+      </div>
+      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+      <div style="position: absolute; left: -5000px;">
+        <input type="text" name="b_c16d18091b821e3289a7546f9_9e931a2612" tabindex="-1" value="">
+      </div>
+      <div class="clear">
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default">
+      </div>
+    </div>
+  </form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+<script type='text/javascript'>
+  (function($) {
+    window.fnames = new Array();
+    window.ftypes = new Array();
+    fnames[0] = 'EMAIL';
+    ftypes[0] = 'email';
+    fnames[1] = 'FNAME';
+    ftypes[1] = 'text';
+    fnames[2] = 'LNAME';
+    ftypes[2] = 'text';
+  }(jQuery));
+  var $mcj = jQuery.noConflict(true);
+</script>
+<!--End mc_embed_signup-->
+        </div>
+      </div>
+      <!-- /.inner-wrap -->
+    </article>
+    <!-- Edit current page -->
+    <!--
+  <a href="https://github.com/login/oauth/authorize?client_id=c602a8bd54b1e774f864&scope=repo&redirect_uri=http://prose.io/#datasf/datasf-website/edit/master/blog/_posts/2015-07-31-announcing-our-year-2-plan.md" target="_blank">Edit this page in Prose.io</a>-->
+
+    <!-- Add post -->
+    <!--
+  <a href="//prose.io/#zzolo/zzolo.github.com/new/master/_posts" target="_blank">Add a post with Prose.io</a>-->
+
+  </div>
+  <!-- ./wrap -->
+</div>
+<!-- /#main -->
+    <footer>
+  <div class="container extra-links">
+    <div class="row text-center">
+      <div class="col-md-4">
+
+      </div>
+      <div class="col-md-4">
+        
+        <ul class="list-inline social-buttons">
+          
+          <li><a href="http://twitter.com/datasf"><i class="fa fa-twitter"></i></a>
+          </li>
+          
+          <li><a href="http://opendata.stackexchange.com/search?q=san+francisco"><i class="fa fa-stack-overflow"></i></a>
+          </li>
+          
+          <li><a href="http://github.com/datasf"><i class="fa fa-github"></i></a>
+          </li>
+          
+        </ul>
+        
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline quicklinks">
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-content-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-md-4 left-border-dotted">
+          <ul class="list-unstyled quick-links">
+              
+              <li class="">
+                <a class="  ext-sf-opendata " href="https://data.sfgov.org">Data Catalog</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/showcase/">Showcase</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/publishing/">Publishing</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/academy/">Academy</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/resources/">Resources</a>
+              </li>
+              
+              <li class="active">
+                <a class="active " href="/blog/">Blog</a>
+              </li>
+            
+            
+              <li style="margin-top: 15px;"><a href="/privacy/">Privacy Policy</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-md-6 mission">
+          <p>DataSF's mission is to empower use of data. We seek to transform the way the City works through the use of data. We believe use of data and evidence can improve our operations and the services we provide. This ultimately leads to increased quality of life and work for San Francisco residents, employers, employees and visitors. <a href="/about">Learn more about our work.</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="text-center made-in">
+    Made with <i class="fa fa-heart"><span class="sr-only">heart</span></i> in San Francisco
+  </div>
+  
+</footer>
+    <!-- jQuery Version 1.11.3 -->
+<script src="/assets/js/vendor/jquery-1.11.3.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="/assets/js/vendor/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="/assets/js/vendor/jquery.easing.min.js"></script>
+<script src="/assets/js/vendor/jquery.validate.min.js"></script>
+<script src="/assets/js/vendor/DataTables-1.10.7/media/js/jquery.dataTables.min.js"></script>
+<script src="/assets/js/vendor/DataTables-1.10.7/Plugins-1.10.7/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+<script src="/assets/js/vendor/jsrender.min.js"></script>
+
+
+
+
+<script src="/assets/js/vendor/c3.js"></script>
+<script src="/assets/js/vendor/moment.js"></script>
+<script src="/assets/js/vendor/selectize.min.js"></script>
+
+<!-- utilities -->
+<script src="/assets/js/vendor/toTitleCase.js"></script>
+
+<!-- Custom site JavaScript -->
+<script src="/assets/js/datasf.js"></script>
+
+
+    </body>
+</html>

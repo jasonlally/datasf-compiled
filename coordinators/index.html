@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <!-- Basic ================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- Mobile ================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  
+  <!-- Title and meta description================================================== -->
+  <title>DataSF | Coordinator's Portal</title>
+  <meta name="description" content="Our mission is to empower use of the City and County of San Francisco's data. Our core product is SF OpenData, the official open data portal.">
+  <!--<link rel="canonical" href="https://datasf.org/coordinators/">-->
+  
+  <!-- Open Graph and Author Metas================================================== -->
+  
+  	<!-- Open Graph -->
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="DataSF | Coordinator's Portal">
+	
+	<meta property="og:url" content="https://datasf.org/coordinators/">
+	
+	<meta property="og:site_name" content="DataSF">
+	<!-- Twitter Cards -->
+	<meta name="twitter:title" content="DataSF | Coordinator's Portal">
+	
+	<meta name="twitter:site" content="@datasf">
+	<meta name="twitter:creator" content="@datasf">
+	
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:image:src" content="https://datasf.org/assets/img/">
+	
+	
+  
+  
+  <!-- Custom Fonts ================================================== -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Alegreya:400italic,700italic,400,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+  
+  <!-- CSS ================================================== -->
+  <link rel="stylesheet" href="/assets/css/vendor.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  <link rel="stylesheet" href="/assets/js/vendor/DataTables-1.10.7/Plugins-1.10.7/integration/bootstrap/3/dataTables.bootstrap.css">
+  
+  <!--[if lte IE 9]><script src="/assets/js/vendor/aight/aight.min.js"></script><![endif]-->
+  <!-- D3 for charting (only need this on some pages -->
+  <script src="/assets/js/vendor/d3.js"></script>
+
+  <!--[if IE 8]><script src="/assets/js/vendor/aight/d3/d3.ie8.js"></script><![endif]-->
+  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  
+  <!-- Scripts ================================================== -->
+  <script src="/assets/js/vendor/modernizr.custom.94053.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-53975719-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+  
+</head>
+
+  
+   <body >
+    <div class="nav-group navbar-fixed-top  navbar-shrink ">
+  <div class="navbar navbar-mini navbar-static-top visible-sm visible-md visible-lg" role="region" aria-label="external links">
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbar-collapse-2">
+        <ul class="nav navbar-nav navbar-right">
+            
+          <li class="">
+            <a class=" " href="https://www.sfgov.org">SFGov</a>
+          </li>
+            
+          <li class="active">
+            <a class="active " href="/coordinators/">Coordinator's Portal</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/about/">About</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="http://support.datasf.org">Help</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand page-scroll" href="/"><span class="brand"><span class="brand-highlight">Data</span>SF</span></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+            
+          <li class="">
+            <a class="  ext-sf-opendata " href="https://data.sfgov.org">Data Catalog</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/showcase/">Showcase</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/publishing/">Publishing</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/academy/">Academy</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/resources/">Resources</a>
+          </li>
+            
+          <li class="">
+            <a class=" " href="/blog/">Blog</a>
+          </li>
+          
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="https://www.sfgov.org">SFGov</a>
+          </li>
+            
+          <script>
+          </script>
+          <li class="active visible-xs utility-nav">
+            <a class="active " href="/coordinators/">Coordinator's Portal</a>
+          </li>
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="/about/">About</a>
+          </li>
+            
+          <script>
+          </script>
+          <li class=" visible-xs utility-nav">
+            <a class=" " href="http://support.datasf.org">Help</a>
+          </li>
+          
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  
+</div>
+    <section id="coordinators">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 section-heading-wrapper">
+        <h1 class="section-heading bg-line">Coordinator's Portal</h1>
+        <p class="section-subheading">Resources for San Francisco's Data Coordinators</p>
+      </div>
+    </div>
+    <div class="row" style="text-align: center;">
+        <a href="#quicktips" class="page-scroll">Quick Inventory Tips</a> | 
+        <a href="#resources" class="page-scroll">Selected Resources</a>
+      </div>
+    <div class="row">
+      <div class="col-md-7">
+        <h2>Overview</h2>
+        <p>This portal is designed to help you, as a City Data Coordinator, orient to your role and make sure you have the resources you need to execute on your responsibilities.</p>
+        <p>The data coordinator is responsible for:</p>
+        <ul>
+          <li>Developing a catalog of datasets that can be made public</li>
+          <li>Monitoring and responding to comments on public datasets</li>
+          <li>Monitoring and tracking the rollout of public datasets on <a href="http://data.sfgov.org">the open data portal</a>
+          </li>
+          <li>Ensuring that processes are followed to exclude private, confidential or proprietary data</li>
+        </ul>
+
+        <p>In addition to the responsibilities, data coordinators will be supported in the work through:</p>
+        <ul>
+          <li>Training and workshop opportunities to develop professionally around data management and best practices</li>
+          <li>Tools for tracking and monitoring the publishing of datasets by your department</li>
+          <li>Access to a network of your peer data coordinators at other departments</li>
+          <li>Services for helping to manage the automation of publishing datasets as needed</li>
+        </ul>
+      </div>
+      <div class="col-md-5">
+        <h2>Due dates and milestones</h2>
+        <div class="well">
+          <h4>Next Up</h4>
+          <div class="task-card">
+            <div class="task-date"><i class="fa fa-check-circle task-current"></i> Due August 19th, 2016</div>
+            <p class="task-item">Submit publishing plans for review. Learn how to <a href="https://docs.google.com/document/d/1CJ2uZSYEYcPb6bpcr24kcRCV0zDN-9xYE-o7FA23EMk/edit#heading=h.c9or4ihj7t51">submit a publishing plan for review in the Data Coordinator's guidebook</a>.</p>
+            <p><a href="/coordinators/calendar">View and subscribe to calendar</a></p>
+          </div>
+        </div>
+        <!--
+        <div class="well well-white text-muted">
+        <h4>In the future</h4>
+          <div class="task-card">
+            <div class="task-date"><i class="fa fa-check-circle task-current"></i> Through December</div>
+            <p class="task-item">Publish target datasets - identified through publishing plans.</p>
+          </div>
+          <div class="task-card">
+            <div class="task-date"><i class="fa fa-check-circle task-current"></i> December</div>
+            <p class="task-item">Update publishing plans for next 6 months.</p>
+          </div>
+          <div class="task-card">
+            <div class="task-date"><i class="fa fa-check-circle task-current"></i> Spring 2016</div>
+            <p class="task-item">Update dataset inventories</p>
+          </div>
+        </div>
+        <div class="well well-white text-muted">
+        <h4>In the past</h4>
+        <div class="task-card">
+            <div class="task-date"><i class="fa fa-check-circle task-past"></i> Rolling deadlines through April</div>
+            <p class="task-item">Dataset prioritization - as data coordinators complete inventory, prioritization is assigned</p>
+          </div>
+        <div class="task-card">
+            <div class="task-date"><i class="fa fa-check-circle task-past"></i> Due March 13, 2015</div>
+            <p class="task-item">Wave 2* data coordinators complete dataset inventory template. (See <a class="page-scroll" href="#quicktips">tips</a> and <a href="#resources" class="page-scroll">resources</a> below)</p>
+          </div>
+        <div class="task-card">
+          <div class="task-date"><i class="fa fa-check-circle task-past"></i> Due December 15, 2014</div>
+          <p class="task-item">Wave 2* data coordinators identify data sources</p>
+        </div>
+        <div class="task-card">
+          <div class="task-date"><i class="fa fa-check-circle task-past"></i> Due December 19, 2014</div>
+          <p class="task-item">Wave 1* data coordinators complete dataset inventory</p>
+        </div>
+        <div class="task-card">
+          <div class="task-date"><i class="fa fa-check-circle task-past"></i> Due August 15, 2014</div>
+          <p class="task-item">Wave 1* data coordinators identify data sources</p>
+        </div>
+      </div>
+        <p><small>*Wave 2 data coordinators are those that started in November. Wave 1 started in June. Wave 1 coordinators should have already submitted their full dataset inventories.</small>
+        </p>
+        <!-- include tasks.html -->
+      </div>
+    </div>
+  </div>
+</section>
+<!--
+<section id="quicktips-section" class="bg-light-gray">
+  <div class="container">
+    <div class="row">
+	<div class="col-xs-12">
+	<h2 id="quicktips">Dataset Inventory Tips</h2>
+  <h3>Step 1: Identify Data Sources</h3>
+  <p>Your data may be housed in a variety of places – from inside information systems or databases to shared drives and folders. This can also include 3rd partner vendors and data hosted on vendor systems. Step 1 is about identifying the major data sources in your department.</p>
+  <ul>
+    <li><strong>Guidebook:</strong> See section 3, Step 1 in <a href="https://docs.google.com/document/d/1CJ2uZSYEYcPb6bpcr24kcRCV0zDN-9xYE-o7FA23EMk/edit?usp=sharing">DC guidebook</a> for tips and advice.</li>
+    <li><strong>Download:</strong> <a href="https://drive.google.com/uc?export=download&id=0B3XTBxBQSd0hYzJTTUY1TzMwcjA">the inventory template (Excel)</a>.</li>
+    </li>
+    <li><strong>Template Directions:</strong> Complete the first&nbsp;tab (Step 1 Data Sources) in the template.</li>
+    <li><strong>Definition of a data source:</strong> Technology or system that stores data, including databases, named spreadsheets, information systems, business applications, etc.</li>
+  </ul>
+  <h3>Step 2:&nbsp;Brainstorm and identify potential datasets in each data source</h3>
+  <p>Some of your information sources may be fairly straightforward (e.g. a single sheet in a spreadsheet) or already published. In these cases, you have already identified the dataset. But others, like relational databases, may be very complex. Identifying subsets of the database that could serve as datasets, probably requires some brainstorming.</p>
+  <ul>
+    <li><strong>Guidebook:</strong> See section 3, Step 2 in <a href="https://docs.google.com/document/d/1CJ2uZSYEYcPb6bpcr24kcRCV0zDN-9xYE-o7FA23EMk/edit?usp=sharing">DC guidebook</a> for tips and advice.</li>
+    <li><strong>Template Directions:</strong>&nbsp;Use the list of data sources in Step 1 to help with your brainstorming. You can start to capture draft dataset names, descriptions, etc in tab 2 (Step 2 Brainstorm).</li>
+    <li><strong>Definition of a dataset:&nbsp;</strong>Contents of a single database table, worksheet or defined view; data is provided as a single combination of unique rows (or records) and corresponding columns (or fields) describing that row.
+      <ul>
+        <li><strong>Example – Database:</strong> A database may contain several data tables – each data table constitutes a dataset. However, you could also create new datasets by combining data from different tables into a new table.</li>
+      </ul>
+    </li>
+  </ul>
+  <h3>Step 3: Complete dataset inventory template</h3>
+  <p>For each dataset, complete the data inventory template.</p>
+  <ul>
+    <li><b>Guidebook: </b>See section 3, Step 3 in <a href="https://docs.google.com/document/d/1CJ2uZSYEYcPb6bpcr24kcRCV0zDN-9xYE-o7FA23EMk/edit?usp=sharing">DC guidebook</a> for tips and advice.</li>
+    <li><b>Template Directions: </b>Complete the questions in tab 3 (Step 3 Dataset Inventory) for each&nbsp;datasets. Include all datasets in single worksheet, if possible.</li>
+    <li><b>Example:&nbsp;</b><a href="https://docs.google.com/spreadsheets/d/1a6R-zBGoaA3qhYm67X0G-XdUhoEV9vR3VJePDd5a-iE/edit?usp=sharing">View example answers for rent board.</a>
+    </li>
+  </ul>
+</div>
+</div>
+  </div>
+</section>
+-->
+<section id="resources-section" class="bg-light-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 id="resources">Selected Resources</h2>
+        <p class="text-muted">Below are resources most relevant for data coordinators. You can view <a href="/resources">all DataSF resources by clicking here</a>.</p>
+      </div>
+    </div>
+       
+    <div class="row">
+       <div class="col-md-4">
+  <div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">
+      <h4>One Page Summary of DataSF Program</h4>
+    </div>
+    <div class="panel-body">
+      <p>1 page flyer describing the Open Data Program. Use it to explain DataSF to your City colleagues.</p>
+
+      <p>
+        <time datetime=" 2014-06-19 " itemprop="datePublished">
+          June 19, 2014
+        </time>
+      </p>
+      
+    </div>
+    <!-- List group -->
+    <ul class="list-group">
+      
+      <a href="https://drive.google.com/open?id=0B3XTBxBQSd0hZFBMVDFIZy1fMEk&authuser=0" class="download" data-download-type="PDF" data-download-name="One Page Summary of DataSF Program">
+        <li class="list-group-item list-group-item-download" data-download-type="PDF" data-download-name="One Page Summary of DataSF Program"><i class="fa fa-download"></i> PDF
+        </li>
+      </a>
+      
+    </ul>
+  </div>
+</div>     <div class="col-md-4">
+  <div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">
+      <h4>One Page Summary of Data Inventory Process</h4>
+    </div>
+    <div class="panel-body">
+      <p>1 page flyer explaining the 3 step data inventory process.</p>
+
+      <p>
+        <time datetime=" 2014-06-19 " itemprop="datePublished">
+          June 19, 2014
+        </time>
+      </p>
+      
+    </div>
+    <!-- List group -->
+    <ul class="list-group">
+      
+      <a href="https://drive.google.com/file/d/0B3XTBxBQSd0hX0MzWnRodTVVNG8/view?usp=sharing" class="download" data-download-type="PDF" data-download-name="One Page Summary of Data Inventory Process">
+        <li class="list-group-item list-group-item-download" data-download-type="PDF" data-download-name="One Page Summary of Data Inventory Process"><i class="fa fa-download"></i> PDF
+        </li>
+      </a>
+      
+    </ul>
+  </div>
+</div>     <div class="col-md-4">
+  <div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">
+      <h4>Data Coordinator Guidebook</h4>
+    </div>
+    <div class="panel-body">
+      <p>Guidebook for City and County of San Francisco data coordinators.</p>
+
+      <p>
+        <time datetime=" 2014-06-19 " itemprop="datePublished">
+          June 19, 2014
+        </time>
+      </p>
+      
+    </div>
+    <!-- List group -->
+    <ul class="list-group">
+      
+      <a href="https://docs.google.com/document/d/1CJ2uZSYEYcPb6bpcr24kcRCV0zDN-9xYE-o7FA23EMk/edit?usp=sharing" class="download" data-download-type="Google Doc" data-download-name="Data Coordinator Guidebook">
+        <li class="list-group-item list-group-item-download" data-download-type="Google Doc" data-download-name="Data Coordinator Guidebook"><i class="fa fa-download"></i> Google Doc
+        </li>
+      </a>
+      
+      <a href="https://docs.google.com/document/d/1CJ2uZSYEYcPb6bpcr24kcRCV0zDN-9xYE-o7FA23EMk/export?format=pdf" class="download" data-download-type="PDF" data-download-name="Data Coordinator Guidebook">
+        <li class="list-group-item list-group-item-download" data-download-type="PDF" data-download-name="Data Coordinator Guidebook"><i class="fa fa-download"></i> PDF
+        </li>
+      </a>
+      
+    </ul>
+  </div>
+</div> 
+    </div>
+       
+    <div class="row">
+       <div class="col-md-4">
+  <div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">
+      <h4>Data Coordinator Detailed Inventory Guide: Steps 2 and 3</h4>
+    </div>
+    <div class="panel-body">
+      <p>Provides data coordinators with detailed guidance on steps 2 and 3 of the data inventory.</p>
+
+      <p>
+        <time datetime=" 2014-06-19 " itemprop="datePublished">
+          June 19, 2014
+        </time>
+      </p>
+      
+    </div>
+    <!-- List group -->
+    <ul class="list-group">
+      
+      <a href="https://docs.google.com/document/d/1W5C5oO2TrVnmOgLe81_KYgmbghj6hDs9-4SC-ygMDV4/edit" class="download" data-download-type="Google Doc" data-download-name="Data Coordinator Detailed Inventory Guide: Steps 2 and 3">
+        <li class="list-group-item list-group-item-download" data-download-type="Google Doc" data-download-name="Data Coordinator Detailed Inventory Guide: Steps 2 and 3"><i class="fa fa-download"></i> Google Doc
+        </li>
+      </a>
+      
+      <a href="https://docs.google.com/document/d/1W5C5oO2TrVnmOgLe81_KYgmbghj6hDs9-4SC-ygMDV4/export?format=pdf" class="download" data-download-type="PDF" data-download-name="Data Coordinator Detailed Inventory Guide: Steps 2 and 3">
+        <li class="list-group-item list-group-item-download" data-download-type="PDF" data-download-name="Data Coordinator Detailed Inventory Guide: Steps 2 and 3"><i class="fa fa-download"></i> PDF
+        </li>
+      </a>
+      
+    </ul>
+  </div>
+</div>     <div class="col-md-4">
+  <div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">
+      <h4>Data Inventory Example</h4>
+    </div>
+    <div class="panel-body">
+      <p>Example of a completed dataset inventory from the Airport.</p>
+
+
+      <p>
+        <time datetime=" 2014-06-19 " itemprop="datePublished">
+          June 19, 2014
+        </time>
+      </p>
+      
+    </div>
+    <!-- List group -->
+    <ul class="list-group">
+      
+      <a href="https://drive.google.com/uc?export=download&id=0B3XTBxBQSd0hTE9WSml4eEpIcW8" class="download" data-download-type="Excel" data-download-name="Data Inventory Example">
+        <li class="list-group-item list-group-item-download" data-download-type="Excel" data-download-name="Data Inventory Example"><i class="fa fa-download"></i> Excel
+        </li>
+      </a>
+      
+    </ul>
+  </div>
+</div>     <div class="col-md-4">
+  <div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">
+      <h4>Data Inventory Template</h4>
+    </div>
+    <div class="panel-body">
+      <p>Excel template for completing the dataset inventory. Note: You must enable macros for the template to work.</p>
+
+      <p>
+        <time datetime=" 2014-06-19 " itemprop="datePublished">
+          June 19, 2014
+        </time>
+      </p>
+      
+    </div>
+    <!-- List group -->
+    <ul class="list-group">
+      
+      <a href="https://drive.google.com/uc?export=download&id=0B3XTBxBQSd0hYzJTTUY1TzMwcjA" class="download" data-download-type="Excel" data-download-name="Data Inventory Template">
+        <li class="list-group-item list-group-item-download" data-download-type="Excel" data-download-name="Data Inventory Template"><i class="fa fa-download"></i> Excel
+        </li>
+      </a>
+      
+    </ul>
+  </div>
+</div> 
+    </div>
+       
+    <div class="row">
+       <div class="col-md-4">
+  <div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">
+      <h4>Data Coordinator Inventory Tools Webinar</h4>
+    </div>
+    <div class="panel-body">
+      <p>This webinar covers the tools available for San Francisco Data Coordinators to complete the dataset inventory.</p>
+
+      <p>
+        <time datetime=" 2015-01-29 " itemprop="datePublished">
+          January 29, 2015
+        </time>
+      </p>
+      
+    </div>
+    <!-- List group -->
+    <ul class="list-group">
+      
+      <a href="https://www.youtube.com/watch?v=sJn6vdaebmU" class="download" data-download-type="YouTube" data-download-name="Data Coordinator Inventory Tools Webinar">
+        <li class="list-group-item list-group-item-download" data-download-type="YouTube" data-download-name="Data Coordinator Inventory Tools Webinar"><i class="fa fa-download"></i> YouTube
+        </li>
+      </a>
+      
+    </ul>
+  </div>
+</div>     <div class="col-md-4">
+  <div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">
+      <h4>One Page Summary of Personal Data Requests</h4>
+    </div>
+    <div class="panel-body">
+      <p>1 page flyer explaining the personal data request process.</p>
+
+      <p>
+        <time datetime=" 2016-08-08 " itemprop="datePublished">
+          August 08, 2016
+        </time>
+      </p>
+      
+    </div>
+    <!-- List group -->
+    <ul class="list-group">
+      
+      <a href="https://drive.google.com/open?id=0B0jc1tmJAlTcWk4xMXZUZEplQW8" class="download" data-download-type="PDF" data-download-name="One Page Summary of Personal Data Requests">
+        <li class="list-group-item list-group-item-download" data-download-type="PDF" data-download-name="One Page Summary of Personal Data Requests"><i class="fa fa-download"></i> PDF
+        </li>
+      </a>
+      
+    </ul>
+  </div>
+</div>     <div class="col-md-4">
+  <div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">
+      <h4>Open Data Release Toolkit Form</h4>
+    </div>
+    <div class="panel-body">
+      <p>Form included in the Open Data Release Toolkit</p>
+
+      <p>
+        <time datetime=" 2016-08-08 " itemprop="datePublished">
+          August 08, 2016
+        </time>
+      </p>
+      
+    </div>
+    <!-- List group -->
+    <ul class="list-group">
+      
+      <a href="https://drive.google.com/open?id=12uk04YOXqP10oqFy6EcJ-wRa0IrGx1B-BaCNUITP-EA" class="download" data-download-type="Google Doc" data-download-name="Open Data Release Toolkit Form">
+        <li class="list-group-item list-group-item-download" data-download-type="Google Doc" data-download-name="Open Data Release Toolkit Form"><i class="fa fa-download"></i> Google Doc
+        </li>
+      </a>
+      
+    </ul>
+  </div>
+</div> 
+    </div>
+       
+    <div class="row">
+       <div class="col-md-4">
+  <div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">
+      <h4>Open Data Release Toolkit</h4>
+    </div>
+    <div class="panel-body">
+      <p>Toolkit for City and County of San Francisco department management and Data Coordinators to release sensitive or protected datasets on the open data portal.</p>
+
+      <p>
+        <time datetime=" 2016-08-08 " itemprop="datePublished">
+          August 08, 2016
+        </time>
+      </p>
+      
+    </div>
+    <!-- List group -->
+    <ul class="list-group">
+      
+      <a href="https://drive.google.com/open?id=0B0jc1tmJAlTcR0RMV01PM2NyNDA" class="download" data-download-type="PDF" data-download-name="Open Data Release Toolkit">
+        <li class="list-group-item list-group-item-download" data-download-type="PDF" data-download-name="Open Data Release Toolkit"><i class="fa fa-download"></i> PDF
+        </li>
+      </a>
+      
+      <a href="https://drive.google.com/open?id=1MhvEuGKFuGY2vLcNqiXBsPjCzxYebe4dJicRWe6gf_s" class="download" data-download-type="Google Doc" data-download-name="Open Data Release Toolkit">
+        <li class="list-group-item list-group-item-download" data-download-type="Google Doc" data-download-name="Open Data Release Toolkit"><i class="fa fa-download"></i> Google Doc
+        </li>
+      </a>
+      
+    </ul>
+  </div>
+</div>     <div class="col-md-4">
+  <div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">
+      <h4>Personal Data Request Guidebook</h4>
+    </div>
+    <div class="panel-body">
+      <p>Guide for City and County of San Francisco departments and agencies to implement a process to provide individuals with their own personal data upon request.</p>
+
+      <p>
+        <time datetime=" 2016-08-08 " itemprop="datePublished">
+          August 08, 2016
+        </time>
+      </p>
+      
+    </div>
+    <!-- List group -->
+    <ul class="list-group">
+      
+      <a href="https://drive.google.com/open?id=0B0jc1tmJAlTcb3RDWUlhd1BnTUU" class="download" data-download-type="PDF" data-download-name="Personal Data Request Guidebook">
+        <li class="list-group-item list-group-item-download" data-download-type="PDF" data-download-name="Personal Data Request Guidebook"><i class="fa fa-download"></i> PDF
+        </li>
+      </a>
+      
+    </ul>
+  </div>
+</div> 
+    </div>
+     
+  </div>
+</section>
+
+    <footer>
+  <div class="container extra-links">
+    <div class="row text-center">
+      <div class="col-md-4">
+
+      </div>
+      <div class="col-md-4">
+        
+        <ul class="list-inline social-buttons">
+          
+          <li><a href="http://twitter.com/datasf"><i class="fa fa-twitter"></i></a>
+          </li>
+          
+          <li><a href="http://opendata.stackexchange.com/search?q=san+francisco"><i class="fa fa-stack-overflow"></i></a>
+          </li>
+          
+          <li><a href="http://github.com/datasf"><i class="fa fa-github"></i></a>
+          </li>
+          
+        </ul>
+        
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline quicklinks">
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-content-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-md-4 left-border-dotted">
+          <ul class="list-unstyled quick-links">
+              
+              <li class="">
+                <a class="  ext-sf-opendata " href="https://data.sfgov.org">Data Catalog</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/showcase/">Showcase</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/publishing/">Publishing</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/academy/">Academy</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/resources/">Resources</a>
+              </li>
+              
+              <li class="">
+                <a class=" " href="/blog/">Blog</a>
+              </li>
+            
+            
+              <li style="margin-top: 15px;"><a href="/privacy/">Privacy Policy</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-md-6 mission">
+          <p>DataSF's mission is to empower use of data. We seek to transform the way the City works through the use of data. We believe use of data and evidence can improve our operations and the services we provide. This ultimately leads to increased quality of life and work for San Francisco residents, employers, employees and visitors. <a href="/about">Learn more about our work.</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="text-center made-in">
+    Made with <i class="fa fa-heart"><span class="sr-only">heart</span></i> in San Francisco
+  </div>
+  
+</footer>
+    <!-- jQuery Version 1.11.3 -->
+<script src="/assets/js/vendor/jquery-1.11.3.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="/assets/js/vendor/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="/assets/js/vendor/jquery.easing.min.js"></script>
+<script src="/assets/js/vendor/jquery.validate.min.js"></script>
+<script src="/assets/js/vendor/DataTables-1.10.7/media/js/jquery.dataTables.min.js"></script>
+<script src="/assets/js/vendor/DataTables-1.10.7/Plugins-1.10.7/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+<script src="/assets/js/vendor/jsrender.min.js"></script>
+
+
+
+
+<script src="/assets/js/vendor/c3.js"></script>
+<script src="/assets/js/vendor/moment.js"></script>
+<script src="/assets/js/vendor/selectize.min.js"></script>
+
+<!-- utilities -->
+<script src="/assets/js/vendor/toTitleCase.js"></script>
+
+<!-- Custom site JavaScript -->
+<script src="/assets/js/datasf.js"></script>
+
+
+    </body>
+</html>

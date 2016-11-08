@@ -1,0 +1,38 @@
+tagsCallback([
+
+	{
+	"name": "Data Inventory Guidance",
+	"value": "Data Inventory Guidance"
+	}, 
+
+	{
+	"name": "Strategic Plan",
+	"value": "Strategic Plan"
+	}, 
+
+	{
+	"name": "Metadata",
+	"value": "Metadata"
+	}, 
+
+	{
+	"name": "Open Data Licensing Standard",
+	"value": "Open Data Licensing Standard"
+	}, 
+
+	{
+	"name": "Stat Programs",
+	"value": "Stat Programs"
+	}, 
+
+	{
+	"name": "Personal Data Requests",
+	"value": "Personal Data Requests"
+	}, 
+
+	{
+	"name": "Open Data Release Toolkit",
+	"value": "Open Data Release Toolkit"
+	} 
+
+]);

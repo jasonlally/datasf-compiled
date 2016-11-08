@@ -1,0 +1,1780 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  >
+<channel>
+    <title xml:lang="en">DataSF</title>
+    <atom:link type="application/atom+xml" href="https://datasf.org/feed/" rel="self"/>
+    <link>https://datasf.org</link>
+    <pubDate>Tue, 08 Nov 2016 21:48:05 +0000</pubDate>
+    <lastBuildDate>Tue, 08 Nov 2016 21:48:05 +0000</lastBuildDate>
+    <language>en-US</language>
+    <description>Our mission is to empower use of the City and County of San Francisco's data. Our core product is SF OpenData, the official open data portal.</description>
+    
+      
+    <item>
+        <title><![CDATA[ Show me the data (dictionary)! ]]></title>
+        <link>https://datasf.org/blog/show-me-the-data-dictionary/</link>
+        <pubDate>Mon, 31 Oct 2016 00:00:00 +0000</pubDate>
+        <dc:creator></dc:creator>
+        <category>blog</category>
+        <guid isPermaLink="false">/blog/show-me-the-data-dictionary</guid>
+        <description><![CDATA[ <p>What does that field mean? That’s an oft-asked question that can normally be answered by a little documentation. <a href="https://data.sfgov.org">For San Francisco’s open data</a>, finding that documentation can be, ahem, inconsistent, and it’s high time we address that for everyone’s sanity! We are beginning a project to make the collection, maintenance and dissemination of data documentation consistent for data publishers, DataSF staff and data users.</p>
+
+<h2 id="where-we-are-today-a-confusing-array-of-options">Where we are today: a confusing array of options</h2>
+
+<p>Across the open data portal, there are many ways to access and find documentation about a dataset. These include:</p>
+
+<ul>
+  <li><strong>In the description of the dataset.</strong> This is rare, but sometimes a dataset will list field definitions in the description or link to a place that contains definitions.</li>
+  <li><strong>As descriptions within the open data platform.</strong> You can access these descriptions by mousing over the (i)nfo icon on the column name.</li>
+  <li><strong>As an attachment.</strong> This will be the case for almost all datasets published in the past year or so. As part of the updated DataSF publishing process, we generate a template and attach to each dataset.</li>
+  <li><strong>None at all.</strong> For some datasets posted in the early days of the portal, there may be no documentation. We’re fixing that through this process.</li>
+</ul>
+
+<p>The problem is that users don’t know which one to expect for a given dataset. That’s a pain. We get it.</p>
+
+<h2 id="where-were-headed-one-stop-documentation">Where we’re headed: one stop documentation</h2>
+
+<p>When we started, data dictionary templates were the best solution. And they’ve served us well at the start, but they hardly scale.</p>
+
+<p>Imagine getting a question about a dataset, answering the question, updating an attachment and re-uploading it. Now imagine that across 400+ datasets, 52 data coordinators and thousands of users.</p>
+
+<p>So we’re centralizing and systematizing to support continuous improvement of documentation. We’ll do this work in phases, but when complete, we will have:</p>
+
+<ol>
+  <li>A single point of access for all field definitions and eventually profiled information about those fields.</li>
+  <li>Consistent, printer-friendly documentation to accompany datasets.</li>
+  <li>Global field definitions written once and propagated across datasets. (There’s no reason we should write the definition of Supervisor District more than one time).</li>
+  <li>A consistent way to administer changes and updates to the master field definitions.</li>
+</ol>
+
+<h2 id="write-once-read-anywhere">Write once, read anywhere</h2>
+
+<p>One of our primary goals is to reduce the overhead of maintaining and accessing field documentation. We know that data stewards spend a good bit of time explaining data to users. Maybe something gets written down, but many times, the documentation hasn’t been systematic. Or, if it has, it’s not easily accessible.</p>
+
+<p>As of today, <a href="https://data.sfgov.org/City-Management-and-Ethics/Field-Dictionary-for-Open-Data-Portal-Datasets/wn8x-uk7i">we’re releasing a working dataset</a> of all fields stored in the open data portal. We include field definitions where available. We also provide a link to data dictionary attachments where they exist. We have a bit of work to do to document all of the fields, but you’ll be able to track our progress (see below).</p>
+
+<p>The finished dataset will ultimately power a more user-friendly documentation interface. Don’t worry, we won’t expect everyone to go to the dataset to look up field definitions forever. It will also enable meta-analyses of fields. For example, we anticipate it informing our efforts around consistent data publishing practices.</p>
+
+<h2 id="follow-along-with-us">Follow along with us</h2>
+
+<p>We have over 7000 fields. About one third of them are documented either within the open data platform or through the template attachments. That leaves us with nearly 5000 fields with no documentation. That may sound like a lot, but we’re breaking it down into smaller pieces:</p>
+
+<ol>
+  <li><strong>Define unique, undocumented fields.</strong> We’ll rely on the data stewards to submit definitions for the currently undocumented fields that aren’t global. This averages to about 25 fields per steward.</li>
+  <li><strong>Define global fields.</strong> There are many fields that show up in multiple datasets. We can define these once and propagate them.</li>
+  <li><strong>Migrate documentation from templates.</strong> A subset of the 32% documented fields are in other documents. We’ll script what we can and systematically enter the rest.</li>
+  <li><strong>Deal with the rest as needed.</strong> Even if we don’t get to full coverage using the above 3 tactics, we’re okay with rolling on the rest as needed. Priorities can be determined based on where we’re seeing confusion through our support portal.</li>
+</ol>
+
+<p>To track our progress, we’ve created a simple dashboard. It’s linked to the field definition dataset and will update automatically. Follow along with us toward a brighter documentation future!</p>
+<div class="embed-responsive embed-responsive-square">
+<iframe src="https://app.powerbi.com/view?r=eyJrIjoiODk2ODgwZjctZWEzMC00YzJkLWJlOGYtNjg0OGUyNDQ4YmJmIiwidCI6IjIyZDVjMmNmLWNlM2UtNDQzZC05YTdmLWRmY2MwMjMxZjczZiIsImMiOjZ9" frameborder="0" allowfullscreen="true"></iframe>
+</div>
+ ]]></description>
+    </item>
+      
+    
+      
+    <item>
+        <title><![CDATA[ 4 Steps to Manage Privacy and De-Identification for your Open Data Program ]]></title>
+        <link>https://datasf.org/blog/4-steps-to-manage-privacy-and-de-identification-for-your-open-data-program/</link>
+        <pubDate>Thu, 06 Oct 2016 00:00:00 +0000</pubDate>
+        <dc:creator>Erica Finkle</dc:creator>
+        <category>blog</category>
+        <guid isPermaLink="false">/blog/4-steps-to-manage-privacy-and-de-identification-for-your-open-data-program</guid>
+        <description><![CDATA[ <p>Today we are excited to launch the <a href="https://drive.google.com/open?id=0B0jc1tmJAlTcR0RMV01PM2NyNDA">Open Data Release Toolkit</a> to help you manage the release of sensitive or protected datasets on the open data portal.</p>
+
+<h2 id="challenge-following-the-letter-of-the-law-is-not-enough">Challenge: following the letter of the law is not enough</h2>
+
+<p>While privacy laws state how to protect data, most of them were written well before modern computing and statistical tools. These tools challenge the idea of simple de-identification of data. For example, you could publish record level data on probationers without obvious identifiers, such as names and social security numbers, and still be within the law. But by combining that data with other sources or just doing some crosstabs, you might be able to identify the individuals in the dataset and associated sensitive or personal information about them. As a result, open data programs need a much more robust way of managing the release of sensitive or protected datasets.</p>
+
+<h2 id="that-sounds-scary-so-why-still-publish">That sounds scary, so why still publish?</h2>
+
+<p>Sensitive or protected raw data is a lot like the information you carry around in your wallet. There will always be a risk, no matter how infinitely small, that someone is going to steal your wallet. (Even if you are a vigilant city dweller who securely tucks it away.) So why do we carry some of our most sensitive information around with us? Because we value the activities we can engage in - going to a bar with our ID card, purchasing lunch with our credit card, keeping our medical information to hand in case of emergency, etc.  </p>
+
+<p>Substitute that card in your wallet for sensitive or protected data, such as a person’s identity or sensitive information about them. Just like most people still find reasons to carry around a wallet, our open data program aims to proactively make data available for the public benefit. Open data can help us to, among other things, measure the effectiveness of government services; stimulate new ideas and services; identify communities in need of better assistance; and ultimately change how we use, share and consume data to work more efficiently and effectively.</p>
+
+<h2 id="responsible-risk-management">Responsible risk management</h2>
+
+<p>Like a vigilant tourist who purchases the best money-belt on the market before a trip, we seek to publish data responsibly. This requires a balancing of competing factors such as:</p>
+
+<ul>
+  <li>the value of publishing the data,</li>
+  <li>an individual’s expectation of privacy,</li>
+  <li>repercussions to an individual or the organization from re-identification, and</li>
+  <li>the likelihood of re-identification.  </li>
+</ul>
+
+<p>Sound tricky? It is. Especially when you pile on top ever-evolving data analysis and re-identification techniques. That is why we created this handy <a href="https://drive.google.com/open?id=0B0jc1tmJAlTcR0RMV01PM2NyNDA">Toolkit</a>! To provide practical, clear guidance for government employees considering publication of sensitive or protected raw data.</p>
+
+<p>The <a href="https://drive.google.com/open?id=0B0jc1tmJAlTcR0RMV01PM2NyNDA">Open Data Release Toolkit</a> will guide you through a step-by-step process to:</p>
+
+<ol>
+  <li>Identify sensitive or protected raw data,</li>
+  <li>Perform a risk assessment regarding the identifiability of the data,</li>
+  <li>Choose and implement privacy solutions (e.g. de-identification methods), and</li>
+  <li>Perform a risk assessment regarding the accessibility of the de-identified data.</li>
+</ol>
+
+<p>The <a href="https://drive.google.com/open?id=12uk04YOXqP10oqFy6EcJ-wRa0IrGx1B-BaCNUITP-EA">Open Data Release Form</a> included in the <a href="https://drive.google.com/open?id=0B0jc1tmJAlTcR0RMV01PM2NyNDA">Toolkit</a> is also meant to serve as a way to facilitate and document the decision-making process.</p>
+
+<h2 id="remember---risk-can-be-managed-but-it-will-not-be-zero">Remember - risk can be managed, but it will not be zero</h2>
+
+<p>We can never have absolute certainty (i.e. zero risk) that successful re-identification will not occur. Techniques for re-identification continually evolve, often faster than security measures intended to protect data. While re-identification risk will never be 0%, it can be reduced and managed. Acknowledging the supposed failures of “perfect anonymization”, the <a href="https://drive.google.com/open?id=0B0jc1tmJAlTcR0RMV01PM2NyNDA">Open Data Release Toolkit</a> moves forward by setting out a decision-making process to publish valuable information while managing risk of re-identification and sensitive attribute disclosure in a thoughtful way.</p>
+
+<p>A huge thanks to the authors and partners mentioned in the Acknowledgements and Resources section of the <a href="https://drive.google.com/open?id=0B0jc1tmJAlTcR0RMV01PM2NyNDA">Toolkit</a>, from whom we learned a great deal. Even with this learning, we know the field is evolving and we do not have all the answers. We are keeping our eyes on the recent draft from NIST on <a href="http://csrc.nist.gov/publications/drafts/800-188/sp800_188_draft.pdf">De-Identifying Government Datasets</a>, and we welcome any feedback!</p>
+
+<p>Check out the <a href="https://drive.google.com/open?id=0B0jc1tmJAlTcR0RMV01PM2NyNDA">Open Data Release Toolkit</a>!</p>
+ ]]></description>
+    </item>
+      
+    
+      
+    <item>
+        <title><![CDATA[ Year 3 is in Session ]]></title>
+        <link>https://datasf.org/blog/year-3-is-in-session/</link>
+        <pubDate>Tue, 16 Aug 2016 00:00:00 +0000</pubDate>
+        <dc:creator>Joy Bonaguro</dc:creator>
+        <category>blog</category>
+        <guid isPermaLink="false">/blog/year-3-is-in-session</guid>
+        <description><![CDATA[ <p>We quietly posted our <a href="https://docs.google.com/document/d/1cVqhRQXq5LJ7XQtA-OjmEXe6penlqI6DY8mY84_wlb0/edit?usp=sharing">annual plan update</a> last month. A few updates on Year 2 and some teasers on what’s coming.</p>
+
+<h2 id="our-favorite-things-from-year-2">Our favorite things from Year 2</h2>
+
+<ul>
+  <li>New team members. Janine and Erica joined DataSF to accelerate data automation and services and internal data sharing, respectively. <a href="https://datasf.org/about/">Read more about them and how awesome they are</a>.</li>
+  <li>133 new datasets versus 49 last year (171% increase) and the <a href="https://datasf.org/publishing/automation/">automation program</a> to make it happen</li>
+  <li>2 rounds of <a href="https://datasf.org/publishing/plans/">publishing plans</a> and <a href="https://datasf.org/progress/">automated reporting</a> on <a href="https://datasf.org/blog/how-to-measure-open-data/">open data metrics</a></li>
+  <li>Brand new <a href="http://support.datasf.org/">help desk</a> with 384 tickets and counting</li>
+  <li>34 classes via <a href="https://datasf.org/academy/">Data Academy</a></li>
+  <li>Advancing data governance and infrastructure through ShareSF, HOPE SF, Our Children Our Families and more</li>
+  <li>New partners with <a href="http://whatworkscities.bloomberg.org/">What Works Cities</a> and the <a href="http://ash.harvard.edu/civic-analytics-network">Harvard Ash Center</a></li>
+</ul>
+
+<p>And so much more…read Year 2 in Review in <a href="https://docs.google.com/document/d/1cVqhRQXq5LJ7XQtA-OjmEXe6penlqI6DY8mY84_wlb0/edit?usp=sharing">our new plan</a>.</p>
+
+<h2 id="focus-in-year-3">Focus in Year 3</h2>
+
+<p>In Year 3, we are maintaining and improving our open data work but deepening and expanding work in several additional areas:</p>
+
+<ul>
+  <li>Internal data sharing for coordinated care</li>
+  <li>Data infrastructure and services</li>
+  <li>Data governance and management (we added a new goal for this)</li>
+  <li>Putting our data to work with analytics and special projects</li>
+</ul>
+
+<h2 id="some-fun-things-underway-this-quarter-jul---sep">Some fun things underway this quarter (Jul - Sep)</h2>
+
+<ul>
+  <li>Re-imagining the open data portal experience</li>
+  <li>Relaunching geo data to be easier to use</li>
+  <li>A framework for open data and privacy</li>
+  <li>Faster, easier, better data publishing</li>
+  <li>Metadata platform</li>
+  <li>Data quality tools and resources</li>
+  <li>Unifying our web properties</li>
+</ul>
+
+<p>Read the <a href="https://docs.google.com/document/d/1cVqhRQXq5LJ7XQtA-OjmEXe6penlqI6DY8mY84_wlb0/edit?usp=sharing">whole plan</a> or check out our <a href="https://drive.google.com/file/d/0B-65Qm9J0m0WdHowYjNtc3Q4Wm8/view?usp=sharing">1 page strategy map.</a> The appendix links to some documents that go into detail about our thinking on <a href="https://docs.google.com/document/d/1zObXTSM7oKAQwbpqEf1lT4gcr6Zq2XgO1wSH1fr4LlI/edit?usp=sharing">data governance, quality, and integration</a>; <a href="https://docs.google.com/document/d/1AyDX9i58usd85TtnTohyHSFadp1TZ4VoCyIilVrg4Rc/edit?usp=sharing">geo data services</a>; and our <a href="https://docs.google.com/document/d/1CbOqNNmzDbllSudT_4mg49xa8RmX74awlNoa6oaT8BY/edit?usp=sharing">technology and services architecture</a>.</p>
+
+<p>Many thanks to a <a href="/about/">great team</a> and all the partners we had a chance to work with this last year!</p>
+ ]]></description>
+    </item>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    <item>
+        <title><![CDATA[ We Want You- Serve as the Digital Services Chief for San Francisco ]]></title>
+        <link>https://datasf.org/blog/we-want-you-serve-as-the-digital-services-chief/</link>
+        <pubDate>Tue, 26 Jul 2016 00:00:00 +0000</pubDate>
+        <dc:creator>Joy Bonaguro</dc:creator>
+        <category>blog</category>
+        <guid isPermaLink="false">/blog/we-want-you-serve-as-the-digital-services-chief</guid>
+        <description><![CDATA[ <h2 id="need-to-transform-city-services">Need to Transform City Services</h2>
+
+<p>At DataSF, our mission is to empower use of data. But when City data is locked into cumbersome backends, it’s not empowering, it’s exhausting. :-(</p>
+
+<p>Much of that City data is the digital exhaust of a service or interaction with a resident, business or visitor (e.g. filing for a permit, getting a parking pass, paying a ticket). Data can help transform those services by identifying what residents want and how we can improve our services.</p>
+
+<p>Unfortunately, the experience of City services can often feel as cumbersome as our backends. That’s why we were so excited to be part of the working group that helped write and launch <a href="http://digitalservices.sfgov.org/">San Francisco’s Digital Services Strategy</a> to transform our services in the modern age.</p>
+
+<h2 id="a-new-role-in-sf-chief-digital-services-officer">A New Role in SF: Chief Digital Services Officer</h2>
+
+<p>A key piece of the strategy is strong, experienced central leadership with a new role to support it: the CDSO. From our strategy: “San Francisco needs an empowered, trusted leader to implement the strategy and guide our service redesign efforts. A dedicated, experienced thought-leader will be a change-agent who drives a culture shift towards user centered thinking and brings a modern technology approach to digital products at the City.”</p>
+
+<p>We are looking for a leader who can not only manage a portfolio of digital services but also set the City up to deliver quality services at scale.</p>
+
+<h2 id="the-missing-data-middle">The Missing Data Middle</h2>
+
+<p>Data services and infrastructure will be part of that scaling. At DataSF, we are excited to have a partner to work with to build out our nascent data services and infrastructure layer. Data as a service in the City will:</p>
+
+<ul>
+  <li>Decrease development time and costs</li>
+  <li>Increase access to data for analytics and planning</li>
+  <li>Ultimately lead to better decisions and services</li>
+</ul>
+
+<p>We envision co-building this data services and infrastructure layer to include:</p>
+
+<ul>
+  <li>A connectors and transport layer across our federated data backends</li>
+  <li>Sources and repositories for open data, streaming data and specialized stores</li>
+  <li>A services layer including API gateways and management, messaging and geo services and a metadata platform</li>
+</ul>
+
+<p>All of this will make it easier and faster to build applications, discover and access data for planning and analytics and empower real-time understanding of programs and services</p>
+
+<p>Help us design and develop the data infrastructure in San Francisco to fuel both great services and great decisions!</p>
+
+<h3 id="apply-herehttpdigitalservicessfgovorgcdsohtml"><a href="http://digitalservices.sfgov.org/CDSO.html">Apply here</a></h3>
+ ]]></description>
+    </item>
+      
+    
+      
+    <item>
+        <title><![CDATA[ Say hello to our brand new systems inventory ]]></title>
+        <link>https://datasf.org/blog/say-hello-to-systems-inventory/</link>
+        <pubDate>Fri, 01 Jul 2016 00:00:00 +0000</pubDate>
+        <dc:creator>Jason Lally</dc:creator>
+        <category>blog</category>
+        <guid isPermaLink="false">/blog/say-hello-to-systems-inventory</guid>
+        <description><![CDATA[ <p>We are happy to announce that our <a href="https://data.sfgov.org/City-Management-and-Ethics/Catalog-of-citywide-enterprise-systems-of-record/ebux-gcnq">citywide systems inventory</a> is now live! The scope of the inventory was defined by <a href="http://bit.ly/CAinventory">California Government Code 6270.5</a>, which was enacted by Governor Brown after the State Legislature passed SB 272.</p>
+
+<p>We want to acknowledge all of the tremendous effort of City departments, and in particular their Data Coordinators. This really did take a lot of work, but reflects a continued commitment to transparency and open government on the part of San Francisco.</p>
+
+<p>The systems inventory joins its sister, the <a href="https://data.sfgov.org/City-Management-and-Ethics/Dataset-Inventory/y8fp-fbf5">dataset inventory</a>, which is the result of <a href="http://www.govtech.com/e-government/SF-Mayor-Signs-Landmark-Open-Data-Policy-and-Procedures-Legislation.html">our landmark open data legislation</a>. San Francisco passed the nation’s first local open data law in 2010 and it was subsequently strengthened and supported by Mayor Lee, former Board President Chiu and Supervisor Farrell. That law laid the foundation, and Mayor Lee has continued commitment to the program by empowering DataSF to <a href="http://sfmayor.org/index.aspx?recordid=639&amp;page=846">mature the open data initiative</a> beyond maintaining lists and catalogs of data.</p>
+
+<p>Our dataset inventory has now become a piece of infrastructure for managing the open data program. We use it to <a href="https://datasf.org/progress">measure</a> and <a href="https://datasf.org/publishing/plans">monitor</a> our progress and to track datasets as <a href="https://datasf.org/publishing">they move through our publishing process</a>.</p>
+
+<p>The systems inventory is another addition to all the <a href="https://datasf.org">tools</a> and <a href="https://datasf.org/resources">resources</a> developed to empower use of the City’s data. We continue our steady commitment to that every day, and are motivated and inspired by the people we serve and work with. Enjoy the new dataset!</p>
+ ]]></description>
+    </item>
+      
+    
+      
+    <item>
+        <title><![CDATA[ A new search experience for SF Open Data ]]></title>
+        <link>https://datasf.org/blog/new-search-experience/</link>
+        <pubDate>Mon, 06 Jun 2016 00:00:00 +0000</pubDate>
+        <dc:creator>Jason Lally</dc:creator>
+        <category>blog</category>
+        <guid isPermaLink="false">/blog/new-search-experience</guid>
+        <description><![CDATA[ <p><a href="https://www.socrata.com">Socrata</a> has been rolling out <a href="https://data.sfgov.org/browse">a new search experience</a> across their customer sites. We’re happy to announce, we’ve just gone live with the new search in our data catalog. If you’re used to the old search experience, it’ll feel different, but in this case, that’s a good thing!</p>
+
+<p>Two major shifts have happened with the new search experience:</p>
+
+<ol>
+  <li>Better, cleaner user interface and experience</li>
+  <li>More relevant search results</li>
+</ol>
+
+<p>Together, these mean a more useful way of finding the data you need in the catalog. You can read <a href="https://support.socrata.com/hc/en-us/articles/219007257">more about the changes on Socrata’s website</a>.</p>
+
+<p>Let us know what you think of the new experience.</p>
+ ]]></description>
+    </item>
+      
+    
+      
+    <item>
+        <title><![CDATA[ Yumm...new data in San Francisco! ]]></title>
+        <link>https://datasf.org/blog/yumm-new-data-in-san-francisco/</link>
+        <pubDate>Fri, 22 Apr 2016 00:00:00 +0000</pubDate>
+        <dc:creator>Joy Bonaguro</dc:creator>
+        <category>blog</category>
+        <guid isPermaLink="false">/blog/yumm---new-data-in-san-francisco</guid>
+        <description><![CDATA[ <p>We are excited to announce the release of a slew of new datasets <a href="http://bayeshack.org/">for Bayes Hack 2016</a>! Below we’ve highlighted a number of datasets in <a href="http://bayeshack.org/housing-and-urban-development.html">the spirit of the theme “How can data help communities thrive?”</a> Read on for some delicious data we hope helps and inspires folks this weekend and beyond.</p>
+
+<h2 id="new-housing-related-data">New Housing Related Data</h2>
+
+<p>You can search all of our housing data on <a href="http://datasf.org/">datasf.org</a> or view just the datasets in our <a href="https://data.sfgov.org/data?category=Housing%20and%20Buildings">Housing and Buildings category</a>. We wanted to highlight some recently published data that we’re excited to launch:</p>
+
+<ul>
+  <li>Planning Department data on
+    <ul>
+      <li>Historic height and bulk districts for 2009, 2010, 2012, 2013</li>
+      <li>Historic special use districts for 2010, 2011, 2012, 2013, 2014, 2015</li>
+      <li>Historic zoning for 1998 - 2015</li>
+      <li>Development pipeline and more…how do these all change over time?</li>
+      <li><a href="https://data.sfgov.org/Geographic-Locations-and-Boundaries/Affordable-Housing-Bonus-Program-Zoning-Districts-/hxy5-cgnc">Districts and parcels eligible to participate in the affordable housing bonus program</a></li>
+      <li><a href="https://data.sfgov.org/data?dept=Planning">View all Planning data</a></li>
+    </ul>
+  </li>
+  <li>Brand new! Fire Department data on
+    <ul>
+      <li><a href="https://data.sfgov.org/Public-Safety/Fire-Incidents/wr8u-xric">Fire incidents</a></li>
+      <li><a href="https://data.sfgov.org/Housing-and-Buildings/Fire-Inspections/wb4c-6hwj">Fire inspections</a></li>
+      <li><a href="https://data.sfgov.org/Public-Safety/Fire-Permits/893e-xam6">Fire permits</a></li>
+      <li><a href="https://data.sfgov.org/Housing-and-Buildings/Fire-Safety-Complaints/2wsq-7wmv">Fire safety complaints</a></li>
+      <li><a href="https://data.sfgov.org/Housing-and-Buildings/Fire-Violations/4zuq-2cbe">Fire violations</a></li>
+    </ul>
+  </li>
+  <li><a href="http://data.sfgov.org/d/9rdx-httc">City funded affordable rental portfolio</a></li>
+  <li>In addition to the Rent Board <a href="http://data.sfgov.org/d/cne3-h93g">eviction notices</a> data, we recently added <a href="https://data.sfgov.org/Housing-and-Buildings/Buyout-agreements/wmam-7g8d">buyout agreements</a>, <a href="https://data.sfgov.org/Housing-and-Buildings/Petitions-to-the-Rent-Board/6swy-cmkq">petitions</a> and <a href="https://data.sfgov.org/Housing-and-Buildings/Appeals-to-the-Rent-Board/w2ze-eag5">appeals</a></li>
+</ul>
+
+<h2 id="neighborhood-and-quality-of-life-data">Neighborhood and Quality of Life Data</h2>
+
+<ul>
+  <li><a href="https://data.sfgov.org/City-Management-and-Ethics/San-Francisco-City-Survey-Data-1996-2015/89tc-4uwi">City survey data 1996-2015</a></li>
+  <li><a href="https://data.sfgov.org/Culture-and-Recreation/Park-Evaluation-Scores-starting-Fiscal-Year-2015/r33y-seqv">Park evaluation scores in fiscal year 2015</a> and <a href="https://data.sfgov.org/Culture-and-Recreation/Park-Scores-2005-2014/fjq8-r8ws">Historic Park Evaluation Scores 2005-2014</a></li>
+  <li><a href="https://data.sfgov.org/Energy-and-Environment/San-Francisco-Municipal-Greenhouse-Gas-Inventory/pxac-sadh">Municipal green house gas inventory</a> and the <a href="http://data.sfgov.org/d/btm4-e4ak">communitywide version</a></li>
+  <li><a href="https://data.sfgov.org/City-Infrastructure/Paving-PCI-Scores-Historical-Data/78va-8dhi">Pavement condition index (PCI) scores</a></li>
+  <li><a href="http://data.sfgov.org/d/cne3-h93g">Flood health vulnerability index</a> and related website</li>
+  <li><a href="https://data.sfgov.org/Transportation/Travel-Decision-Survey-Data-2014/v3h7-53cb">Travel decision survey data</a> from SFMTA (search for additional years)</li>
+  <li><a href="http://data.sfgov.org/d/p5b7-5n3h">Analysis neighborhoods</a> that consist of rolled up census tract boundaries; use this <a href="http://data.sfgov.org/d/bwbp-wk3r">crosswalk to census tracts</a> to incorporate census tract data into your work. Learn more about our <a href="https://datasf.gitbooks.io/draft-publishing-standards/content/boundaries/neighborhoods.html">various neighborhood boundaries</a>.</li>
+</ul>
+
+<p>Happy hacking!</p>
+
+<p>&lt;3 the DataSF team and our awesome city departments!</p>
+ ]]></description>
+    </item>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    <item>
+        <title><![CDATA[ How to Measure Open Data ]]></title>
+        <link>https://datasf.org/blog/how-to-measure-open-data/</link>
+        <pubDate>Wed, 16 Dec 2015 00:00:00 +0000</pubDate>
+        <dc:creator>Joy Bonaguro</dc:creator>
+        <category>blog</category>
+        <guid isPermaLink="false">/blog/how-to-measure-open-data</guid>
+        <description><![CDATA[ <p>One of the most frequent questions I get about open data is - why? Most folks understand the need for transparency and openness in government, but some question the need to invest the effort in a comprehensive open data effort.</p>
+
+<p>And to be perfectly fair - very few folks have measured the impact of open data. Since we love being data-driven, we decided to attempt measuring open data. This blog post summarizes what we’re doing and we want to hear your thoughts and feedback so we can learn together.</p>
+
+<p>Learn more below or dive into <a href="http://datasf.org/progress/">DataSF in Progress</a> - where you can track our metrics in real time! Or read our evaluation and performance plan here: https://docs.google.com/document/d/1wvrSviKN8mYtxVVYCw7WohoujJjSFvSkY_Tj3ku8UMU/edit?usp=sharing.</p>
+
+<h2 id="number-of-datasets-is-a-bad-success-measure">Number of datasets is a bad success measure</h2>
+
+<p>Early on, it became clear - we cannot measure open data by counting the number of datasets. A couple problems with this:</p>
+
+<ul>
+  <li><strong>It incents the wrong behavior.</strong> If we publish every year as a different dataset, our N goes up but data usability goes down. If we publish low value data, our N goes up but no one wants to use it. While it’s important to track - # of datasets shouldn’t be a key performance indicator (KPI).</li>
+  <li><strong>It diverts focus from quality.</strong> Publishing to increase your N distracts from ensuring high quality publishing - data that is documented, updated regularly and of value.</li>
+</ul>
+
+<h2 id="limited-guidance-and-a-focus-on-case-studies">Limited guidance and a focus on case studies</h2>
+<p>Our <a href="https://docs.google.com/document/d/1pEKAkSVPgr2-HMUoYcQe-jFD3wViEk_DzalCQp4bxUA/edit?usp=sharing">research review</a> revealed that there was not a bunch of guidance on how to measure open data and many of the benefits to open data relied on example case studies. Case studies are important but hard to quantify.</p>
+
+<p>One of the most frequently cited estimates of the impact of open data is a <a href="http://www.mckinsey.com/insights/business_technology/open_data_unlocking_innovation_and_performance_with_liquid_information">2013 McKinsey report</a> that estimates open data will create $3-5 trillion in value. Unfortunately, the report doesn’t offer a methodology that can be replicated.</p>
+
+<h2 id="our-framework-logic-model--measures">Our framework: Logic Model + Measures</h2>
+<p>Our approach relies on a logic model that provides a theoretical framework plus a set of measures for tracking our performance.</p>
+
+<h3 id="logic-model-our-theoretical-framework">Logic Model: Our theoretical framework</h3>
+<p>Our logic model provides a framework for linking our activities to the ultimate outcomes we hope for, namely:</p>
+
+<ul>
+  <li>A robust and innovative economy</li>
+  <li>Quality outcomes for residents, businesses, and visitors using City services</li>
+  <li>Increased engagement and empowerment</li>
+  <li>Ultimately - excellent quality of life and work in the City</li>
+</ul>
+
+<p>These are lofty outcomes - how do we relate the Open Data program to them? Our logic model provides the theoretical linkages (though we haven’t figured out a good way to measure them).</p>
+
+<p><a href="https://drive.google.com/file/d/0B-65Qm9J0m0Wa1VIenczS3ZHRjA/view?usp=sharing">View the full logic model</a>.</p>
+
+<h3 id="measures-for-activity-quality-and-impact">Measures for Activity, Quality and Impact</h3>
+<p>Since our ultimate outcomes are hard to track, we rely on a variety of indirect measures - starting from how much we publish to what’s being done with it. Our metrics fall into 3 groups:</p>
+
+<ul>
+  <li>How much did we do? (activity metrics)</li>
+  <li>How well did we do it? (quality metrics)</li>
+  <li>Is anyone better off as a result? (impact metrics)</li>
+</ul>
+
+<p>(You may notice these look suspiciously like the <a href="http://raguide.org/">Results Based Accountability</a>, RBA, approach…that’s because we are using it ;-)</p>
+
+<h3 id="publishing-activity">Publishing Activity</h3>
+<p>Our publishing activity measures progress on our dataset inventory (<a href="http://datasf.org/blog/5-ways-to-scale-mountain-of-data/">learn about this process</a>) and publishing plans (<a href="http://datasf.org/publishing/plans/">view plans</a>). Both of these are mandated by our open data legislation.</p>
+
+<p>We also track publishing activity by department, priority level and classification as percentages. Percents allow us to compare performance without distorting incentives.</p>
+
+<h3 id="publishing-quality">Publishing Quality</h3>
+
+<p>Our quality metrics track how well we publish when we publish:</p>
+
+<ul>
+  <li><strong>Performance against target.</strong> Every six months, we identify the number of datasets to publish. These measures track how we are performing against those targets.</li>
+  <li><strong>Timeliness of publishing.</strong> Fresh data is better than old data. Data should be updated per our commitment captured in the metadata for each dataset.</li>
+  <li><strong>Documentation and Usability.</strong> Data that isn’t documented puts extra burden on the user and results in unnecessary question loops. Native hosting allows our users to fully leverage our open data services.</li>
+</ul>
+
+<p>We have now added all of our quality metrics to <a href="http://datasf.org/progress/">DataSF in Progress</a> - where you can track them real time! Couple notes on how we’ve built this:</p>
+
+<ul>
+  <li>We track all the needed variables in a handful of public datasets (data inventory, metadata, and published views)</li>
+  <li>We use our open data API to populate our dashboard</li>
+</ul>
+
+<h3 id="publishing-impact">Publishing Impact</h3>
+
+<p>If we publish a bunch of data in a quality manner, it doesn’t matter if no one uses it. This is where our impact measures come into play. They are the hardest to measure and require deliberate data collection. At this time, our impact measures focus on internal metrics. While we’ve attempted external surveys, our “n” has been too low to infer anything from the data. In lieu of this, we are exploring “net promoter” scores and other methods. Welcome thoughts on this one.</p>
+
+<p>Until then, we will collect the following data via annual surveys and will add to our dashboard as we have multiple years.</p>
+
+<ul>
+  <li>Respondents indicating that SF OpenData has made their analytical work easier, faster or more accurate</li>
+  <li>Respondents indicating a reduction in medium or major barriers to use of data</li>
+  <li>Respondents indicating sufficient access to data produced or collected by other departments</li>
+</ul>
+
+<p>We’ll also try to capture additional impact via:</p>
+
+<ul>
+  <li>Case studies or stories of uses of open data</li>
+  <li>Focus groups or workshops</li>
+  <li>Counts of apps or websites “Made with Open Data” as part of our new showcase. This may include some basic impact questions like “how important was open data to creating your service”.</li>
+</ul>
+
+<p>Read our entire <a href="https://docs.google.com/document/d/1wvrSviKN8mYtxVVYCw7WohoujJjSFvSkY_Tj3ku8UMU/edit?usp=sharing">Evaluation and Performance Plan for Open Data</a>, which provides details on our approach, including desired trends, etc. Drop us a note if you think we are missing something key!</p>
+ ]]></description>
+    </item>
+      
+    
+      
+    <item>
+        <title><![CDATA[ We're Hiring! Help Promote Coordinated Care thru Effective Data Sharing & Use ]]></title>
+        <link>https://datasf.org/blog/share-sf-coordinator-job-post/</link>
+        <pubDate>Thu, 22 Oct 2015 00:00:00 +0000</pubDate>
+        <dc:creator>Joy Bonaguro</dc:creator>
+        <category>blog</category>
+        <guid isPermaLink="false">/blog/share-sf-coordinator-job-post</guid>
+        <description><![CDATA[ <p>The City and County of San Francisco is seeking a talented individual to play a transformational role in local government by helping to ensure that we are able to successfully, sustainably, and respectably navigate the data sharing space.</p>
+
+<p>Social service delivery is in the midst of a migration from program to people centric care. Our most vulnerable individuals touch multiple systems - education, human services, and criminal justice - which have historically operated in silos. The transition to coordinated care will tailor services to meet the needs of each individual, rather than administering programs with a one-size-fits-all approach.</p>
+
+<p>A coordinated care approach is best carried out when multiple agencies and jurisdictions are able to share data about the individuals they are jointly serving, so that efforts are not duplicated, and the dosage of services is based on the right mix of supports. Effective data sharing is at the heart of coordinated care and this role will support that work.</p>
+
+<h2 id="the-job">The Job</h2>
+<p>The ShareSF Coordinator will develop and shepherd the City’s work on cross-department and cross-jurisdictional data sharing. Reporting directly to the Chief Data Officer and working closely with the Controller’s office, the ShareSF Coordinator will be responsible for developing a program to support repeatable, scalable, legal, and respectful means for sharing regulated data. Ultimately, this role will play a key and central role to maturing the City’s capacity to effectively leverage data in decision-making via case management, evaluation and planning so that residents can experience services that are more effective, holistic, and integrated.</p>
+
+<p>The responsibilities for the role will include but not be limited to:</p>
+
+<ul>
+  <li>Develop and continuously improve data sharing policies and procedures for cross-department use</li>
+  <li>Develop strategies to support cross-department or citywide approaches to achieve effective data sharing, e.g. a city consent strategy</li>
+  <li>Conduct legal and privacy analysis and develop recommendations for data sharing questions and use cases</li>
+  <li>Develop enduring knowledge materials to support effective decision-making for data sharing, e.g. MOU templates, data use sharing agreements, training and decision trees</li>
+  <li>Develop and oversee knowledge repository on data sharing issues to preserve institutional memory and ensure consistent application</li>
+  <li>Help develop or inform legislative agenda as needed for local, state and federal levels</li>
+  <li>Advise on requirements for technical infrastructure or tools to support data sharing</li>
+  <li>Liaison with policy and program leaders within and without the City, including Data Sharing Committee members and their respective departments, to ensure that the program is supporting ongoing and emerging needs</li>
+  <li>Keep abreast of the latest developments in practices, regulation and laws related to data sharing</li>
+</ul>
+
+<h2 id="what-were-looking-forgot">What We’re Looking Forgot</h2>
+
+<h3 id="at-a-minimum">At a minimum</h3>
+<ul>
+  <li>A Master’s degree from an accredited college or university, preferably in public policy, law, public administration, business, or equivalent.</li>
+  <li>Three (3) years of verifiable and recent experience in one or more of the following: public policy, public administration, law, privacy, management, consulting, or policy analysis.</li>
+  <li>The full job posting lists some alternatives to these minimums</li>
+</ul>
+
+<h3 id="we-would-love">We would love</h3>
+<ul>
+  <li>A JD/MPP or an extensive background in legal or privacy work</li>
+  <li>Project management experience</li>
+  <li>Experience working for local government and/or public management</li>
+  <li>Familiarity with privacy and data sharing laws, including state and federal laws such as HIPAA and FERPA</li>
+</ul>
+
+<h2 id="how-to-apply">How to apply</h2>
+<p>Apply to the ShareSF Coordinator position available as <a href="http://www.jobaps.com/SF/sup/BulPreview.asp?R1=PEX&amp;R2=1823&amp;R3=066425&amp;Viewer=Admin&amp;Test=Y">#PEX-1823-066425</a>. Note that the description is a little different as part of the posting process!</p>
+ ]]></description>
+    </item>
+      
+    
+      
+    <item>
+        <title><![CDATA[ Meet Casey, the User that Open Data Forgot ]]></title>
+        <link>https://datasf.org/blog/meet-casey-the-user-open-data-portals-forgot/</link>
+        <pubDate>Mon, 21 Sep 2015 00:00:00 +0000</pubDate>
+        <dc:creator>Joy Bonaguro</dc:creator>
+        <category>blog</category>
+        <guid isPermaLink="false">/blog/meet-casey-the-user-open-data-portals-forgot</guid>
+        <description><![CDATA[ <p>Casey works her tail off. Every month she works incredibly hard pulling together a bunch of data from multiple departments. She carefully checks and double checks the numbers. She then summarizes them into tables and a few charts. (She would love to be able to map them but just doesn’t know how). When she’s all done, she emails the table and charts to her supervisor to file the official report. Sometimes, they end up being blog-posted to the website where they can be downloaded. Next month, it starts all over.</p>
+
+<p>Casey describes this process using a couple choice adjectives:</p>
+
+<ul>
+  <li>Labor-intensive</li>
+  <li>Repetitive</li>
+  <li>Frustrating</li>
+  <li>Annoying</li>
+</ul>
+
+<p>Let’s imagine Casey in a world where open data addressed her endless reporting problem:</p>
+
+<ol>
+  <li>Casey works with the open data program to publish her dataset and establish an update method (ideally automated).</li>
+  <li>She uses her City’s friendly open data portal to easily configure charts, tables and maps for the dataset that meet all of her reporting requirements. In fact, it’s so easy that it’s just like using Excel PivotTables - a tool that 1) she uses all the time and 2) is actually capable of creating the reports she needs.</li>
+  <li>Now anyone who visits the dataset on the portal can quickly see all the visuals she uses for reporting, which not only answer the most common questions about the dataset but serve as a gentle introduction to the data. Now users can dig into the full dataset at their now, better informed leisure.</li>
+  <li>Plus, her department recently updated their website and Casey can easily port over the visuals into a web page with some additional narrative and analysis.</li>
+</ol>
+
+<p>Now you might be thinking - golly, Casey, you can do this now! Technically and in the most narrow sense, you may be right. Open data portals do allow you to do this assuming:</p>
+
+<ul>
+  <li>You can master a fresh novel interface to generate the visuals</li>
+  <li>Your data is of a sufficiently simple structure to work in that interface</li>
+  <li>Your users can somehow find all the visuals you created scattered about</li>
+</ul>
+
+<p>No portal has met this challenge. My advice to the open data movement: solve City reporting challenges with open data and watch the data floodgates open.</p>
+
+<p><em>Names and specific circumstances have been altered to represent the stories of multiple, hard-working yet hamstrung public servants.</em></p>
+ ]]></description>
+    </item>
+      
+    
+      
+    
+      
+    <item>
+        <title><![CDATA[ Join Us! Seeking service-oriented technologist to scale open data ]]></title>
+        <link>https://datasf.org/blog/datasf-seeks-open-data-services-engineer/</link>
+        <pubDate>Wed, 26 Aug 2015 00:00:00 +0000</pubDate>
+        <dc:creator>Joy Bonaguro</dc:creator>
+        <category>blog</category>
+        <guid isPermaLink="false">/blog/datasf-seeks-open-data-services-engineer</guid>
+        <description><![CDATA[ <p>What does open data look like at scale? Would you like to find out? Or rather, would you like to be a key person in helping the City and County of San Francisco continuously improve the way we deliver open data services? We have a job for you.</p>
+
+<p>The Open Data Services Engineer is a new role at the City that will deliver service-oriented open data automation across a diverse range of departments. This role will also help roll out a strategy around geographic data services.</p>
+
+<h2 id="do-the-hard-work-to-make-things-simple">Do the hard work to make things simple</h2>
+<p>Publishing open data and access to data is an ongoing challenge in the City. We need someone to help design and implement a scalable framework for accessing and publishing data across the City. Help us unlock the potential of data in San Francisco.</p>
+
+<h2 id="who-were-looking-for">Who we’re looking for</h2>
+<p>We are looking for someone who can learn the contours of a complex and large organization and likes hard, meaty challenges. We are not looking for superhero lone wolfs, but thoughtful, empathetic individuals with a set of broad tools. We are a user-oriented team and we apply that in all of our work. Our users are diverse and varied and come from inside and outside the organization; willingness to take time to learn their needs and perspective is a needed trait.</p>
+
+<p>Folks who can gracefully translate business worries into technical needs and frameworks will thrive in this role.</p>
+
+<h2 id="skills-we-need">Skills we need</h2>
+<p>We are looking for people with:</p>
+
+<ul>
+  <li>Experience in GIS and mapping concepts and tools or equivalent</li>
+  <li>Familiarity with enterprise GIS, including common commercial platforms as well as open source platforms</li>
+  <li>Experience translating business needs into technical implementations, including mapping out business processes and data models</li>
+  <li>Comfort with front end development and web standards</li>
+  <li>Willingness and ability to learn new tools as needed, including programming languages</li>
+  <li>Familiar with the concepts of open data</li>
+  <li>Comfort creating, following, standardizing, and automating business processes to support program management</li>
+  <li>3+ years experience in related work</li>
+  <li>BS/BA in GIS, computer science, engineering, user-centered design or related field</li>
+</ul>
+
+<h2 id="skills-we-prefer">Skills we prefer</h2>
+<p>We would love applicants who also meet the following:</p>
+
+<ul>
+  <li>Passionate about improving government through open data</li>
+  <li>Enthusiastic about empowering use of data, with a focus on mapping, within and without the City</li>
+  <li>Advanced experience with front end development</li>
+  <li>Experience with back end development and database management</li>
+  <li>Experience training non-technical users to use technology to support their work</li>
+  <li>Experience with Feature Manipulation Engine (FME) from SAFE or similar ETL toolkits or frameworks</li>
+  <li>Self motivated and willing to learn / self teach</li>
+</ul>
+
+<p>You can <a href="https://docs.google.com/document/d/1Z2dxCeDVedmH3Z5Cvs_x-z1cygePjJoI8saPKjJUS9Q/edit?usp=sharing">read a longer description of the job on Google Docs</a> or <a href="https://docs.google.com/document/d/1Z2dxCeDVedmH3Z5Cvs_x-z1cygePjJoI8saPKjJUS9Q/export?format=pdf">as a PDF</a></p>
+
+<h2 id="how-to-apply">How to apply</h2>
+
+<p>The job blog-post is now live so you can:</p>
+
+<ol>
+  <li><a href="http://www.jobaps.com/SF/sup/bulpreview.asp?R1=PEX&amp;R2=1043&amp;R3=066002">Go here for the official blog-post and complete your application</a>. Don’t forget to include a cover letter and a resume with your application.</li>
+</ol>
+
+<h2 id="equal-employment-opportunity">Equal Employment Opportunity</h2>
+<p>The City and County of San Francisco is committed to equal employment opportunity. <a href="http://www.sfdhr.org/index.aspx?page=33">Read more about our equal employment opportunity policy</a>.</p>
+ ]]></description>
+    </item>
+      
+    
+      
+    <item>
+        <title><![CDATA[ SF Open Data Quarterly Roundup ]]></title>
+        <link>https://datasf.org/blog/sf-open-data-roundup-1/</link>
+        <pubDate>Fri, 14 Aug 2015 00:00:00 +0000</pubDate>
+        <dc:creator>Jason Lally</dc:creator>
+        <category>blog</category>
+        <guid isPermaLink="false">/blog/sf-open-data-roundup-1</guid>
+        <description><![CDATA[ <h2 id="showcasing-datasets-released-since-the-beginning-of-this-year">Showcasing datasets released since the beginning of this year</h2>
+
+<p>Recently, <a href="/blog/announcing-our-year-2-plan">we released our second year strategy</a>, which we’re really excited about! We’ve had our heads down this past year working diligently to get things lined up with the wonderful support of our data coordinators and colleagues throughout the City. In the coming year, we expect to be increasing our publishing and talking more about it with as many people as we can.</p>
+
+<p>While we’re making our publishing program as transparent as possible with <a href="/progress">DataSF In Progress</a> and the <a href="/publishing/plans">companion department publishing plans</a>, we want to make sure we do more to increase dataset discovery over time. A lot of love goes into making data available, and we would hate for all that work to go unnoticed and unused.</p>
+
+<p>Below is our first dataset roundup organized by category. Future roundups will cover the prior quarter of data releases, but we’re catching up, so these go back to the beginning of the year. These will be broader than they are deep, but hopefully you’ll find something you want to dig into and understand more. While you’re poking around, don’t forget to show a little love to departments for making these datasets available. Click on the links below to “tweet your appreciation” at the publishing departments in each category.</p>
+
+<!-- 
+<a class="btn-social twitter btn-block" style="text-align: center;" href="https://twitter.com/intent/tweet?text=
+%20Thanks%20for%20the%20%23opendata%20%40sfpublicworks%20%40sfplanning%20%40sfethics%20%40sfcontroller%20%40SF_DPH%20%40mayoredlee%20%40SFCityCIO%20%40sfrentboard%20%23govlove
+&amp;url=https://datasf.org/blog/sf-open-data-roundup-1/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet your appreciation</a>-->
+
+<h2 id="city-infrastructure">City Infrastructure</h2>
+<p><a href="http://data.sfgov.org/d/83ki-hu3p"><strong>DPW Street &amp; Sidewalk Evaluation Results, 7-1-2013 to Present</strong></a> - The Controller’s Office’s City Services Auditor (CSA) Division has worked with the Department of Public Works (DPW) to develop maintenance standards for streets and sidewalks and schedules and inspect for compliance since July 2004. This dataset contains street and sidewalk evaluation results since 7/1/2013 under the new FY12 standards.  You can also <a href="http://sfcontroller.org/index.aspx?page=49">access the annual reports in PDF under “street maintenance” here</a>.</p>
+
+<p><a href="http://data.sfgov.org/d/i926-ujnc"><strong>Large Utility Excavation Permits</strong></a> - The Department of Public Works (DPW) publishes this subset of large utility excavation permits (&gt;=1000 square feet total size) in the last year. Its primary purpose is to support the <a href="http://www.sfgov3.org/index.aspx?page=5358">Dig Once program</a>, a collaboration among DPW the Department of Technology and others involved in street and infrastructure improvements</p>
+
+<p><a href="http://data.sfgov.org/d/quzf-fjsw"><strong>Existing SF Commercial Wireless Facilities - April 2015</strong></a> -This is a compilation of data provided by wireless carriers and is maintained by the Planning Department updated as needed. This dataset has the locations of each of the commercial wireless facilities.</p>
+
+<p><a class="btn-social twitter btn-block" style="text-align: center;" href="https://twitter.com/intent/tweet?text= %20Thanks%20for%20the%20%23opendata%20RE:%20city%20infrastructure%20%40sfpublicworks%20%40sfplanning%20%40sfcontroller%20%23govlove &amp;url=https://datasf.org/blog/sf-open-data-roundup-1/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet your appreciation</a></p>
+
+<h2 id="city-management-and-ethics">City Management and Ethics</h2>
+<p><strong>Ethics Commission datasets</strong> the Ethics Commission continues to be one of the most prolific publishers on the open data portal. Here’s a summary of datasets too many to enumerate individually:</p>
+
+<ul>
+  <li><a href="https://data.sfgov.org/data?search=%22campaign%20finance%22&amp;dept=&amp;category=City%20Management%20and%20Ethics&amp;type=">A number of updated Campaign Finance Reports ahead of the upcoming election</a></li>
+  <li><a href="https://data.sfgov.org/City-Management-and-Ethics/FPPC-803-Behested-Payment-Report/2nqb-h7k4">Behested payment reports for payments made at the behest of public officials that are not presumed to be contributions</a></li>
+  <li><a href="https://data.sfgov.org/City-Management-and-Ethics/Lobbyists-on-Behalf-of-the-City-Disclosure-Reports/sz7b-c3pn">Lobbyists on behalf of the City, which is distinct from the lobbyists influencing the City</a></li>
+  <li><a href="https://data.sfgov.org/City-Management-and-Ethics/Statement-of-Economic-Interests-Database-SEI-Form-/si4a-zhur">Statement of Economic Interest list of non-filers</a></li>
+  <li><a href="https://data.sfgov.org/data?search=&amp;dept=Ethics%20Commission&amp;category=&amp;type=">Among others</a></li>
+</ul>
+
+<p><a href="http://data.sfgov.org/d/yrfc-c5yu"><strong>Web Analytics for SFGov Sites - 2015 (Q1+Q2)</strong></a> the Department of Technology has started publishing quarterly web analytics for sites in the SFGov domain. This does not include websites managed independently by departments.</p>
+
+<p><strong>DataSF datasets</strong> We’ve published both the <a href="http://data.sfgov.org/d/y8fp-fbf5">dataset inventory</a> and a <a href="http://data.sfgov.org/d/tzir-jbhj">dataset of department planning and inventory status</a>, which are used together to track our progress and report on individual department progress.</p>
+
+<p><a class="btn-social twitter btn-block" style="text-align: center;" href="https://twitter.com/intent/tweet?text= %20Thanks%20for%20the%20%23opendata%20RE:%20city%20management%20and%20ethics%20%40sfethics%20%40mayoredlee%20%40SFCityCIO%20%40datasf%20%23govlove &amp;url=https://datasf.org/blog/sf-open-data-roundup-1/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet your appreciation</a></p>
+
+<h2 id="energy-and-environment">Energy and Environment</h2>
+
+<p><a href="http://data.sfgov.org/d/a3ua-edzd"><strong>Urban Bird Refuge</strong></a> - the adopted Standards for Bird-Safe Buildings explains the documented risks that structures present to birds. Over thirty years of research has proven the risk to be biologically significant for certain bird species. This geospatial dataset maps out areas of particular risk to birds.  These areas are within 300ft of: open water, inland water bodies greater than 2 acres in size, open space greater than 2 acres, the shoreline.  <a href="http://www.sf-planning.org/index.aspx?page=2506">For more information visit the Standards for Bird-Safe Buildings web site</a></p>
+
+<p><a href="http://data.sfgov.org/d/3n7h-3jam"><strong>Green Connections Network</strong></a> - Green Connections aims to increase access to parks, open spaces, and the waterfront by envisioning a network of “green connectors”, city streets that will be upgraded incrementally over the next 20 years to make it safer and more pleasant to travel to parks by walking, biking, and other forms of active transportation. <a href="http://greenconnections.sfplanning.org">Further information can be found on the Green Connections website.</a></p>
+
+<p><a class="btn-social twitter btn-block" style="text-align: center;" href="https://twitter.com/intent/tweet?text= %20Thanks%20for%20the%20%23opendata%20RE:%20energy%20and%20environment%20%40sfplanning%20%23govlove &amp;url=https://datasf.org/blog/sf-open-data-roundup-1/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet your appreciation</a></p>
+
+<h2 id="geographic-locations-and-boundaries">Geographic Locations and Boundaries</h2>
+
+<p><a href="http://data.sfgov.org/d/wvqx-t7yi"><strong>California Register Districts</strong></a> and <a href="http://data.sfgov.org/d/286s-n9rt"><strong>National Register Districts</strong></a> Each of these two datasets are district boundaries that are either listed or determined eligible to be listed by San Francisco Planning Department preservation staff. One for California Register Districts and another for the National Register. <a href="http://ohp.parks.ca.gov/listedresources/">You can learn more about these district designations on the State’s Office of Historic Preservation website.</a></p>
+
+<p><a href="http://data.sfgov.org/d/c24s-w3ii"><strong>Orthophoto mosaic of San Francisco proper (2014) - 10cm per pixel (zipped MrSID format)</strong></a> - looking for detailed imagery of San Francisco? Look no further.</p>
+
+<p><a href="http://data.sfgov.org/d/4y69-icf9"><strong>Potential Locations For Medical Cannabis Dispensaries</strong></a> -  Locations may be used as an initial guide for investigating possible Medical Cannabis Dispensary (MCD) locations, but these do not superced applicable requirements in the Planning Code. The data shows: areas which are zoned to allow new MCDs; areas not located within 1,000’ of a school.  The data does not show: uses which further restrict MCD locations including (i.e. community facilities, recreation buildings, and substance abuse treatment centers).  The data is based on the best information available at the time of publication (Sept 2010).</p>
+
+<p><a href="http://data.sfgov.org/d/t2hi-nrng"><strong>Right of Way Polygons</strong></a> This is an oft requested layer representing the “paved” portion of the right of way. The Department of Public Works (DPW) published this in answer to a request. This layer is not drawn to engineering specifications and should be used accordingly either as a display layer or for very rough estimations regarding the right of way area.</p>
+
+<p><a class="btn-social twitter btn-block" style="text-align: center;" href="https://twitter.com/intent/tweet?text= %20Thanks%20for%20the%20%23opendata%20RE:%20geography%20%40sfpublicworks%20%40sfplanning%20%40SFCityCIO%20%23govlove &amp;url=https://datasf.org/blog/sf-open-data-roundup-1/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet your appreciation</a></p>
+
+<h2 id="health-and-social-services">Health and Social Services</h2>
+<p><a href="http://data.sfgov.org/d/banc-xdvr"><strong>Community Resiliency Indicator System</strong></a> The Community Resiliency Indicator System was developed by San Francisco’s Climate and Health Program managed by the Department of Public Health (DPH) and is part of San Francisco’s Climate and Health Profile. The dataset represents the system including 40 indicators and an additive index which is a compilation of all of the indicators. You can visit http://sfclimatehealth.org for more.</p>
+
+<p><a href="http://data.sfgov.org/d/46p7-cb56"><strong>Permitted Medical Cannabis Dispensaries</strong></a> As of December 31st, 2014, there were 28 Permitted Medical Cannabis Dispensaries (MCD) operating in the City and County of San Francisco. This dataset shows their locations. The Department of Public Health issues a permit to operate an MCD once approvals are granted by the Department of Building Inspection, Planning Department, Fire Department and The Mayor’s Office of Disability. A permit does not overrule state and federal laws regarding cannabis enforcement.</p>
+
+<p><a class="btn-social twitter btn-block" style="text-align: center;" href="https://twitter.com/intent/tweet?text= %20Thanks%20for%20the%20%23opendata%20RE:%20health%20and%20social%20services%20%40SF_DPH%20%23govlove &amp;url=https://datasf.org/blog/sf-open-data-roundup-1/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet your appreciation</a></p>
+
+<h2 id="housing-and-buildings">Housing and Buildings</h2>
+<p><a href="http://data.sfgov.org/d/pucn-j93j"><strong>2014 Housing Inventory</strong></a> - This report is the 45th in the series and describes San Francisco’s housing supply.  Housing Inventory data accounts for new housing construction, demolitions, and alterations in a consistent format for analysis of housing production trends.</p>
+
+<p><a href="http://data.sfgov.org/d/2cma-9y6y"><strong>SF Development Pipeline 2015 Q1</strong></a> - The Planning Department publishes a <a href="http://sf-planning.org/index.aspx?page=1691">quarterly report tracking the development pipeline in San Francisco</a>. The latest one is for the first quarter of 2015.</p>
+
+<p><a href="http://data.sfgov.org/d/hsxb-ci7b"><strong>Annual Allowable Rent Increase for Units Under Rent Control</strong></a> - In accordance with <a href="http://bit.ly/17Oq75y">Rules and Regulations Section 1.12</a>, the Rent Board of Arbitration sets the annual allowable rent increase for rent controlled units. The new rates are effective every year on March 1. The amount is based on 60% of the percentage increase in the Consumer Price Index (CPI) for All Urban Consumers in the San Francisco-Oakland-San Jose region for the 12-month period ending October 31, as blog-posted in November by the Bureau of Labor Statistics.</p>
+
+<p><a href="http://data.sfgov.org/d/5cei-gny5"><strong>Eviction Notices</strong></a> - Data includes eviction notices filed with the San Francisco Rent Board per San Francisco Administrative Code 37.9(c). A notice of eviction does not necessarily indicate that the tenant was eventually evicted, so the notices below may differ from actual evictions.</p>
+
+<p><a href="http://data.sfgov.org/d/ugv9-ywu3"><strong>Requests for Information Regarding Protected Status Related to Owner Move-In Evictions</strong></a> - This dataset includes requests for information filed with the San Francisco Rent Board under the SF Admin. Code. Under the Code, residents receiving an eviction notice may claim protected status either due to age and/or disability and length of tenancy or based on length of tenancy and occupancy of a child under the age of 18 during the school year. They need not be filed as estoppels. However, it has become common practice to add the request pursuant to the codes to estoppels, which is a legal term for limiting a legal action that could normally be taken, e.g. evicting.</p>
+
+<p><a href="http://data.sfgov.org/d/a229-rspw"><strong>Green Roofs in San Francisco</strong></a> - This layer is the data feeding into the San Francisco Green Roofs web map.  This map and further information about green roofs in San Francisco can be found at the <a href="http://www.sf-planning.org/index.aspx?page=3839">Planning Department’s Green Roofs website</a>.</p>
+
+<p><a href="http://data.sfgov.org/d/ngem-gcfs"><strong>Land Use</strong></a> - The Planning Department publishes the land use categories for every parcel in San Francisco in this geographic dataset. The land use categories are derived from a range of City and commercial databases.</p>
+
+<p><a href="http://data.sfgov.org/d/f2n6-ybnq"><strong>Residential projects with inclusionary requirements</strong></a> - <a href="http://bit.ly/1ag0AmP">Subject to Planning Code Section 415</a>, developments of 10 or more units fall under the City’s Inclusionary Affordable Housing Program. Data on residential projects are collected through the lifecycle of the projects by the Planning Department and the Department of Building Inspection. On a quarterly basis, the Mayor’s Office of Housing and Community Development works with Planning to produce a list for tracking and monitoring of these projects. This data is also featured in the <a href="http://housing.datasf.org/data-browser/inclusionary-housing/principal-projects-by-declaration/">housing data hub</a>, which showcases programs, policies and data related to housing in San Francisco.</p>
+
+<p><a class="btn-social twitter btn-block" style="text-align: center;" href="https://twitter.com/intent/tweet?text= %20Thanks%20for%20the%20%23opendata%20RE:%20housing%20and%20buildings%20%40sfplanning%20%40mayoredlee%20%23sfmohcd%20%40sfrentboard%20%23govlove &amp;url=https://datasf.org/blog/sf-open-data-roundup-1/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet your appreciation</a></p>
+
+ ]]></description>
+    </item>
+      
+    
+      
+    
+      
+    
+      
+    <item>
+        <title><![CDATA[ Announcing our Year 2 Strategic Plan! ]]></title>
+        <link>https://datasf.org/blog/announcing-our-year-2-plan/</link>
+        <pubDate>Fri, 31 Jul 2015 00:00:00 +0000</pubDate>
+        <dc:creator>Joy Bonaguro</dc:creator>
+        <category>blog</category>
+        <guid isPermaLink="false">/blog/announcing-our-year-2-plan</guid>
+        <description><![CDATA[ <p>We are so excited to launch our strategic plan for Year 2 - Data in San Francisco: Meeting supply, spurring demand!</p>
+
+<p><a href="http://www.sfmayor.org/index.aspx?recordid=927&amp;page=846">Read the press release</a> or <a href="https://docs.google.com/document/d/1mqunsT9wXRt-mBbOmY3WcEJmsWSpMOISotZ1WHZ1_IU/edit?usp=sharing">read the whole thing as a google doc</a> or <a href="https://drive.google.com/uc?export=download&amp;id=0B-65Qm9J0m0WTExmWnVaZVBNNTA">PDF</a>.</p>
+
+<h2 id="transforming-our-city-with-data">Transforming our City with Data</h2>
+<p>Data can feel dry, boring and academic. At the same time, everyone loves a good story. But every story has a rich vein of data threaded throughout, describing a pattern and illuminating a path forward. It’s only when we link the data narratives that underlie our stories, that we are able to make new connections that lead to new insights about what is working or what is possible. Our Year 2 plan is not about data for data’s sake. It is about transforming how we enrich our understanding, our experience and our City with data.</p>
+
+<h2 id="celebrating-year-1">Celebrating Year 1</h2>
+<p>Before we dive into what’s next, we need to step back and celebrate what we accomplished in Year 1. Section 3 of our plan goes into greater detail, but below are some of our favorite highlights from the last year:</p>
+
+<ul>
+  <li>Completed the <a href="https://data.sfgov.org/City-Management-and-Ethics/Dataset-Inventory/y8fp-fbf5">dataset inventory</a> with the help of our amazing Data Coordinators (<a href="http://datasf.org/blog/5-ways-to-scale-mountain-of-data/">learn more about our approach</a>)</li>
+  <li>Relaunched our open data portal and created a <a href="http://datasf.org/blog/building-lighter-and-faster/">web home for DataSF</a></li>
+  <li>Standardized <a href="http://datasf.org/publishing/">publishing methods</a> and <a href="http://datasf.org/blog/u-heart-metadata/">metadata requirements</a></li>
+  <li>Established a <a href="http://datasf.org/blog/data-license-liberation-day/">Citywide open data license</a> for published data</li>
+  <li>Launched the <a href="http://housing.datasf.org/">Housing Data Hub</a> our first strategic release in partnership with a slew of City departments</li>
+  <li>Launched the <a href="http://datasf.org/academy/">Data Academy</a> in partnership with the City Services Auditor</li>
+  <li>Developed a strategy to improve confidential data sharing
+with the City Services Auditor and more than a dozen City departments</li>
+  <li>Grew our team with the awesome addition of Jason Lally AND sneak peek: we’ll be hiring soon to support open data services and our confidential data sharing project - so keep an eye out!</li>
+</ul>
+
+<h2 id="leveraging-the-foundation-from-year-1">Leveraging the Foundation from Year 1</h2>
+<p>If Year 1 was about building the foundation, Year 2 is about buying furniture, painting the walls, hanging photos and throwing a housewarming party. It’s time to open the doors and not just let folks in, but deliver the invite in-person. That’s why the theme for Year 2 is to fill out the supply of data but also ensure that it’s being used by a broader range of people.</p>
+
+<h2 id="it-took-a-village">It took a village</h2>
+<p>A key part of our Year 1 foundation was the many people we partnered and worked with. The work we are doing requires the commitment, insight and effort of a tremendous number of people. And the length of our acknowledgements section reflects that.</p>
+
+<h2 id="our-goals-for-year-2">Our goals for Year 2</h2>
+<p>For Year 2, we are structuring our work around five core goals and subgoals in some cases.</p>
+
+<ol>
+  <li>Make timely data easily available</li>
+  <li>Increase number and timeliness of datasets on SF OpenData</li>
+  <li>Enable use of private data, while appropriately protecting it</li>
+  <li>Streamline internal data access</li>
+  <li>Improve the usability, quality and consistency of our data</li>
+  <li>Support increased use of data in decision-making</li>
+  <li>Increase internal capacity</li>
+  <li>Support public capacity</li>
+  <li>Foster and incent a data culture</li>
+  <li>Identify and foster innovations in open data and data use</li>
+  <li>Continuously improve, scale, maintain and monitor our work</li>
+</ol>
+
+<h2 id="things-we-plan-to-report-on-next-year">Things we plan to report on next year</h2>
+<p>If all goes according to plan, we will be reporting on the following key accomplishments next year:</p>
+
+<ul>
+  <li>Fully deployed data automation as a service to ease data publication</li>
+  <li>Deployed better, friendlier publishing for geographic data</li>
+  <li>Identified methods to crowdsource collective intelligence about published datasets</li>
+  <li>Launched new transparency websites</li>
+  <li>Engaged our broader community around a handful of key issues or datasets</li>
+  <li>Established center to facilitate and standardize confidential data sharing</li>
+  <li>Began to systematically tackle data quality</li>
+  <li>Developed Data Academy into a professional development strategy</li>
+  <li>Enriched our data through effective storytelling</li>
+</ul>
+
+<h2 id="in-the-meantime-check-out-datasf-in-progress">In the meantime, check out DataSF In Progress</h2>
+<p>Along with our plan, we are <a href="/progress">excited to launch DataSF In Progress</a> - our live dashboard tracking:</p>
+
+<ul>
+  <li>The Citywide data inventory and status by department</li>
+  <li>Department publishing plans</li>
+  <li>Publishing activity and performance</li>
+</ul>
+
+<p>Written with LOVE in San Francisco.</p>
+
+ ]]></description>
+    </item>
+      
+    
+      
+    <item>
+        <title><![CDATA[ How to Unstick Your Open Data Publishing ]]></title>
+        <link>https://datasf.org/blog/how-to-unstick-data-publishing/</link>
+        <pubDate>Tue, 07 Jul 2015 00:00:00 +0000</pubDate>
+        <dc:creator>Joy Bonaguro</dc:creator>
+        <category>blog</category>
+        <guid isPermaLink="false">/blog/how-to-unstick-data-publishing</guid>
+        <description><![CDATA[ <p>In San Francisco, we have some data <a href="https://data.sfgov.org/City-Management-and-Ethics/Dataset-Inventory/y8fp-fbf5">(sorry, I mean a lot of data)</a>. But sadly, there is no magical red publish button. So how to go about it? Priortize your data.</p>
+
+<p>We follow 4 key strategies.</p>
+
+<h2 id="strategy-1-department-drip">Strategy 1: Department Drip</h2>
+<p>Ultimately, our departments have to set aside time and resources to publish datasets. So during our <a href="/blog/5-ways-to-scale-mountain-of-data/">data inventory process</a>, we asked them two key questions to help them prioritize:</p>
+
+<ol>
+  <li>What is your sense of the relative value in publishing this data - High, Medium, or Low? (Check the questions and definitions in our <a href="https://docs.google.com/document/d/1CJ2uZSYEYcPb6bpcr24kcRCV0zDN-9xYE-o7FA23EMk/edit?usp=sharing">Data Coordinator Guidebook</a>).</li>
+  <li>How do you classify this data - Public, Sensitive, or Protected?</li>
+</ol>
+
+<p>We then assigned an initial priority level per the picture below and asked departments to revise it as needed.</p>
+
+<figure>
+	<img src="/assets/blog/unstick-data/PrioritizationGrid-DataSF.png" />
+	<figcaption>This grid was used to help guide departments in assigning an initial priority.</figcaption>
+</figure>
+
+<p>(<a href="https://docs.google.com/document/d/1CJ2uZSYEYcPb6bpcr24kcRCV0zDN-9xYE-o7FA23EMk/edit#heading=h.u72jj7ir95pq">Read more about how we did this - deep link in our guidebook</a>).</p>
+
+<p>We then asked departments to use this to create their publication plans (more on this later).</p>
+
+<h2 id="strategy-2-endorse-a-dataset">Strategy 2: Endorse a Dataset</h2>
+<p>While the department drip strategy reflects internal value and needs, we needed to also give a voice to our users - both internally and externally.</p>
+
+<p>We are still building this, but basically, it works like this:</p>
+
+<ol>
+  <li>We have this <a href="https://data.sfgov.org/City-Management-and-Ethics/Dataset-Inventory/y8fp-fbf5">awesome data inventory</a></li>
+  <li>We are building a lightweight endorsement application on top of it (more on that later)</li>
+</ol>
+
+<h2 id="strategy-3-strategic-or-thematic-releases">Strategy 3: Strategic or Thematic Releases</h2>
+<p>We’ve <a href="/blog/housing-data-hub-launched/">written about this before</a>. Strategic releases are the publication of 1 or more datasets + a data product. The <a href="http://housing.datasf.org/">Housing Data Hub</a> is one. For strategic releases, we’ll leverage additional resources from the open data program.</p>
+
+<h3 id="key-criteria">Key Criteria</h3>
+<p>To be a strategic release, it must meet several key criteria:</p>
+
+<ul>
+  <li>Address a pressing information gap or need</li>
+  <li>Inform issues of high public interest or concern</li>
+  <li>Tie together disparate data that may otherwise be used in isolation</li>
+  <li>Unpack complex policy areas through the thoughtful dissemination of open data</li>
+  <li>Pair data with the content and domain expertise that we are uniquely positioned to offer (e.g answer the questions we receive over and over again in a scalable way)</li>
+  <li>Build data products that are unlikely to be built by the private sector</li>
+  <li>Solve cross-department reporting challenges</li>
+</ul>
+
+<h3 id="readiness-checklist">Readiness Checklist</h3>
+<p>Even if an idea meets the key criteria, we need to be able to execute, so we have a readiness checklist:</p>
+
+<ul>
+  <li>Do we have a resourced partner? Are the departments ready and able to commit resources? Is the data ready and/or departments are committed to making it ready?</li>
+  <li>Do we have the time / bandwidth to commit?</li>
+  <li>What type of technology development is required? Do we have the time? Can we leverage existing investments?</li>
+  <li>Is there an opportunity to shop this around for resources?</li>
+  <li>Are there key dependencies we can’t control? How will we mitigate?</li>
+  <li>Can we create an agreed upon project charter including:
+    <ul>
+      <li>Clear scope</li>
+      <li>Resource commitment from us and departments, including roles and responsibilities</li>
+      <li>Phases of work and estimated timelines</li>
+    </ul>
+  </li>
+  <li>During production / work - can we clearly specify processes? In particular, if there is content development, do we have the review process designed and agreement on tone/editing rights etc?</li>
+</ul>
+
+<h2 id="strategy-4-divide-and-conquer">Strategy 4: Divide and Conquer</h2>
+<p>As part of our <a href="/about/">strategic plan</a>, we created data automation as a service. The idea is to provide data automation services to remove the human from data updates. Both strategic releases and department publishing plans and drip strategies feed our data automation queue. But the divide and conquer strategy emerged after analyzing our systems list created during the course of the inventory.</p>
+
+<p>In analyzing the list, we identified departments that are excellent candidates for wholesale automation - i.e. we can swoop in and automate all (or alot of) their data in a single project.</p>
+
+<p>What about you? How do you prioritize data for publication?</p>
+ ]]></description>
+    </item>
+      
+    
+      
+    <item>
+        <title><![CDATA[ 5 Ways to Scale the Mountain of Data in Your Organization ]]></title>
+        <link>https://datasf.org/blog/5-ways-to-scale-mountain-of-data/</link>
+        <pubDate>Wed, 17 Jun 2015 00:00:00 +0000</pubDate>
+        <dc:creator>Joy Bonaguro</dc:creator>
+        <category>blog</category>
+        <guid isPermaLink="false">/blog/5-ways-to-scale-mountain-of-data</guid>
+        <description><![CDATA[ <p>I was completely terrified.  We were hiking downhill towards the Pacific Ocean, and I was fighting visions of slipping, tumbling down the hillside.</p>
+
+<p>It was my first hike. In retrospect, it was not steep or challenging or particularly precipitous. But growing up in the flat plains of the Midwest, I had made it to my early twenties without a single hike (and was questioning the rationality of this strange subspecies known as “hikers”).</p>
+
+<p>Many years later, I managed to hike the Inca Trail, where I <em>mostly</em> conquered my lingering fears of hiking.</p>
+
+<p>Well, our data inventory was our Inca Trail, and let me just say…</p>
+
+<h2 id="try-some-foothills-before-you-scale-a-mountain">Try some foothills before you scale a mountain</h2>
+<p>In other words - consider starting with something smaller than a full scale inventory (i.e. listing all of your data). In our case, our program had been around for awhile and the inventory was a natural progression. But for programs that are just starting, an inventory can take a lot of work without visible results. Ideally, you should have some successes or examples in place before starting an inventory.</p>
+
+<p>Here are some ideas for alternatives to doing a full scale inventory:</p>
+
+<ol>
+  <li><strong>Topic Inventory.</strong> Collect and list all the data around a service or topic like Housing or Transit or Recreation and then pair it with a <a href="http://datasf.org/blog/housing-data-hub-launched/">strategic release</a>.</li>
+  <li><strong>Top Five.</strong> Ask departments to list their top 5 datasets. See <a href="https://data.lacity.org/">DataLA</a>.</li>
+  <li><strong>Department Dives.</strong> Dive deep into a handful of departments and inventory (and maybe publish) their data. <a href="http://www.phila.gov/data/">See Philly</a>.</li>
+  <li><strong>Initiative Inventory.</strong> Start with a specific problem or challenge your City is facing and inventory the data related to that. Again, couple with a strategic release.</li>
+  <li><strong>Stop at Systems.</strong> Simply identifying systems that generate data could be a natural stopping point. Our legislation was more specific and the dataset inventory is super helpful to have, but it’s one way to go.</li>
+</ol>
+
+<p>Alternatively - do the full scale inventory, but use these alternatives as an implementation or phasing strategy. Whatever you do…</p>
+
+<h2 id="break-it-into-steps">Break it into steps</h2>
+<p>Our legislative requirement to inventory our data didn’t come with a set of instructions. And we didn’t find a lot of guidance out there (though maybe we missed it). So we broke it into 3 phases:</p>
+
+<ol>
+  <li>Identify data sources</li>
+  <li>Brainstorm datasets</li>
+  <li>Complete dataset inventory</li>
+</ol>
+
+<p>Without these discrete tasks, the inventory felt too big and scary to accomplish. And for each of those steps…</p>
+
+<h2 id="provide-guidance-and-support">Provide guidance and support</h2>
+<p>Our Data Coordinators (representatives from each department) ultimately had to deliver the inventory. (And FYI, they are the true heroes here.) So we did our best to support them every step of the way and <strong><em>make it as easy as possible</em></strong> for them to complete the work. During this phase your data coordinators are your users. Craft empathy for them and leverage user-centered design to support them.</p>
+
+<p>Tools we provided:</p>
+
+<ul>
+  <li>Guidebooks, webinars and workshops</li>
+  <li>Shared definitions (e.g. data steward, data source) - thank you <a href="http://www.govfresh.com/about/">GovFresh</a></li>
+  <li><a href="https://www.youtube.com/watch?v=UuFRCg0U6mE">Activities to motivate the process</a></li>
+  <li>Templates designed to ease input</li>
+  <li>Custom support and consulting for complicated departments</li>
+  <li>A single <a href="http://datasf.org/coordinators/">online  resource portal</a> for Data Coordinators to go to</li>
+  <li>Deadlines, including intermediate deadlines (they actually asked for this ;-)</li>
+</ul>
+
+<p>Check out our <a href="http://datasf.org/resources/">Data Inventory Resources</a>, but before you use them…</p>
+
+<h2 id="implement-quality-control-and-maintenance">Implement quality control and maintenance</h2>
+<p>At each stage in the process, plan to allocate time and energy to ensure quality submissions. If you don’t do this, your inventory will be less useful. This takes a lot of work (try to minimize by thinking thoughtfully about your data collection strategy) but it’s worth it. Just budget the time. Also, come up with a plan for maintaining the inventory and always, always…</p>
+
+<h2 id="track-progress">Track progress</h2>
+<p>We tracked the status of each department through each phase (and deadline) of the inventory. This forced us to checkin and helped us identify the need for targeted outreach and support. It also made us accountable to our legislative requirements.</p>
+
+<p>At this point, 75% of our departments have completed the inventory, <a href="https://data.sfgov.org/City-Management-and-Ethics/Dataset-Inventory/y8fp-fbf5">which you can check out here</a>. We decided to go live with the inventory despite not having all departments ready. That’s also where tracking comes into play. We have rolled the tracking into our quarterly report and are accepting department submissions on a rolling, monthly basis.</p>
+
+<h2 id="anticipate-future-needs-inventory-as-platform">Anticipate future needs: Inventory as platform</h2>
+<p>Your inventory is a one time chance to capture a lot of awesome information. Don’t waste it. Now that we have this tremendous resource in place, we are building all sorts of stuff on top of it. More on this in subsequent blog-posts but we are using the inventory to:</p>
+
+<ul>
+  <li>Create publishing plans</li>
+  <li>Automate monitoring and performance metrics in publishing and open data</li>
+  <li>Conduct dataset management</li>
+  <li>Build tools to endorse datasets for publication</li>
+  <li>Provide data dating / data concierge services</li>
+  <li>And more…stay tuned ;-)</li>
+</ul>
+
+<p>And again, thanks to our amazing Data Coordinators for making this possible!</p>
+ ]]></description>
+    </item>
+      
+    
+      
+    <item>
+        <title><![CDATA[ Raising the digital barn, or how we're building the Housing Data Hub ]]></title>
+        <link>https://datasf.org/blog/raising-digital-barn/</link>
+        <pubDate>Wed, 13 May 2015 00:00:00 +0000</pubDate>
+        <dc:creator>Jason Lally</dc:creator>
+        <category>blog</category>
+        <guid isPermaLink="false">/blog/raising-digital-barn</guid>
+        <description><![CDATA[ <p>A couple weeks ago, <a href="http://datasf.org/blog/housing-data-hub-launched/">we announced the Housing Data Hub</a>! In this blog-post, read about our technical and process approach to building the hub and what’s next.</p>
+
+<h2 id="prototyping-together-the-housing-data-hub-as-process">Prototyping together: the Housing Data Hub as process</h2>
+<p>The <a href="http://housing.datasf.org">Housing Data Hub</a> was born out of the notion that in order to mature our open data practice at the City, we needed to diversify our approach to publishing data. In the <a href="https://docs.google.com/document/d/1hvp_wls8KuJrfHW_NwX1qtyFR4EFdWCkxcULnNlhKNw/edit?usp=sharing">City’s open data strategy</a>, a quick look at datasets over time reveals a publishing stagnation. While the inventory process will help us bring institutional focus and planning to citywide data, Joy hit on the idea early on that we also needed to release datasets strategically around common themes or topics. Housing affordability is our first one.</p>
+
+<p>These strategic (or thematic) releases allow us to apply focused, collaborative effort around a number of related datasets. <a href="http://datasf.org/blog/housing-data-hub-launched/">Joy lays out more about this approach</a> in her housing data hub announcement. The key challenge was how to turn a concept into action - this is where technology met process.</p>
+
+<h3 id="getting-started">Getting started</h3>
+<p>One of the key parts of a strategic release is to bundle data with a product. This could be a website, a report, a study, or any product that helps frame and focus the activity around the data. In this case, we imagined a website that presented the portfolio of local policies that affect housing affordability in San Francisco in a clearer manner.</p>
+
+<p>With a concept and buy in from departments, Joy began work. Starting with paper prototypes and content drafts, the first push on code began during the 2014 <a href="http://hackforchange.org">National Day of Civic Hacking</a> weekend in San Francisco. Working with local <a href="http://codeforsanfrancisco.org">Code for San Francisco</a> volunteers (<a href="http://www.codeforamerica.org/blog/2014/06/24/peer-network-spotlight-joy-bonaguro/">read about our weekend</a> ), the concept was fleshed out in code using the <a href="http://rubyonrails.org/">Ruby on Rails framework</a>.</p>
+
+<h3 id="changing-technical-direction">Changing technical direction</h3>
+<p>The volunteer work was incredibly useful for crystallizing the concepts you see in the hub today like the data browser and policy pages. But we hit some challenges using Ruby on Rails for both a content management system (CMS) and to store data.</p>
+
+<p>It was hard to iterate fast enough to get content in for review by our content partners. And loading data into a separate database introduced failure points between the source data and the visuals.</p>
+
+<h4 id="using-prose-as-a-lightweight-cms">Using Prose as a lightweight CMS</h4>
+<p>After huddling and laying out the options, we decided to adopt a lighter weight approach. It turned out we didn’t really need full CMS-like capability. The content could be edited in iterations outside the website, and once the content was set, changes would be infrequent. Any CMS capabilities that ended up being built would go underused. It just didn’t make sense to apply the effort there. Instead, we focused on making it easy to configure visuals and consume external data sources. We leaned on emerging <a href="https://developmentseed.org/blog/2012/07/27/build-cms-free-websites/">CMS-less</a> <a href="http://thinkshout.com/blog/2014/10/success-building-cmsless-production-sites-with-jekyll/">practices</a> for content including using <a href="http://prose.io">Prose.io</a> as a basic editing interface.</p>
+
+<h4 id="from-database-to-dogfood">From database to dogfood</h4>
+<p>And instead of using a separate database via Ruby on Rails - we used <a href="http://dev.socrata.com/docs/endpoints.html">open data APIs from our portal</a>. This allows us to have the data in a single place and use the same set of tools as our open data portal users. This approach is often referred to as dogfooding, which you can <a href="https://medium.com/@antheaws/hey-uncle-sam-eat-your-own-dogfood-9f0c110c13c8">read more about in the great blog-post by Anthea Watson Strong</a>.</p>
+
+<p>And we were able to save much of the original front-end work from National Day of Civic Hacking weekend (<a href="http://codeforsanfrancisco.org/hackforchange/">sign up for 2015</a>) even though we changed the underlying technology. Ultimately, I don’t see this as a failure, but as an important learning moment and maybe even a necessary part of working in the open. We had to travel down some roads to discover what would work, and being able to put eyes on some code helped us crystallize the approach.</p>
+
+<!--
+<figure>
+	<img src="/assets/img/blog/white_board_NDoCH.jpg">
+	<figcaption>National Day of Civic Hacking 2014 brought together lots of ideas and a working prototype. That work influences the approach to this day.</figcaption>
+	Manu Koenig (right) works on the white board with Victoria Ngo (left), designing what would become the start of the Housing Data Hub interface.
+</figure>
+-->
+
+<h3 id="the-technology-stack">The technology stack</h3>
+<p>To implement the desired changes, we evaluated and then picked a mix of frameworks and code libraries that would help us ship the product. The core ones being:</p>
+
+<ol>
+  <li><strong><a href="http://jekyllrb.com">Jekyll</a></strong> - a static site compiler and the core of our CMS-less approach. It allows us to quickly develop content and templates to display that content. You can read <a href="http://datasf.org/blog/building-lighter-and-faster">more about how we’ve applied it on the DataSF website</a>.</li>
+  <li><strong><a href="http://c3js.org">C3js</a></strong> - a javascript library that allows the creation of reusable charts wrapped around the incredible D3 visualiztion library. The most important feature here for our process is that we could throw a CSV  or JSON file at it, allowing us to prototype with CSVs and swap in JSON API endpoints from our portal later.</li>
+  <li><strong><a href="https://www.mapbox.com/mapbox.js/api/v2.1.9/">Mapbox.js</a></strong> - a javascript library wrapped around the mapping library, Leaflet, that makes consuming map tiles from Mapbox easy and inherits all of the sweet  capabilities of Leaflet. This lets us present the user with mapped data, consuming geojson for breakfast, which is great because our open data portal <a href="http://dev.socrata.com/changelog/2015/04/27/new-higher-performance-apis.html">now supports that format</a>.</li>
+</ol>
+
+<p>There are many other libraries and inspirations <a href="http://housing.datasf.org/about#acknowledgements">mentioned in our acknowledgements</a>, but these three drive the primary features of the Hub.</p>
+
+<h2 id="it-takes-a-village">It takes a village</h2>
+<p>The change in technology direction removed a major bottleneck and allowed us to implement changes quickly. We worked with department and citizen user reviewers to check content for accuracy as well as ease of understanding (government prose is not always the easiest to decipher :wink:). By having prototypes in place fast, we were able to gather around a real thing and not just an abstract concept: <strong><em>the technology didn’t drive the development, it supported our process of co-creating with multiple stakeholders of varying degrees of technical ability</em></strong>.</p>
+
+<p>Hopefully, you can tell by now, that many many hands (and hearts) touched this project. Not just the folks we’ve <a href="http://housing.datasf.org/about#acknowledgements">acknowledged on the hub already</a>, but the countless coders that have contributed thousands of lines of code to the open source projects on which we’re building.</p>
+
+<p>And that goes to an even broader takeaway. This whole opengov, open data, civic tech (whatever you call it) movement must be built on community. We learn together, which is why we attempt to share as much as we can here on our website. We hope in sharing, we learn even more from everyone else.</p>
+
+<h2 id="whats-next">What’s next?</h2>
+<p>The Hub remains a work in progress. You’ll notice, if you look closely, that not all datasets are being fed directly from the portal. We are simultaneously working on getting datasets published to the portal regularly and consistently (per Goal 1 of our Open Data Strategy). As we get those up, we’ll swap out the generated CSVs for an API call to the portal. As mentioned, C3js enables this flexible pattern. You can track the progress of that transition <a href="http://housing.datasf.org/about#our-process">on the Hub’s about page</a>.</p>
+
+<h3 id="a-little-spring-cleaning">A little spring cleaning</h3>
+<p>If <a href="http://github.com/datasf/housing-data-hub">you look even closer</a>, you’ll notice the code is a bit sloppy :grimacing:! We’re about to freeze the featureset and refactor and document the project in greater detail. We’re kicking the tires on this approach, so I’ll be develop standards for documenting earlier and often and employing better code practices. There’s plenty of inspiration here from <a href="http://18f.gsa.gov">18F</a> and various open source communities that I can’t wait to borrow from.</p>
+
+<p>We’ll work on getting some issues up on the repo and working more with civic hackers and volunteers on the next rounds of improvements. Keep an eye out, and if you want to help, let us know! (Oh, and <a href="http://codeforsanfrancisco.org/hackforchange">maybe swing by National Day of Civic Hacking 2015</a>)</p>
+
+<h3 id="from-product-to-platform">From product to platform</h3>
+<p>Now that we’ve gone deep, we’re thinking broad. What if we want to spin up something similar again? Or what if another city would like to do the same? After we get the fundamentals down with the refactor, we’ll be looking to abstract the approach so others can follow suit. At a minimum, this means really great documentation, cleaning out the specific content, and using good conventions to maintain the project.</p>
+
+<figure>
+	<img src="/assets/blog/digital-barn/get_dataset.png" />
+	<figcaption>A "Get the source dataset" button exists wherever there is raw data available on the open data portal. Over time, all visuals will have this link.</figcaption>
+</figure>
+
+<p>Even more broadly, I’ll point you to a seemingly small feature that actually has larger implications for our strategic approach. On <a href="http://housing.datasf.org/data-browser/rent-control/eviction-notices-over-time/">visualizations</a> <a href="http://housing.datasf.org/data-browser/rent-control/annual-allowable-increases/">for</a> <a href="http://housing.datasf.org/data-browser/inclusionary-housing/principal-projects-by-declaration/">which</a> the underlying data are available on the open data portal, you’ll see a “Get the source dataset” button. Following this takes you to the full dataset on <a href="http://data.sfgov.org">SF OpenData</a>, where you can explore and download the data. This is a small but important step toward creating <em>enduring sources of truth</em> and <em>unbroken data lineages</em>. Gone will be the days of shipping spreadsheets and reports around and losing track of what came from where, and it all starts with that simple, blue button.</p>
+ ]]></description>
+    </item>
+      
+    
+      
+    <item>
+        <title><![CDATA[ Housing Data Hub - from Open Data to Information ]]></title>
+        <link>https://datasf.org/blog/housing-data-hub-launched/</link>
+        <pubDate>Fri, 24 Apr 2015 00:00:00 +0000</pubDate>
+        <dc:creator>Joy Bonaguro</dc:creator>
+        <category>blog</category>
+        <guid isPermaLink="false">/blog/housing-data-hub-launched</guid>
+        <description><![CDATA[ <p>Today we launched the Housing Data Hub - your go to resource to learn about housing programs in San Francisco and the data behind them. Housing is a complex issue and it affects everyone in the City. However, there is not a lot of broadly shared knowledge about the existing portfolio of programs. The Hub puts all housing data in one place, visualizes it, and provides the program context.
+This is also the first of what we hope to be a series of strategic open data releases over time. Read more about that below or check out <a href="http://housing.datasf.org">the Hub</a>, which <a href="http://housing.datasf.org/about/#acknowledgements">took a village</a> to create!</p>
+
+<h2 id="evolution-of-open-data-strategic-releases">Evolution of Open Data: Strategic Releases</h2>
+<p>The Housing Data Hub is also born out of a belief that simply publishing data is no longer sufficient. Open data programs need to take on the role of adding value to open data versus simply blog-posting it and hoping for its use. Moreover, we are learning how important context is to understanding government datasets. While <a href="http://datasf.org/blog/u-heart-metadata/">metadata</a> is an essential part of context, it’s a starting not endpoint.</p>
+
+<p>For us a strategic release is one or more key datasets + a data product. A data product can be a report, a website, an analysis, a package of visualizations, an article…you get the idea. The key point: you have done something beyond simply publishing the data. You provide context and information that transforms the data into insights or helps inform a conversation. (P.S. That’s also why we are excited about Socrata’s <a href="http://www.socrata.com/rethink">new dataset user experience</a> for our open data platform).</p>
+
+<h2 id="will-we-only-do-strategic-releases">Will we only do strategic releases?</h2>
+<p>No! First off - it’s a ton of work and requires <a href="http://housing.datasf.org/about/#acknowledgements">amazing partnerships</a>. Strategic (or thematic) releases should be a key part of an open data program but not the only part. We will continue to publish datasets per department plans (coming out formally this summer). And we’ll also continue to take data nominations to inform department plans.</p>
+
+<p>We’ll reserve strategic releases to:</p>
+
+<ul>
+  <li>Address a pressing information gap or need</li>
+  <li>Inform issues of high public interest or concern</li>
+  <li>Tie together disparate data that may otherwise be used in isolation</li>
+  <li>Unpack complex policy areas through the thoughtful dissemination of open data</li>
+  <li>Pair data with the content and domain expertise that we are uniquely positioned to offer (e.g answer the questions we receive over and over again in a scalable way)</li>
+  <li>Build data products that are unlikely to be built by the private sector</li>
+  <li>Solve cross-department reporting challenges</li>
+</ul>
+
+<p>And leverage the open data program to expose the key datasets and provide context and visualizations via data products.</p>
+
+<p>We also think this is a key part of broadening the value of open data. Open data portals have focused more on a technical audience (what we call our citizen programmers). Strategic releases can help democratize how governments disseminate their data for a local audience that may be focused on issues in addition to the apps and services built on government data. It can also be a means to increase internal buyin and support for open data.</p>
+
+<h2 id="next-steps">Next steps</h2>
+<p>As part of our rolling release, we will continue to work to automate the datasets feeding the hub. You can read more about our <a href="http://housing.datasf.org/about/#our-process">rollout process</a>, inspired by the UK Government Digital Service. We’ll also follow up with technical blog-post on the platform, which is <a href="https://github.com/datasf/housing-data-hub">available on GitHub</a>, including how we are consuming the data via our open data APIs.</p>
+ ]]></description>
+    </item>
+      
+    
+      
+    <item>
+        <title><![CDATA[ Welcome to DataSF's new home ]]></title>
+        <link>https://datasf.org/blog/our-new-home/</link>
+        <pubDate>Mon, 06 Apr 2015 21:33:12 +0000</pubDate>
+        <dc:creator>Joy Bonaguro</dc:creator>
+        <category>blog</category>
+        <guid isPermaLink="false">/blog/our-new-home</guid>
+        <description><![CDATA[ <p>We are excited to launch our new website! Going forward DataSF.org will be the home of our official website, while we have re-branded the open data portal as SF Open Data at <a href="http://data.sfgov.org">data.sfgov.org</a>.</p>
+
+<p>From day one, we needed a website, not just an open data portal. Unfortunately, we haven’t had enough bandwidth until this quarter. Now that we have a website, it’s much easier to showcase and direct folks to our other work. We’ll continue to build it out over time (e.g. new DataSF Showcase) but check it out in the meantime to learn about:</p>
+
+<ul>
+  <li><a href="http://datasf.org/academy">Data Academy</a>. The program we launched last fall for city employees by city employees on anything from data analysis, design, and management. Demand is insane with every course having a waitlist!</li>
+  <li><a href="http://datasf.org/coordinators">Coordinator (and soon to be Publisher) portal</a>. One stop shopping for our publishers and coordinators to support their open data work.</li>
+  <li><a href="http://datasf.org/resources">Resources</a>. All documents / resources that we are creating in the course of our work. We hope that documenting our work can help shorten the effort for others.</li>
+  <li>Coming soon:
+    <ul>
+      <li>ETL toolkit. Our version of Chicago’s awesome ETL toolkit.</li>
+      <li>Stat Starter Kit. A series of case studies and tools for departments to use to kickstart performance stat programs.</li>
+      <li>Civic Starter Kit. A quick how to on how to get involved and contribute to the civic work in the City.</li>
+      <li>Publishing Plans. Open data publishing targets and plans for departments.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Also, read about the terrific, lightweight framework we used to <a href="http://datasf.org/blog/building-lighter-and-faster">build it</a>.</p>
+ ]]></description>
+    </item>
+      
+    
+      
+    <item>
+        <title><![CDATA[ DataSF's corner of the web: building lighter and faster ]]></title>
+        <link>https://datasf.org/blog/building-lighter-and-faster/</link>
+        <pubDate>Mon, 06 Apr 2015 00:00:00 +0000</pubDate>
+        <dc:creator>Jason Lally</dc:creator>
+        <category>blog</category>
+        <guid isPermaLink="false">/blog/building-lighter-and-faster</guid>
+        <description><![CDATA[ <p>When Joy first started as Chief Data Officer, DataSF, the program, was represented only by the open data portal, the product. Early on, she recognized that part of maturing the open data program meant giving DataSF a true home on the web that encapsulated not just the portal, but all the other institutional work that DataSF represents. The first foray in this direction was to work with Socrata to make <a href="http://datasf.org/blog/the-new-datasf/">some usability improvements on the platform</a>, and spin up two WordPress sites, one that would house the blog and resources and another that would act as a portal for our data coordinators.</p>
+
+<p>As time went on, the websites began to show some wear, not for lack of technical knowledge, but because the architecture just didn’t support the flexibility we needed, and frankly, we have bigger things to worry about than whether a plugin is updated or the finer points of WordpPress templating.</p>
+
+<h2 id="charting-a-new-course">Charting a new course</h2>
+
+<p>When I first joined the DataSF team, one of the things Joy and I both got excited about was creating a fresh, agile face for DataSF and rethinking the relationship of the program to the open data portal. We’ve been busy with a lot of things, some of which you’ll start to see evidence of on the site now, but we cleared the path early this year for relaunching the website. The gist of which you can <a href="http://datasf.org/blog/our-new-home">read about here</a>, and the result of which you are looking at right now.</p>
+
+<p>To get here, we evaluated our options carefully. Inspired in <a href="https://18f.gsa.gov/2014/11/17/taking-control-of-our-website-with-jekyll-and-webhooks/">part by 18F</a> and <a href="http://www.codeforamerica.org/blog/2014/02/14/welcome-to-the-new-codeforamerica-org/">Code for America</a>, and wanting to optimize for speed, flexibility and being responsive to feedback, we chose to consolidate our WordPress content and relaunch the site in Jekyll.</p>
+
+<h2 id="what-is-jekyll">What is Jekyll?</h2>
+
+<p>Jekyll is a basic framework that applies templates to content (stored in files) to generate static HTML. These static pages can then be efficiently served to you, our reader, with very little overhead, specifically no databases and no complex backend code.</p>
+
+<h2 id="why-jekyll">Why Jekyll?</h2>
+
+<p>Now I know we’re the open data people, so why in the world would we put the kibosh on a database-driven website? Well, in this case, it just makes sense. At the end of the day, this little corner on the web is mostly content, and whenever we need dynamic data, we can leverage Application Programming Interfaces (APIs like the ones that our <a href="http://dev.socrata.com/docs/endpoints.html">open data portal offers</a>) to serve up that content. For example, we can pull data from the portal if we need to, leveraging the Socrata platform to do so – don’t worry, we’re keeping a database driven portal ;-)</p>
+
+<p>Basically, we don’t want to waste technical resources on something that’s, at the end of the day, nothing more than a bundle of HTML pages. Also, Jekyll allows us to do the following:</p>
+
+<ol>
+  <li><strong>Prototype faster.</strong> When Joy and I have an idea, it’s actually easier to test it out in quick iterations and get feedback from real users. We can leverage open source code to build faster and then refine to something more polished. </li>
+  <li><strong>Collaborate easier.</strong> Our <a href="https://github.com/datasf/datasf.github.io/">code is open source</a> and it’s easier for others to copy, test and create their own version or just look through our code to see what we’re doing (it’s honestly not too complicated, and admittedly has a ways to go, but it’s all there) </li>
+  <li><strong>Ship sooner.</strong> We’re a small team with a lot to do, and while managing a server on its own isn’t overly complicated, it can be a lot in combination with everything else that needs to get done. Jekyll helps us reduce unnecessary dependencies so we can focus on the most important things, like enabling use of the City’s data. </li>
+</ol>
+
+<h2 id="so-how-does-this-thing-work">So how does this thing work?</h2>
+
+<p>Now, there are plenty of resources that can <a href="http://code.tutsplus.com/tutorials/using-jekyll--cms-20956">explain</a> <a href="http://jekyllrb.com/">Jekyll</a> <a href="https://help.github.com/articles/using-jekyll-with-pages/">better</a> <a href="http://code.tutsplus.com/articles/building-static-sites-with-jekyll--net-22211">than</a> I can, but let me give you an example of how these blog pages are built.</p>
+
+<p>Jekyll is built around <a href="https://github.com/datasf/datasf.github.io/tree/master/_layouts">templates</a> and simple documents written in Markdown. <a href="http://daringfireball.net/projects/markdown/">According to John Gruber</a>, its creator, “Markdown’s syntax is intended for one purpose: to be used as a format for writing for the web.” It provides a simple syntax for creating documents with punctuation and simple text conventions.</p>
+
+<p>For example. If you want to emphasize text, you can do the following:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>
+*this text would be the same as italicizing*
+
+**for bold statements, use two asterisks**
+
+</code></pre>
+</div>
+
+<p>What’s awesome about this, is that it gives a very simple way to write content without worrying about HTML. And then with Jekyll, we take these simple documents and turn them into content formatted for the web. So that <a href="https://raw.githubusercontent.com/DataSF/datasf.github.io/master/_blog-posts/blog/2015-04-06-building-lighter-and-faster.md">this</a> becomes the blog blog-post you’re looking at now.</p>
+
+<p>Additionally, we can add data about the blog-post and use it in our templates. For example at the front of this blog blog-post markdown file is the following:</p>
+
+<div class="language-yaml highlighter-rouge"><pre class="highlight"><code><span class="nn">---</span>
+<span class="s">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">DataSF’s</span><span class="nv"> </span><span class="s">corner</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">web:</span><span class="nv"> </span><span class="s">building</span><span class="nv"> </span><span class="s">lighter</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">faster"</span>
+<span class="s">author</span><span class="pi">:</span> <span class="s">jason_lally</span>
+<span class="s">image</span><span class="pi">:</span>
+  <span class="s">thumb</span><span class="pi">:</span> <span class="s">data-sf-website-dev.png</span>
+  <span class="s">feature</span><span class="pi">:</span> <span class="s">data-sf-website-dev.png</span>
+<span class="s">description</span><span class="pi">:</span> <span class="s2">"</span><span class="s">When</span><span class="nv"> </span><span class="s">Joy</span><span class="nv"> </span><span class="s">first</span><span class="nv"> </span><span class="s">started</span><span class="nv"> </span><span class="s">as</span><span class="nv"> </span><span class="s">Chief</span><span class="nv"> </span><span class="s">Data</span><span class="nv"> </span><span class="s">Officer,</span><span class="nv"> </span><span class="s">DataSF,</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">program,</span><span class="nv"> </span><span class="s">was</span><span class="nv"> </span><span class="s">represented</span><span class="nv"> </span><span class="s">only</span><span class="nv"> </span><span class="s">by</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">open</span><span class="nv"> </span><span class="s">data</span><span class="nv"> </span><span class="s">portal,</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">product.</span><span class="nv"> </span><span class="s">Early</span><span class="nv"> </span><span class="s">on,</span><span class="nv"> </span><span class="s">she</span><span class="nv"> </span><span class="s">recognized</span><span class="nv"> </span><span class="s">that</span><span class="nv"> </span><span class="s">part</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">maturing</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">open</span><span class="nv"> </span><span class="s">data</span><span class="nv"> </span><span class="s">program</span><span class="nv"> </span><span class="s">meant</span><span class="nv"> </span><span class="s">giving</span><span class="nv"> </span><span class="s">DataSF</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">true</span><span class="nv"> </span><span class="s">home</span><span class="nv"> </span><span class="s">on</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">web."</span>
+<span class="nn">---</span>
+</code></pre>
+</div>
+
+<p>This metadata, called “YAML front-matter” in Jekyll-speak can be used to do things like, display the author and updated date and define a thumbnail for the blog-post.</p>
+
+<p>There’s lots of other fun things you can do like compile RSS feeds and build resource libraries, but I’ll leave that for future blog-posts.</p>
+
+<h2 id="and-where-does-it-live">And where does it live?</h2>
+
+<p>Currently, we’re keeping the hosting of this simple. <a href="https://pages.github.com/">GitHub allows us to host public facing webpages</a> for free using GitHub pages. This is a feature available to anyone that has an open source project on GitHub. This approach is limited, as <a href="https://18f.gsa.gov/2014/11/17/taking-control-of-our-website-with-jekyll-and-webhooks/#blogging-with-freedom">noted by 18F</a>, because they don’t allow plugins.</p>
+
+<p>At this stage, this is actually okay for us. We aren’t doing anything too complicated yet that requires custom plugins. As we roll out more and begin to hit the limits of GitHub pages, we will evaluate if it makes sense to move to a more robust staging/production model on our own servers. Again, the project is small, the team is small and we still have room to grow into our corner of the web.</p>
+
+<p>When it comes to that, 18F has an excellent primer on how they’re hosting their Jekyll-enabled blog that will be very handy. Special thanks to them for sharing their work!</p>
+
+<h2 id="just-the-beginning">Just the beginning</h2>
+
+<p>There’s so much more to tell you! But we’ll be rolling out new things over the next couple months and I can’t wait to tell you more about our approach. I’m also looking forward to learning how we can do what we do better.</p>
+ ]]></description>
+    </item>
+      
+    
+      
+    <item>
+        <title><![CDATA[ Announcing our Graduate Student Summer Internship Opportunity ]]></title>
+        <link>https://datasf.org/blog/datasf-summer-internship/</link>
+        <pubDate>Fri, 20 Mar 2015 00:00:00 +0000</pubDate>
+        <dc:creator>Joy Bonaguro</dc:creator>
+        <category>blog</category>
+        <guid isPermaLink="false">/blog/datasf-summer-internship</guid>
+        <description><![CDATA[ <p>We are happy to announce that we are looking for a great intern to help us with the open data program! Please read on and click the link below to submit your application.</p>
+
+<p><strong>Description:</strong> Work with the Mayor’s Chief Data Officer this summer! We have many projects related to open data, data visualization or analysis, or the use of data in government. You could help us work on our next strategic open data release, help us develop a flexible approach to data dashboards, or geek out on analyzing some complicated datasets. And we are open to project pitches – if you have an idea, sell us on it!</p>
+
+<p>In addition to your project, you’ll learn about how government works from the inside and have access to city staff (and facilities) across the City. If you are interested in civic tech – this is a great way to get to know government.</p>
+
+<p>Read more about our office and <a href="http://datasf.org/about/">our work</a>, including our strategic plan.</p>
+
+<p><strong>Description of Office:</strong> The Mayor’s Office the Chief Data Officer is responsible for managing the City’s open data program as well as supporting the effective use of data in city government and operations. You can check out our strategic plan at datasf.org/about. Our office functions like a small startup in City government. We love to move fast but thoughtfully and we expect all team members to jump in, get their hands dirty, and have fun (good sense of humor a big plus ;-).</p>
+
+<p><strong>Minimum Qualifications:</strong> We can tailor projects to meet your strengths. At a minimum we expect strong analytical, research, writing, verbal, and interpersonal skills. Some projects may require technical skills (though probably nothing exceeding front-end development or scripting). Candidates should be pursuing a graduate degree in government, public policy, management, economics, information science, data science, computer science, or related field.</p>
+
+<p><strong>Application Procedure:</strong> All interested applicants must complete an internship application, which can be found on <a href="http://www.sfmayor.org/index.aspx?page=18">the Mayor’s homepage</a>.</p>
+
+<p>In addition to a completed application form, submit a cover letter, resume, and writing sample. Please submit all pieces of your application together; we ignore incomplete applications.</p>
+
+<p>Qualified applicants with disabilities requiring reasonable accommodation in the application or selection process must contact this office by phone at (415) 554-6114 or in writing.</p>
+
+<p>In the spirit of diversity and progressiveness that characterizes San Francisco, the Mayor’s Office welcomes intern candidates of various backgrounds who wish to bring innovative ideas from their communities to City Hall and from City Hall to their communities. Minorities, Women and Persons with Disabilities are strongly encouraged to apply.</p>
+
+<p>Also, our colleagues in the Mayor’s Office are also looking for interns, <a href="http://www.sfmayor.org/index.aspx?page=18">check the website</a> for additional opportunities.</p>
+
+ ]]></description>
+    </item>
+      
+    
+      
+    
+      
+    <item>
+        <title><![CDATA[ Data License Liberation Day ]]></title>
+        <link>https://datasf.org/blog/data-license-liberation-day/</link>
+        <pubDate>Fri, 23 Jan 2015 00:00:00 +0000</pubDate>
+        <dc:creator>Joy Bonaguro</dc:creator>
+        <category>blog</category>
+        <guid isPermaLink="false">/blog/data-license-liberation-day</guid>
+        <description><![CDATA[ <p><img class="pull-left" style="margin-right: 10px; width: 230px;" src="/assets/blog/pddl-launch/DataUnlocked-01.png" alt="Icon representing unlocked data" /></p>
+
+<p>It’s official – we have legal sign off on a single licensing strategy for <a href="https://data.sfgov.org/">DataSF</a>! Going forward, all data will be released under the friendly, no obligation Public Domain Dedication License (PDDL). <a href="http://opendatacommons.org/licenses/pddl/summary/">Read the super cute friendly description</a>.</p>
+
+<h2 id="ouch-too-many-licenses">Ouch! Too many licenses</h2>
+
+<p>One of our early goals was to remove ambiguity about how we license our data. Data on DataSF was available under 7 licenses.</p>
+
+<p><strong>Table: Data Licensing on DataSF as of Summer 2014</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>License</th>
+      <th>Dataset Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Creative Commons 1.0 Universal</td>
+      <td>348</td>
+    </tr>
+    <tr>
+      <td>Creative Commons Attribution 3.0 Unported</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Creative Commons Attribution-Share Alike 3.0n Unported</td>
+      <td>83</td>
+    </tr>
+    <tr>
+      <td>Open Database License</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Public Domain</td>
+      <td>145</td>
+    </tr>
+    <tr>
+      <td>None</td>
+      <td>296</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="why-this-is-a-problem">Why this is a problem:</h3>
+
+<ul>
+  <li>No logic or underlying strategy</li>
+  <li>Inconsistent obligations for data users – some have to attribute, some don’t, why?</li>
+  <li>Scared off corporate users with legal teams</li>
+</ul>
+
+<p>For now, some of these licenses will have to stay in place, but as we reissue our existing datasets, we’ll migrate them to the new license.</p>
+
+<h2 id="why-pddl">Why PDDL?</h2>
+
+<p>Our <a href="https://docs.google.com/document/d/1nT4EF6C8so2Qv6Y61MMn2FH-IATrOymfk0Z9A3DvN6w/edit?usp=sharing">research review of licensing</a>, highlighted three key issues that pushed us in this direction:</p>
+
+<ol>
+  <li><strong>Licenses designed for data.</strong> Content licenses didn’t have the special considerations needed for data. So we narrowed our choices to those designed for datasets.</li>
+  <li><strong>Attribution stacking.</strong> Let’s say you are building an app and use data from us, another city, and the feds but this data gets all munched together and represented and re-represented. And then someone else grabs it and reuses. Pretty soon you have 40 things to attribute and it’s just ugly. And how will we even enforce that?  If you note us as a source, that’s awesome, but gosh, don’t mess up your UI doing it.</li>
+  <li><strong>License interoperability.</strong> When you’re mushing data together, we want to minimize the overhead of managing multiple licenses. If other open data releases insist on more restrictive licenses, you’ll have to deal – but we don’t want to be a drag.</li>
+</ol>
+
+<p>We also heard from companies that having no license is ambiguous and annoying.</p>
+
+<h3 id="learn-more-about-our-thinking">Learn more about our thinking</h3>
+
+<ul>
+  <li><a href="https://docs.google.com/document/d/1nT4EF6C8so2Qv6Y61MMn2FH-IATrOymfk0Z9A3DvN6w/edit?usp=sharing">Licensing Open Data: Resources and Practices</a> (gdoc). Research conducted by our intern (Peri Weisberg/rock star) on data licensing options available and considerations for deployment in San Francisco.</li>
+  <li><a href="https://docs.google.com/spreadsheets/d/1gZHgJig0BYlKdpSDieUfY-9pS5B6Tn6l3azWM7twbPw/edit?usp=sharing">Licenses – Inventory</a> (gsheet). Inventory of available licenses we reviewed and licensing policies across cities and states.</li>
+  <li><a href="http://discovery.ac.uk/files/pdf/Licensing_Open_Data_A_Practical_Guide.pdf">Licensing Open Data: A practical guide</a> (PDF). Our favorite resource on licensing we uncovered during our research.</li>
+</ul>
+
+<h2 id="a-note-on-ensuring-pddl">A note on ensuring PDDL</h2>
+
+<p>One of the things our research suggested was that enforcing licensing standards was an issue. So we’ll simply take it out of the equation. Right now, we’ll enforce through policy and process. But once Socrata implements some needed metadata improvements, we’ll make it a technical control on our portal.</p>
+ ]]></description>
+    </item>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    <item>
+        <title><![CDATA[ U Heart Metadata ]]></title>
+        <link>https://datasf.org/blog/u-heart-metadata/</link>
+        <pubDate>Mon, 15 Sep 2014 00:00:00 +0000</pubDate>
+        <dc:creator>Joy Bonaguro</dc:creator>
+        <category>blog</category>
+        <guid isPermaLink="false">/blog/u-heart-metadata</guid>
+        <description><![CDATA[ <p><img class="pull-left" src="/assets/blog/u-heart-metadata/u-heart-metadata.png" alt="You heart metadata" style="width:230px; margin-right: 10px" /></p>
+
+<p>Thank you to everyone who responded to our request for feedback on our metadata draft! We really appreciated your comments and thoughts. Below is a summary of how we are incorporating comments and changes based on feedback from an internal survey, external survey, and our governance committee.</p>
+
+<p>You can view the revised draft and our comments here.
+## Changes we made
+We made a handful of changes based on the feedback:</p>
+
+<ul>
+  <li>Removed field 27-Spatial/geo coverage as we concluded this was more confusing than not and that publishing and quality checks would serve to ensure completeness.</li>
+  <li>Changed the fields 12 and 13 to “Required - Private” per feedback from our governance committee who felt that they created unnecessary confusion given that they supported internal management versus understanding the dataset. For example, public users would only see datasets marked as public access level: public. As a result, providing this as a public field doesn’t add value and may create confusion.</li>
+  <li>Incorporated some changes to the drop down menus and what we would include.</li>
+</ul>
+
+<h2 id="guidance-well-incorporate">Guidance we’ll incorporate</h2>
+
+<p>A few of you had suggestions for new field elements or information to include. Since our research noted that “compliance” is an issue, we are very focused on making the fields easy to populate while recognizing that good metadata is essential.</p>
+
+<p>To balance ease of use with comprehensiveness, we’ll create templates and guidance for completing all of the field elements, but with a focus on:</p>
+
+<ul>
+  <li>1-Title</li>
+  <li>2-Description</li>
+  <li>5-Data dictionary</li>
+  <li>25-Data notes</li>
+  <li>26-Related documents</li>
+</ul>
+
+<p>With the goal of addressing questions about:</p>
+
+<ul>
+  <li>Data collection methods and business processes generating the data</li>
+  <li>Units of analysis or suggested analysis</li>
+  <li>Primary keys and other important data fields</li>
+</ul>
+
+<p>And of course, we will monitor this in the next year and see if we need to add additional field elements or improve our guidance.</p>
+
+<h2 id="ease-of-completion">Ease of completion</h2>
+
+<p>We heard from a few folks concerned about how much effort it will take to complete the metadata. In addition, to the guidance we’ll develop, we worked hard to minimize manual input/writing.</p>
+
+<p>Of the 15 required elements, 10 are either auto-generated or drop downs, which simplifies completion. Another 2 are simple text - that is they should be simple and straightforward to complete. We’ll provide detailed guidance on creating the title and description which are open text and the data dictionary, which will require a mix of strategies to complete. The ratio is similar for the conditionally required elements - 5 of the 7 are auto-generated or drop downs.</p>
+
+<p><strong>Table: Metadata field by type of field</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Field Type</th>
+      <th>Required</th>
+      <th>Conditionally required</th>
+      <th>Optional</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Auto-generated</td>
+      <td>4</td>
+      <td>3</td>
+      <td> </td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Drop down</td>
+      <td>6</td>
+      <td>2</td>
+      <td> </td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Simple text</td>
+      <td>2</td>
+      <td>1</td>
+      <td>2</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Open text</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>1</td>
+      <td> </td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>15</td>
+      <td>7</td>
+      <td>4</td>
+      <td>26</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>We hope the combination of clear guidance and use of auto-generation and drop downs will help keep things manageable.</p>
+
+<p>Thank you again to everyone who contributed feedback! We really appreciate it and continue to look forward to working with everyone on improving the delivery and quality of data through our open data portal.</p>
+
+<p>Your Open Data Team,</p>
+
+<p>Joy &amp; Jason</p>
+ ]]></description>
+    </item>
+      
+    
+      
+    <item>
+        <title><![CDATA[ The New DataSF! ]]></title>
+        <link>https://datasf.org/blog/the-new-datasf/</link>
+        <pubDate>Tue, 19 Aug 2014 00:00:00 +0000</pubDate>
+        <dc:creator>Joy Bonaguro</dc:creator>
+        <category>blog</category>
+        <guid isPermaLink="false">/blog/the-new-datasf</guid>
+        <description><![CDATA[ <p>Today we released the new DataSF. You spoke and we listened. Our new design addresses some of the major usability issues on our website:</p>
+
+<ul>
+  <li>Simplifying the category structure (we went from 27 to 10 categories) to improve data discovery</li>
+  <li>Making it easy to find data by department (for those familiar with the City)</li>
+  <li>Visually integrating the various pages so it felt like you were on the same website</li>
+  <li>Simpler, more intuitive and visual help</li>
+  <li>Quick tips on accessing the API and getting started</li>
+  <li>Adding an about page with links to our strategic plan and reports</li>
+</ul>
+
+<h2 id="multiple-ways-to-discover-data">Multiple ways to discover data</h2>
+
+<p>Based on feedback from both internal and external users - we really wanted to make sure we offered several ways of discovering our data. The following three already existed, but we made some improvements:</p>
+
+<ol>
+  <li><strong>By search.</strong> We already offered this, but we made the feature more prominent.</li>
+  <li><strong>By category.</strong> Our old design made our categories hard to use or even find. They are now featured prominently in the new design.</li>
+  <li><strong>By type of dataset.</strong> This is a standard Socrata feature, but our new data catalog makes it more intuitive and presents the differences as a conscious choice.</li>
+</ol>
+
+<p>And then we added one more based on hearing again and again how frustrating it was to find data from departments: <strong>By department.</strong></p>
+
+<h2 id="a-few-more-details-on-categories">A few more details on categories</h2>
+
+<p>We spent some time thinking about the categories. And we used a bunch of tools to try and identify the right mix of categories:</p>
+
+<ul>
+  <li><strong>Survey of categories on existing sites.</strong> We reviewed categories from major open data websites, both local, national and international. <a href="https://docs.google.com/document/d/1Ih3x4uEu5VvRUEw7PaeSt2wqw0WrHuj01pSnV1EM2d8/edit?usp=sharing">Review the survey here</a> (gdoc).</li>
+  <li><strong>Analysis of search terms.</strong> Our major finding here was the need to have a category for geographic boundaries.</li>
+  <li><strong>Card sorting!</strong> This helped us move some of our data around and find new clusters of data.</li>
+  <li><strong>User interviews.</strong> We asked end users to respond to our categories and tell us what sounded like bureaucratic speak. We tried to remove bureaucratic speak…</li>
+</ul>
+
+<p>While this job will never be done, we think we’ve vastly improved it.</p>
+
+<h2 id="future-steps">Future Steps</h2>
+
+<p>But we still have more to do. Look for future improvements to include:</p>
+
+<ul>
+  <li>Easier distinction between original (or source) dataset and derived views, charts, and maps</li>
+  <li>Improved metadata</li>
+  <li>Simpler chart creation</li>
+</ul>
+
+<p>And a huge thanks to the development team at Socrata - Lou Huang and Louis Fettet. With a special shout out to Jessica Carsten for shepherding this project.</p>
+
+<p>And we look forward to working with you, the user, to make DataSF a delightful experience!</p>
+ ]]></description>
+    </item>
+      
+    
+      
+    <item>
+        <title><![CDATA[ Metadata & Dating - More in Common than you Think... ]]></title>
+        <link>https://datasf.org/blog/dating-data-what-do-you-look-for/</link>
+        <pubDate>Wed, 23 Jul 2014 00:00:00 +0000</pubDate>
+        <dc:creator>Joy Bonaguro</dc:creator>
+        <category>blog</category>
+        <guid isPermaLink="false">/blog/dating-data-what-do-you-look-for</guid>
+        <description><![CDATA[ <p><img class="pull-left" src="/assets/blog/i-heart-metadata/i-heart-metadata.png" alt="I Heart Metadata" style="width:240px; margin-right: 10px" /></p>
+
+<p>Finding, dating and settling down with the perfect mate is a lot easier with online dating tools. When you look for a potential match, maybe you only want a few details - like name and a list of interests. But as things get serious, you want to know more.</p>
+
+<p>In the real and online world, you have lots of ways to learn more. But in the online data dating world, you really only have one - metadata.</p>
+
+<p>And, well, our metadata makes it hard to commit…So we’re updating it.</p>
+
+<p>You can read more below - but check out our new draft standard:
+- <a href="http://bit.ly/SFMetadata">Draft Metadata Standard</a>
+- <a href="http://bit.ly/MetadataFeedback">Give us feedback on the draft standard</a> (3 short questions!)&lt;/li&gt;</p>
+
+<h2 id="metadatadream-date">Metadata Dream Date</h2>
+
+<p>In my metadata dreamworld:</p>
+
+<ul>
+  <li>Each required field would have a thoughtful and robust justification</li>
+  <li>Fields would be easy to complete and populate (think drop downs and controlled vocabulary)</li>
+  <li>The metadata would be in a friendly, portable file (think json)</li>
+  <li>Our Socrata platform would include an automated dataset of datasets that included each metadata field for each dataset. And I would make charts and views of the dataset of datasets that summarized and tracked our performance in open data.</li>
+  <li>Bonus feature! An API on the dataset of datasets that would let us create apps or feeds for recently updated, new datasets, etc!</li>
+</ul>
+
+<h3 id="instead">Instead…</h3>
+
+<p>Our metadata (the data about our datasets) is more or less out of the box (<a href="https://data.sfgov.org/Business-and-Economic-Development/Businesses-Registered-in-San-Francisco-Active/funx-qxxn/about">see an example for business registered in SF</a>). We have a handful of custom fields like Department and frequency, but we haven’t sat down and really thought through what fields we should include (and require) and why. And we’re inspired by metadata leadership from <a href="https://data.ny.gov/">Open New York</a> and <a href="http://www.cabq.gov/abq-data">Albuquerque</a>.</p>
+
+<h2 id="how-were-tackling-metadata-in-san-franciscoh2">How we’re tackling metadata in San Francisco&lt;/h2&gt;</h2>
+
+<p>We’ve kicked off a working group to draft a metadata standard. The team includes some metadata experts, library scientists, and some of our biggest publishers on DataSF. Read our <a href="https://docs.google.com/document/d/1w5-zVPGanEw9ePL7KevAgYgnD2feaNCjpjQgqDL1fVY/edit?usp=sharing">project document with background/motivation/major steps</a>.</p>
+
+<p>But before we kicked off the group, we surveyed the metadata landscape for existing practices. Some major findings:</p>
+
+<ul>
+  <li>Alot of great work has been done in migrating existing frameworks to accommodate open data (Dublin Core, DCAT, and Common Core). Though we were surprised by some interesting gaps (e.g. data quality notes, field definitions).</li>
+  <li>A balance is to be had in terms of making something required if a) you want compliance and b) you want to get data published. Alot of portals have metadata requirements, but compliance can by tricky.</li>
+</ul>
+
+<p>Read our full document on <a href="https://docs.google.com/document/d/1dz_-yWePLvfNPX8KZRn2SiP1SCpFcojZeO-8U8SPXgE/edit?usp=sharing">Metadata: Existing Practices and Survey</a>.</p>
+
+<p>(And PS - you can always visit our <a href="http://datasf.org/resources">Resources</a> page for all of our metadata documents.)</p>
+
+<h2 id="your-metadatadream-date">Your Metadata Dream Date</h2>
+
+<p>And we want to hear from you:
+- Data publishers - What works and what doesn’t about metadata?
+- Data users - What elements and fields are essential?
+- What’s field elements are hard to do? Can we crowd source data dictionaries???</p>
+
+<p>Drop us a line at datasf at sfgov dot org or check out our standard and give us feedback:</p>
+
+<ul>
+  <li><a href="http://bit.ly/SFMetadata">Draft Metadata Standard</a></li>
+  <li><a href="http://bit.ly/MetadataFeedback">Give us feedback on the draft standard</a> (3 short questions!)</li>
+</ul>
+ ]]></description>
+    </item>
+      
+    
+      
+    <item>
+        <title><![CDATA[ Open Data Grows Up ]]></title>
+        <link>https://datasf.org/blog/open-data-grows-up/</link>
+        <pubDate>Sat, 19 Jul 2014 00:39:45 +0000</pubDate>
+        <dc:creator>Joy Bonaguro</dc:creator>
+        <category>blog</category>
+        <guid isPermaLink="false">/blog/open-data-grows-up</guid>
+        <description><![CDATA[ <p>We released our multi-year strategic plan today! <a href="http://sfmayor.org/index.aspx?page=846&amp;recordid=639&amp;returnURL=%2findex.aspx%3fpage%3d1">Read the press release</a>.</p>
+
+<p>You can read the whole thing as a <a href="http://sfmayor.org/Modules/ShowDocument.aspx?documentID=425">PDF</a> or <a href="https://docs.google.com/document/d/1hvp_wls8KuJrfHW_NwX1qtyFR4EFdWCkxcULnNlhKNw/edit?usp=sharing">google doc</a>. If you want a quick read, I pasted the executive summary below. You can also track details on our progress on our <a href="https://docs.google.com/spreadsheets/d/1M30oyAFUO6TXkmZ1jqGXTNGdvsTiXh5V7oS7vUCKRJ0/edit?usp=sharing">timeline of activities</a> (google spreadsheet).</p>
+
+<p>(And PS - we added a <a href="/resources">resources page</a> to the blog where we’ll blog-post all of our documents - reuse, re-purpose, critique!)</p>
+
+<h2 id="executive-summary">Executive Summary</h2>
+
+<p>San Francisco has been a leader in open data. As one of the first cities with an open data policy, we helped fuel a movement that has spread across the country and the world. Open data can serve as a platform to 1) change how we use, share and consume government data - externally and internally; 2) transform data into services; and 3) foster continuous improvement in decision-making and the business of government.</p>
+
+<p><img src="/assets/blog/open-data-grows-up/open-data-theory-of-change.png" alt="Open Data- Theory of Change (1)" />&lt;/a&gt;</p>
+
+<h3 id="need-to-evolve">Need to Evolve.</h3>
+
+<p>But this plan demonstrates the need to evolve and mature our approach. Not only do we need to reinvigorate our program and release more data, we need to evolve our work to support the use of data in decision-making. To transform our initiative into a program, our strategic plan is designed to build the elements of an institutional approach to open data and data use more generally. The goals and strategies for year 1 lay out a framework for how we can grow, mature, and sustain our program to align our activities and resources with the expectations of the open data policy. In achieving these goals and strategies, we can fulfill our mission of enabling use of the City’s data thereby fostering an ecosystem of data-enabled management, services, and decisions.</p>
+
+<h3 id="timing-and-resources">Timing and Resources.</h3>
+
+<p>Our strategic plan is ambitious and reflects a vision of what we hope to accomplish over time. We do not expect to be able to deliver on all aspects of our strategic vision in year 1. However, by fully articulating our vision, we are better able to prioritize and allocate our resources and identify where we need key partners to help execute on our goals. Moreover, this plan recognizes that each of our goals are multi-year goals and that a great deal of work is already happening throughout the City. This plan helps us stitch together an overarching vision of how these efforts align, where the role of open data fits in, and how we can move forward to enable use of data.</p>
+
+<p>While we expect our strategic goals to change over time, we believe the goals in this plan will be in place for the next three years. The Office of the Chief Data Officer (OCDO) will be focused on Goals 1, 2 and 6 in year 1, in conjunction with key partners and the departments themselves. In year 1, OCDO work on goals 3, 4, and 5 is focused on leveraging key partnerships or pursuing strategies that will inform future work. Section 6 and Appendix D include more details.</p>
+
+<table>
+<tbody>
+<tr>
+<th><b>Goals</b></th>
+<th><b>Supporting Strategies</b></th>
+</tr>
+<tr>
+<td><b>Goal 1. Increase number and timeliness of datasets on DataSF</b></td>
+<td><b>Why this matters. </b>To enable the use of data we must first make it available. We need to ensure that we are publishing the City’s data when allowed and in a timely way. We will:&lt;/p&gt;
+<ol>
+<li>Establish the role of data coordinators and support development of data catalogs—this will provide the basis of data governance and allow us to understand the scope of the City’s data.*</li>
+<li>Develop methods to inform the prioritization of datasets for publication —this will allow us to stagger publication based on resource availability.</li>
+<li>Develop metrics to track and measure progress in publishing open data—this will provide the basic reporting for our data publication plans.</li>
+<li>Develop our program to automate publication of data—this will increase efficiency and decrease department effort in publishing datasets.*</li>
+<li>Develop an outreach and support program for data coordinators and data publishers—this will help departments be successful in publishing data.</li>
+<li>Establish methods to ensure SF licensing and publication of data for new information systems—this will stem future open data costs by building open data into new system requirements.*</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td><b>Goal 2. Improve the usability of DataSF</b></td>
+<td><b>Why this matters.</b> To ensure that our open data is readily accessible and used, we need to make sure that our data website and the means of accessing the data support the needs of users. We will:&lt;/p&gt;
+<ol>
+<li>Better leverage existing services and features from our data portal vendor, Socrata—this will help optimize our investment in our vendor.*</li>
+<li>Partner closely with Socrata to inform the development of the portal—this will help ensure that the data platform evolves to meet our needs.</li>
+<li>Redesign our web presence and supporting processes and materials to better meet the needs of our users—this will increase the impact of open data by easing access to more users.</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td><b>Goal 3. Improve the usability, quality and consistency of our data</b></td>
+<td><b>Why this matters.</b> While Goals 1 and 2 help provide access to the City’s data, the ultimate value of the data depends on its usability, quality, and consistency. We will:&lt;/p&gt;
+<ol>
+<li>Establish metadata standards for published data—this is key to increasing understanding and usability of our data.*</li>
+<li>Establish mechanisms to elicit and track feedback and learnings from data users—this will help us flag data quality problems.</li>
+<li>Explore the creation of data quality processes and measures—this will help inform how to support improved data quality over time.</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td><b>Goal 4. Enable use of confidential data, while appropriately protecting it</b></td>
+<td><b>Why this matters.</b> While the City needs to appropriately protect confidential data, we also need to enable better access to and use of this data for cross-department data sharing. We will:&lt;/p&gt;
+<ol>
+<li>Create a data classification and sharing standard—this will help improve efficiency and consistency in sharing and protecting data.*</li>
+<li>Create a process for accessing your individual data—this will help support data quality and privacy.*</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td><b>Goal 5. Support increased use of data in decision-making</b></td>
+<td><b>Why this matters.</b> Once data is available, we need to use it. We need to match the availability of data with the capacity to use data, both in terms of people and technology. We will:&lt;/p&gt;
+<ol>
+<li>Establish a training curriculum to support increased use of data in decision-making—this will increase the capacity of City staff to use, analyze, and manage with data.*</li>
+<li>Help establish department stat programs based on department readiness; codify lessons learned and materials for broader use—this will help increase effectiveness in using and leveraging “stat” programs.*</li>
+<li>Continue to develop our portfolio of transparency tools and websites—this will help leverage open data to inform broader decision-making.*</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td><b>Goal 6. Identify and foster innovations in open data and data use</b></td>
+<td><b>Why this matters. </b>The pace of change in the open data, analytics, and visualization spaces is breathtaking. We need to identify and nurture innovation in order to ensure that the City benefits. We will:&lt;/p&gt;
+<ol>
+<li>Develop and maintain a communications and engagement strategy—this will help ensure that we stay in touch with evolving stakeholder needs.</li>
+<li>Conduct ongoing reviews of best practices and the changing technology landscape—this will help us stay ahead of the innovation curve.</li>
+<li>Identify and enable targeted data-centric initiatives—this will help us uncover and foster new uses of data, internally and externally.*</li>
+<li>Establish a data licensing framework and standard—this will help ensure that our data users can use our data in any way they see fit.*</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p>*Indicates need for resources or activities beyond the OCDO (e.g. key partnerships, department effort, volunteers etc).</p>
+ ]]></description>
+    </item>
+      
+    
+      
+    
+      
+    
+      
+    <item>
+        <title><![CDATA[ Hello World, Take 2! ]]></title>
+        <link>https://datasf.org/blog/hello-world/</link>
+        <pubDate>Fri, 20 Jun 2014 00:00:00 +0000</pubDate>
+        <dc:creator>Joy Bonaguro</dc:creator>
+        <category>blog</category>
+        <guid isPermaLink="false">/blog/hello-world</guid>
+        <description><![CDATA[ <p>So…we’ve been a bit quiet about open data in San Francisco. In case anyone was worried, we’re still here and about to get quite chatty. Going forward, we’ll use this blog to talk about what we are doing, what are our plans, and what are our struggles with open data. You can also follow <a href="https://twitter.com/DataSF">DataSF on Twitter</a>.</p>
+
+<p>I started this spring as the City’s first Chief Data Officer. This is what we’ve been up to:</p>
+
+<p><strong>Talking. Alot.</strong> I’ve been spending a lot of time getting to know people working both inside and outside of the City (or in partnership). Along the way, I’ve been learning a lot about our challenges with data use and access, but I’ve also learned a great deal about some amazing work. I’ll be featuring some of these stories in future blog-posts. One thing I’ve learned - the City’s data is a complex ecosystem and it will take time to unfurl and understand.</p>
+
+<p><strong>Planning and Defining.</strong> I’ve been pulling together a strategic vision for the next 3 years. The full plan will be available online shortly - look for it on this blog. Part of the plan is defining the role of Chief Data Officer and where it fits and how does open data overlap with, complement or frustrate existing data work. I expect the plan to change (even substantively) over time, but we need something to serve as a compass to guide our path forward.</p>
+
+<p><strong>Starting to execute.</strong> We have started work on a number of things. I’ll be blog-posting more about each of these. The short (and incomplete) list is:</p>
+
+<ul>
+  <li><strong>Portal Overhaul.</strong> <a href="https://data.sfgov.org/">DataSF</a> is in serious need of a facelift! And if you have feedback, tell us in this <a href="https://docs.google.com/forms/d/135Mghbh-QQWd119byd6IkJ7gbZJQHdLyZ5Qh_VpCGkU/viewform">5-10 minute survey</a>. It has fun questions like “If DataSF were a car, what car would it be?”</li>
+  <li><strong>Data Categories.</strong> Part of overhauling DataSF is sorting through how we categorize our data to facilitate data discovery. We have 27 categories - way too much. We’ll be simplifying this.</li>
+  <li><strong>Metadata.</strong> The information we provide about our datasets is more or less out of the box. But we’ve heard from our users that it needs lots of work. We are rethinking our metadata requirements and how we will roll that out.</li>
+  <li><strong>Establishing Data Coordinators.</strong> Our legislation calls for the role of data coordinators, who will serve as the point of contact and coordination for open data work and standards. While the nominations are still rolling in, we are kicking off this group.</li>
+  <li><strong>Planning for the inventory.</strong> This part is a bit scary. How to inventory a vast store of data on disparate information systems? How do you define a dataset? What guidance do you give to our data coordinators? All tough questions. Drop me a line if you  have thoughts.</li>
+  <li><strong>Hacking!</strong> Big shout out to <a href="http://codeforsanfrancisco.org/">SFBrigade</a> for hosting the <a href="http://hackforchange.org/">National Day of Civic Hacking</a> in San Francisco. The event was a great success and the projects that the Brigade teams are tackling are super cool. I’m really excited to see how they evolve.</li>
+</ul>
+
+<p>And who is we? The existing open data portal has been maintained by Andy Maimoni and Mathias Gibson at <a href="http://www.sf311.org/">311</a> and they have graciously kept it going. And the GIS team, Jeff Johnson and Sam Valdez, have helped create and keep the backend data feeds to DataSF alive and functioning. We are also getting a lot of great support and guidance from Jay Nath and Jason Lally in the <a href="http://innovatesf.com/">Mayor’s Office of Civic Innovation</a>. Everyone has been tremendously helpful answering all my many questions. Lastly, I’ve had a rock star intern, Peri Weisberg, join us for the summer. Thank you everyone!</p>
+ ]]></description>
+    </item>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+</channel>
+</rss>
